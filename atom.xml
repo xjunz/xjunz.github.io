@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Me, xjunz&#39;s blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.xjunz.top/"/>
+  <updated>2019-04-28T02:21:53.687Z</updated>
+  <id>http://www.xjunz.top/</id>
+  
+  <author>
+    <name>xjunz</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于我搭博客这件事</title>
+    <link href="http://www.xjunz.top/2019/04/25/%E5%85%B3%E4%BA%8E%E6%88%91%E6%90%AD%E5%8D%9A%E5%AE%A2%E8%BF%99%E4%BB%B6%E4%BA%8B/"/>
+    <id>http://www.xjunz.top/2019/04/25/关于我搭博客这件事/</id>
+    <published>2019-04-25T15:04:19.000Z</published>
+    <updated>2019-04-28T02:21:53.687Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于起因"><a href="#关于起因" class="headerlink" title="关于起因"></a>关于起因</h1><p>其实早在2016年，我就了解到Hexo框架下的精致博客，那是Material主题作者在简书发表的推广简介。那篇文章在我的收藏夹躺到现在。眼看该项目最近一条commit都是九个月前了，我才搭好，感觉像是看了一份糊在墙上的报纸。因为当时我觉得搭博客是一件非常麻烦的事，所以还没尝试就放弃了。最近，看到一位好友的博客，我又心血来潮，才下定决心。这一路下来，发现其实并不难。所以说，有时阻挡我们的不是荆棘，而是退却的心啊。</p><h1 id="关于过程"><a href="#关于过程" class="headerlink" title="关于过程"></a>关于过程</h1><p>我完全不懂Web知识，搭博客几乎就是照着别人的教程一步一步下来的。从挑域名到成功deploy大约花了四五小时，虽然是成功了，但是一路都是云里雾里的，完全不懂为什么，只知道Ctrl C+Ctrl V…回头再看，才有了初步的了解。接下来就是一堆配置工作，我这个从未接触过yaml的小白以至于不知道冒号后面要加空格而被坑了好一会儿，生而为人，我很抱歉。</p><h1 id="一些细节"><a href="#一些细节" class="headerlink" title="一些细节"></a>一些细节</h1><p>关于如何搭建hexo以及如何托管到github（抑或是自己的服务器）我就不赘述了，网上教程及官方文档已经说得很明白了。</p><h2 id="关于Material-主题的使用"><a href="#关于Material-主题的使用" class="headerlink" title="关于Material 主题的使用"></a>关于Material 主题的使用</h2><p>很简单，直接把项目clone到hexo的theme目录下</p><pre><code class="powershell">cd [你的主题目录]git clone https://github.com/viosey/hexo-theme-material.git</code></pre><p>然后修改hexo的_config.yml，找到theme字段，修改为clone下来的文件夹名，名字可以修改。没修改过的话，应该就是hexo-theme-material，以下都以 hexo-theme-material为例</p><pre><code class="yaml">theme: hexo-theme-material</code></pre><p>还有一个坑， <strong>需要手动将 hexo-theme-material 文件夹中的 _config.template.yml 复制一份并重命名为 _config.yml</strong>。</p><p>最后，如果你的博客是托管在github上，并且使用了自定义域名，请在<strong>主题</strong>的source目录下新建一个文件，命名为CNAME,然后在里面写入你的域名。这样github就会自动识别custom domain，而不用你每次都去手动配置。现在</p><pre><code class="powershell">hexo cleanhexo ghexo d</code></pre><p>就能看到主题部署成功啦！接下来就是按自己喜好配置主题咯！</p><h1 id="一些小问题"><a href="#一些小问题" class="headerlink" title="一些小问题"></a>一些小问题</h1><h3 id="如何建立一个自我介绍的页面？"><a href="#如何建立一个自我介绍的页面？" class="headerlink" title="如何建立一个自我介绍的页面？"></a>如何建立一个自我介绍的页面？</h3><p>先创建一个新页面，如下，该命令会在hexo的source目录下创建一个文件夹，这个文件夹和你的_posts是平行且隔离的。</p><pre><code class="powershell">hexo new page &quot;intro[文件夹名可自定义，以下就以intro为例]&quot;</code></pre><p>成功后，intro文件夹下会生成一个index.md,不同于post页面，自定义的页面只能识别index.md并显示，你新建其他md，是不会被显示的。现在你就可以在index.md里写自己的介绍啦！当然，写完以后，如何在侧边栏添加一个入口呢？首先，打开<strong>主题</strong>的_config.yml,找到sidebar节点，然后找到sidebar节点下的pages节点,最后在pages节点下添加</p><pre><code class="yaml">  关于: #这里的文字会显示在侧边栏，可以自定义      link: &quot;/intro&quot; # 这里是生成的page的目录，即我前面指令里的intro，不能乱改      icon: person #可以自定义图标，图标来自于material.io/icons,无需下载图标，直接填图标名即可      divider: false #是否显示下方分割线</code></pre><p>完成后 hexo  s，就可以预览效果啦！</p><h3 id="如何在博客中使用图片？"><a href="#如何在博客中使用图片？" class="headerlink" title="如何在博客中使用图片？"></a>如何在博客中使用图片？</h3><p>看到这个大佬可能笑了，怎么插入图片还要你教？等等，我的意思是如何在在线网页上使用你写博客时用的本地的图片。大佬可能会说用图床啊！当然这是一种方法，但是还有更方便的方法。以Typora为例（看下图），插入图片时可选择<strong>设置图像根目录</strong>，第一步，我们把它设置为，<strong>…\hexo-theme-material\source</strong>。第二步，我们可以看到有个<strong>复制图片到文件夹</strong>的选项，可以点击配置，当然如果不想每次写新博客都手动配置呢，我们可以点击<strong>全局图像设置</strong><img src="/img/post_imgs/typro2.PNG" alt></p><p>打开全局图像配置后，选择“复制到指定目录”<img src="/img/post_imgs/typora3.PNG" alt></p><p>最关键的部分来啦！这时，在你的<strong>…\hexo-theme-material\source\img</strong>文件夹下新建一个post_imgs文件夹（文件夹名字随意，主要用于存放博客的图片，以下以post_imgs为例），然后将<strong>复制到指定目录</strong>的目标目录选为<strong>…\hexo-theme-material\source\img\post_imgs</strong>，即你新建的目录的路径，如上图。现在，你在博客中插入图片，可以看到，我们的图像路径是/img开头的<img src="/img/post_imgs/TIM图片20190427110356.png" alt></p><p>而这正是网页寻址的相对目录，这意味着，我们的图片就能被网页正常引用，只要配置好了，网页博客插入图片就和在本地写博客一样简单，最后运行 hexo d ,看看效果。唯一的缺点就是每次写新博客就得花几秒钟配置一下图片根目录，Typora也没有全局的选项。大佬们要是有什么更好的奇技淫巧，欢迎联系我！</p><h3 id="如何建立时光轴、标签云、图库等？"><a href="#如何建立时光轴、标签云、图库等？" class="headerlink" title="如何建立时光轴、标签云、图库等？"></a>如何建立时光轴、标签云、图库等？</h3><p>其实建立这些的原理和我上面说的建立“自我介绍”页面时一样的，本质也是建立一个新page,只不过这个page里的index.md的layout类型是特定的罢了。具体的方法参考上文以及<a href="https://neko-dev.github.io/material-theme-docs/#/pages" target="_blank" rel="noopener">官方文档</a>。</p><h3 id="如何在博客主页添加网易云音乐歌单-歌曲外链播放器？"><a href="#如何在博客主页添加网易云音乐歌单-歌曲外链播放器？" class="headerlink" title="如何在博客主页添加网易云音乐歌单/歌曲外链播放器？"></a>如何在博客主页添加网易云音乐歌单/歌曲外链播放器？</h3><p>这是什么呢？看图，或者到我的博客主页底部就能看到这个<img src="/img/post_imgs/outchain.png" alt></p><p>那这是怎么是怎么实现的呢？其实主要得益于网易云音乐提供的外链播放器功能，首先登录网页版网易云音乐，登录以后，点击进入一个歌单，如下图<img src="/img/post_imgs/outchain1.png" alt></p><p>点击图片上指示的<strong>生成外链播放器</strong>，复制他给的代码就行了，一般像这样：</p><pre><code class="html">&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=450 src=&quot;//music.163.com/outchain/player?type=0&amp;id=135453255&amp;auto=0&amp;height=430&quot;&gt;&lt;/iframe&gt;</code></pre><p>此时，如果你的歌单里包含没有版权的歌曲，网页会提示是无法生成外链播放器。这时看我图示标注的歌单id，把生成的外链中的id参数替换掉就行，即使这样，没有版权的歌曲还是无法播放的，但是聊胜于无嘛。当然，自己建立一个博客专用歌单也是阔以的。</p><p>最关键的步骤来啦，以我的Material主题为例，打开<strong>…\themes\hexo-theme-material\layout\index.ejs</strong>这个文件，看图<img src="/img/post_imgs/outchain2.png" alt></p><p>选择合适的位置粘贴你的代码，我选择了主页最底部，当然如果你想置顶，把它放到Normal Post上面就行，不过可能没有那么协调。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;关于起因&quot;&gt;&lt;a href=&quot;#关于起因&quot; class=&quot;headerlink&quot; title=&quot;关于起因&quot;&gt;&lt;/a&gt;关于起因&lt;/h1&gt;&lt;p&gt;其实早在2016年，我就了解到Hexo框架下的精致博客，那是Material主题作者在简书发表的推广简介。那篇文章在我的收藏
+      
+    
+    </summary>
+    
+      <category term="杂谈" scheme="http://www.xjunz.top/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://www.xjunz.top/2019/04/23/hello-world/"/>
+    <id>http://www.xjunz.top/2019/04/23/hello-world/</id>
+    <published>2019-04-23T13:16:34.747Z</published>
+    <updated>2019-04-23T13:16:34.747Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
