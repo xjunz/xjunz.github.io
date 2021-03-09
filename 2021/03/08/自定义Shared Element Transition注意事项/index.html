@@ -251,7 +251,7 @@
 
     
         <meta property="article:published_time" content="Mon Mar 08 2021 22:32:14 GMT+0800">
-        <meta property="article:modified_time" content="Tue Mar 09 2021 15:52:27 GMT+0800">
+        <meta property="article:modified_time" content="Tue Mar 09 2021 16:05:09 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -274,7 +274,7 @@
     "mainEntityOfPage": "http://www.xjunz.top/2021/03/08/自定义Shared Element Transition注意事项/index.html",
     "headline": "自定义Shared Element Transition注意事项",
     "datePublished": "Mon Mar 08 2021 22:32:14 GMT+0800",
-    "dateModified": "Tue Mar 09 2021 15:52:27 GMT+0800",
+    "dateModified": "Tue Mar 09 2021 16:05:09 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "xjunz",
@@ -356,7 +356,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#📢-自定义Shared-Element-Transition注意事项"><span class="post-toc-number">1.</span> <span class="post-toc-text">📢 自定义Shared Element Transition注意事项</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#从A到B的ASET"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">从A到B的ASET</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#为什么要这样设计？"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">为什么要这样设计？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Shared-Elment-Return-Transition"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">Shared Elment Return Transition</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#初始状态问题"><span class="post-toc-number">1.1.2.1.</span> <span class="post-toc-text">初始状态问题</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#最后一帧问题"><span class="post-toc-number">1.1.2.2.</span> <span class="post-toc-text">最后一帧问题</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#从A到B的FSET"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">从A到B的FSET</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#📢-自定义Shared-Element-Transition注意事项"><span class="post-toc-number">1.</span> <span class="post-toc-text">📢 自定义Shared Element Transition注意事项</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#从A到B的ASET"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">从A到B的ASET</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#为什么要这样设计？"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">为什么要这样设计？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Shared-Element-Return-Transition"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">Shared Element Return Transition</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#初始状态问题"><span class="post-toc-number">1.1.2.1.</span> <span class="post-toc-text">初始状态问题</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#最后一帧问题"><span class="post-toc-number">1.1.2.2.</span> <span class="post-toc-text">最后一帧问题</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#从A到B的FSET"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">从A到B的FSET</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -529,8 +529,8 @@
 </blockquote>
 <h2 id="从A到B的ASET"><a href="#从A到B的ASET" class="headerlink" title="从A到B的ASET"></a>从A到B的ASET</h2><p>系统会将B中View的一些属性设为A中View的值，然后根据初始值和终值的不同构造执行<code>Transition</code>。如果你自定义的<code>Transition</code>旨在<code>Activity</code>间使用，那么在<code>captureStartValues</code>中获取初始值时需要注意，此时获取到的View是<strong>Activity B</strong>中共享元素，而<strong>不是</strong>Activity A中的那个共享元素。能获取到的信息只有位置、大小、可见性等信息，其他信息无法获得，只能通过xml或代码指定。但是在<code>SharedElmentCallback#onSharedElementStart()</code>，可以获取到<strong>Activity A</strong>的元素的<code>Snapshot Bitmap</code> ，此View是源共享元素的快照，可以将其添加到<code>Overlay</code>中伪造源View。</p>
 <h3 id="为什么要这样设计？"><a href="#为什么要这样设计？" class="headerlink" title="为什么要这样设计？"></a>为什么要这样设计？</h3><p>原因在于Activity之间的Transition数据是通过<code>Intent</code>传递的，所以不可能将整个View传递到下一个Activity，只能传递某些可以序列化的属性，如大小、位置、快照等。虽然有局限性，但是也有其优越性：这意味着，只要对接完好，即使是两个不同应用的Activity也可以进行共享元素Transition。</p>
-<h3 id="Shared-Elment-Return-Transition"><a href="#Shared-Elment-Return-Transition" class="headerlink" title="Shared Elment Return Transition"></a>Shared Elment Return Transition</h3><blockquote>
-<p>Shared Elment Return Transition (SERT) 在ASET中也是非常特殊的存在，需要注意以下问题。</p>
+<h3 id="Shared-Element-Return-Transition"><a href="#Shared-Element-Return-Transition" class="headerlink" title="Shared Element Return Transition"></a>Shared Element Return Transition</h3><blockquote>
+<p>Shared Element Return Transition (SERT) 在ASET中也是非常特殊的存在，需要注意以下问题。</p>
 </blockquote>
 <h4 id="初始状态问题"><a href="#初始状态问题" class="headerlink" title="初始状态问题"></a>初始状态问题</h4><p>对于SERT，需要注意的是，在SERT之前系统会把视图设置为SERT的<code>end</code>状态（也是Shared Elment Enter Transition的<code>start</code>状态）保证<code>captureEndValues</code>能正常工作。因此，如果要执行动画，必须将视图手动重置为SERT的<code>start</code>状态。比如，你需要执行一个位移动画，那么，请先通过<code>view.layout</code>将View移动到初始位置，动画才能如期（as expected）执行。</p>
 <h4 id="最后一帧问题"><a href="#最后一帧问题" class="headerlink" title="最后一帧问题"></a>最后一帧问题</h4><p>需要知道的是，Transition都是在 <strong>Activity B</strong>中执行的。在SERT执行完成之后，B会被<code>finish</code>。考虑到这一点，需要特别注意动画的<code>onAnimationEnd</code>回调是否有改变共享元素外观的代码（比如移除Overlay中的Drawable/View），因为<code>onAnimationEnd</code>是在动画最后一帧执行的，在<code>onAnimationEnd</code>和<code>finish</code>之间就会有一帧的空隙，如果不处理好，会出现视图一闪而过的突变，体验非常糟糕。</p>
