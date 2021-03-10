@@ -251,7 +251,7 @@
 
     
         <meta property="article:published_time" content="Wed Mar 10 2021 09:34:18 GMT+0800">
-        <meta property="article:modified_time" content="Wed Mar 10 2021 15:59:54 GMT+0800">
+        <meta property="article:modified_time" content="Wed Mar 10 2021 16:15:27 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -274,7 +274,7 @@
     "mainEntityOfPage": "http://www.xjunz.top/2021/03/10/真的有这么丝滑吗-MotionLayout-ViewDragHelper/index.html",
     "headline": "真的有这么丝滑吗？MotionLayout+ViewDragHelper绝赞组合!",
     "datePublished": "Wed Mar 10 2021 09:34:18 GMT+0800",
-    "dateModified": "Wed Mar 10 2021 15:59:54 GMT+0800",
+    "dateModified": "Wed Mar 10 2021 16:15:27 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "xjunz",
@@ -525,7 +525,7 @@
 <p>内容可能存在错误或瑕疵，欢迎斧正…</p>
 </blockquote>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>目前各大视频、音乐播放器都有小窗（折叠）和全屏（展开）模式。但是对我而言，一直没找到任何一个产品能完美地通过用户交互在这两个模式之间优雅地过渡，唯一差强人意的是YouTube移动客户端。但是它对用户手指松开后的动画处理仍然不够自然。所以我思考着能不能自己实现一个。</p>
-<h2 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a>效果预览</h2><p><img src="/img/post_imgs/真的有这么丝滑吗-Motionlayout-ViewDragHelper/Video_20210310_093906_557.gif" style="zoom:33%;"></p>
+<h2 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a>效果预览</h2><p><img src="/img/post_imgs/真的有这么丝滑吗-MotionLayout-ViewDragHelper/Video_20210310_041143_668.gif" alt="Video_20210310_041143_668" style="zoom: 50%;"></p>
 <hr>
 <p>上面时我实现后的成品，展示了一个可根据用户拖动而在小窗和全屏之间过渡的音乐播放器。可以看到，无论是交互还是动画，都非常自然，也没有过度设计导致的低效。</p>
 <h2 id="需求实现分析"><a href="#需求实现分析" class="headerlink" title="需求实现分析"></a>需求实现分析</h2><p>对于这样的需求，我首先想到的就是使用<code>ViewDragHelper</code>，以为它可以自然地处理手势拖拽。然后根据拖拽的比例设置控件的属性从而实现动画效果。但是这个界面上控件如此之多，各种控件位置、大小、透明度、颜色、可见性乃至圆角大小都在变化，且不考虑工作量问题，就算实现了可维护性也非常糟糕。如果中途需求更改，某处要添加、移除一个控件，或者更换某个控件的动画效果，都是会牵一发而动全身的。这就是我们为什么要引入<code>MotionLayout</code>，它可以声明式地实现两个布局之间的过渡动画。其实，<code>MotionLayout</code>本身也可以通过<code>&lt;OnSwipe/&gt;</code>标签实现手势拖拽，但是效果真的差强人意，因为它无法实现像<code>ViewDragHelper</code>一样，当手指松开后，自然地过渡到结束状态。只有<code>linear</code>、<code>accelerate</code>、<code>decelerate</code>三种插值选项。所以我们还是使用<code>ViewDragHelper</code>处理手势。</p>
