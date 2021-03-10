@@ -157,9 +157,9 @@
     
     
     <entry>
-      <title>Timeline</title>
-      <link href="/timeline/index.html"/>
-      <url>/timeline/index.html</url>
+      <title>Gallery</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -168,9 +168,9 @@
     
     
     <entry>
-      <title>Gallery</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
+      <title>Timeline</title>
+      <link href="/timeline/index.html"/>
+      <url>/timeline/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
