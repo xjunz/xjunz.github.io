@@ -146,20 +146,20 @@
     
     
     <entry>
-      <title>About Me</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>Gallery</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
       
-        <content type="html"><![CDATA[<h1 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h1><p>目前的博客框架是<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>,  主题是<a href="https://github.com/viosey/hexo-theme-material" target="_blank" rel="noopener">Material</a> ，Markdown编辑器是好用又美观的<a href="https://www.typora.io/" target="_blank" rel="noopener">Typora</a> .</p><h2 id="我的称呼"><a href="#我的称呼" class="headerlink" title="我的称呼"></a>我的称呼</h2><p><strong>XJUNZ</strong>  ( 读作: <em>/eksdʒʌnz/</em> )</p><h2 id="我来自"><a href="#我来自" class="headerlink" title="我来自"></a>我来自</h2><p>浙江</p><h2 id="年龄"><a href="#年龄" class="headerlink" title="年龄"></a>年龄</h2><p>95后  狮子座</p><h2 id="爱好特长"><a href="#爱好特长" class="headerlink" title="爱好特长"></a>爱好特长</h2><p>没想好…</p><h2 id="长话短说"><a href="#长话短说" class="headerlink" title="长话短说"></a>长话短说</h2><p>拖延完美主义| 好想回到童年| Material Design 拥趸| Praise Google</p><p><em>待补充…</em></p><h2 id="联系到我"><a href="#联系到我" class="headerlink" title="联系到我"></a>联系到我</h2><p><strong>QQ</strong> (主要): 1409122313</p><p><strong>Telegram </strong>(随缘上线): xjunz</p>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>Gallery</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
+      <title>Timeline</title>
+      <link href="/timeline/index.html"/>
+      <url>/timeline/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -179,11 +179,11 @@
     
     
     <entry>
-      <title>Timeline</title>
-      <link href="/timeline/index.html"/>
-      <url>/timeline/index.html</url>
+      <title>About Me</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h1><p>目前的博客框架是<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>,  主题是<a href="https://github.com/viosey/hexo-theme-material" target="_blank" rel="noopener">Material</a> ，Markdown编辑器是好用又美观的<a href="https://www.typora.io/" target="_blank" rel="noopener">Typora</a> .</p><h2 id="我的称呼"><a href="#我的称呼" class="headerlink" title="我的称呼"></a>我的称呼</h2><p><strong>XJUNZ</strong>  ( 读作: <em>/eksdʒʌnz/</em> )</p><h2 id="我来自"><a href="#我来自" class="headerlink" title="我来自"></a>我来自</h2><p>浙江</p><h2 id="年龄"><a href="#年龄" class="headerlink" title="年龄"></a>年龄</h2><p>95后  狮子座</p><h2 id="爱好特长"><a href="#爱好特长" class="headerlink" title="爱好特长"></a>爱好特长</h2><p>没想好…</p><h2 id="长话短说"><a href="#长话短说" class="headerlink" title="长话短说"></a>长话短说</h2><p>拖延完美主义| 好想回到童年| Material Design 拥趸| Praise Google</p><p><em>待补充…</em></p><h2 id="联系到我"><a href="#联系到我" class="headerlink" title="联系到我"></a>联系到我</h2><p><strong>QQ</strong> (主要): 1409122313</p><p><strong>Telegram </strong>(随缘上线): xjunz</p>]]></content>
       
     </entry>
     
