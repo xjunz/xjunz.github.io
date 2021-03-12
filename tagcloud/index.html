@@ -50,7 +50,7 @@
     
     <title>
         
-            About Me | 
+            Tagcloud | 
         
         Me, xjunz&#39;s blog
     </title>
@@ -224,7 +224,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Me, xjunz&#39;s blog">
-    <meta name="msapplication-starturl" content="http://www.xjunz.top/About-me/">
+    <meta name="msapplication-starturl" content="http://www.xjunz.top/tagcloud/">
     <meta name="msapplication-navbutton-color" content="#fec3ab">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Me, xjunz&#39;s blog">
@@ -239,9 +239,9 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://www.xjunz.top/About-me/">
+    <meta property="og:url" content="http://www.xjunz.top/tagcloud/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="About Me | Me, xjunz&#39;s blog">
+    <meta property="og:title" content="Tagcloud | Me, xjunz&#39;s blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="xjunz&#39;s blog">
     
@@ -253,7 +253,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://www.xjunz.top/About-me/index.html">
+        <link rel="canonical" href="http://www.xjunz.top/tagcloud/index.html">
     
 
     <!-- Structured-data for SEO -->
@@ -307,11 +307,20 @@
                 
     <!-- Paradox Post Header -->
     
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/daily_pic.png)">
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
     
             <p class="article-headline-p">
-                About Me
+                Tagcloud
             </p>
         </div>
 
@@ -330,7 +339,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>xjunz</strong>
-        <span>4月 26, 2019</span>
+        <span>3月 12, 2021</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -352,7 +361,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB50lEQVR42u3aQXLDMAgFUN//0ukJ7HyEk9TiadWZxjZvwyDgeG1xDgwMDAwMDAyMf8M44nP21PV7rp9qxYCBgTGM8Sa1nXw4D+76nYsxYGBgjGScJbi1UBJqJwYMDAyMJMQ1dg7GwMDAuCvhnv0yeTMGBgbGJy6x1YCqT33pLo6BgfFARt6U/9zfX51vYGBgPIqxuOhw+YE8uB/vjGBgYDyEUW3oH8WTjxOqMAwMjJmM/KX5RbSzKNZatsDAwNiIkafdNUy+/JoMRzEwMGYy7irU+mUlBgYGRrXd1g/ouvi7LhyT5VcMDIxpjM7SamdIUF2wwMDAmMzIL6udhbAqbHHZAgMDY2tGXq7lv68urRa+i4GBMYZRXY/I02gSXHUhAwMDYyYjSXn5tTYvDZP/lpctMDAwNmUkxVzrqrlUApYHAxgYGFsz7kq4a0HnqRYDA2Myo9rEfwWnM9TMV9MwMDDmMKqnumyRt/DyUhUDA2Mao7/s1SkWkzHA4nwDAwNjO0belM+LuXx1rFqqYmBgTGbkl8l8bFldYC204TAwMDDiNNoZKiRJ9iMJFwMDY2tG9RJbbqLlSR8DA2MkI7nEVltm1Xbel9ptGBgYD2RUP7NWUHYWZDEwMCYznnswMDAwMDAwMH56/gCXdFS5Nvan7gAAAABJRU5ErkJggg==">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB3UlEQVR42u3aS27DMAwFQN//0u22QGHnkZLhWBqtCsNJOVkQ4uf4WeIcGBgYGBgYGBhfwzji8/f968/+//6z93sxYGBg7Mn4kNpOGLOeVGPAwMDYmZEk2SRF5p8aigEDAwOj9W+SC+J1wsXAwMCYm3B7F8qRQhcDAwMjLyCTIEYukbfX4hgYGC9kjAwGZv398HwDAwPjixnlFYcgUeaNtsd2RjAwMF7FqF7szoK7fn4NyMtaDAyMnRn5glde0I6UuJOLWAwMjCUYs8ravFUXpdRrGAYGxmaM6ppFPnrspexoXQMDA2NLRq/FNmtdIy96MTAwMPLn1aWKZrjVdhsGBsZyjGRgmQ8MqtfHoZ8DAwNjG0avcdZrluWJOHqOgYGxPaMXdBJQnqwxMDAw7muuVb+nWr5iYGDsxugl0zsWMiYMBjAwMBZl5Fe3PEHnLbNe+YqBgbEnIx9V5u/POhgYGBjVkyfiBJwn/aFJLAYGxssZI+Vo7538/fJ8AwMDY2nGeJmaBJGPOaPEjYGBsSWj2tbvrZSNFL0YGBgY+dUtv9JVRwL5T4mBgYGRh1ttpeXFKgYGBkaviK0uZ1TbcIVyFwMDYzPGyGCgmpSjZIqBgYGxxMHAwMDAwMDAePT8Al8JFtsEM0cxAAAAAElFTkSuQmCC">
     
 </ul>
 
@@ -385,7 +394,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=About Me&url=http://www.xjunz.top/About-me/index.html&pic=http://www.xjunz.top/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Tagcloud&url=http://www.xjunz.top/tagcloud/index.html&pic=http://www.xjunz.top/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -394,7 +403,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=About Me&url=http://www.xjunz.top/About-me/index.html&via=xjunz" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Tagcloud&url=http://www.xjunz.top/tagcloud/index.html&via=xjunz" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -403,7 +412,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.xjunz.top/About-me/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.xjunz.top/tagcloud/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -418,7 +427,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Me, xjunz&#39;s blog&title=About Me&summary=xjunz&#39;s blog&pics=http://www.xjunz.top/img/favicon.png&url=http://www.xjunz.top/About-me/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Me, xjunz&#39;s blog&title=Tagcloud&summary=xjunz&#39;s blog&pics=http://www.xjunz.top/img/favicon.png&url=http://www.xjunz.top/tagcloud/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -427,7 +436,7 @@
 
     <!-- Share Telegram -->
     
-        <a class="post_share-link" href="https://telegram.me/share/url?url=http://www.xjunz.top/About-me/index.html&text=About Me" target="_blank">
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://www.xjunz.top/tagcloud/index.html&text=Tagcloud" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Telegram
             </li>
@@ -444,16 +453,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h1><p>目前的博客框架是<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>,  主题是<a href="https://github.com/viosey/hexo-theme-material" target="_blank" rel="noopener">Material</a> ，Markdown编辑器是好用又美观的<a href="https://www.typora.io/" target="_blank" rel="noopener">Typora</a> .</p>
-<h2 id="我的称呼"><a href="#我的称呼" class="headerlink" title="我的称呼"></a>我的称呼</h2><p><strong>XJUNZ</strong>  ( 读作: <em>/eksdʒʌnz/</em> )</p>
-<h2 id="我来自"><a href="#我来自" class="headerlink" title="我来自"></a>我来自</h2><p>浙江</p>
-<h2 id="年龄"><a href="#年龄" class="headerlink" title="年龄"></a>年龄</h2><p>95后  狮子座</p>
-<h2 id="爱好特长"><a href="#爱好特长" class="headerlink" title="爱好特长"></a>爱好特长</h2><p>没想好…</p>
-<h2 id="长话短说"><a href="#长话短说" class="headerlink" title="长话短说"></a>长话短说</h2><p>懒| 拖延症|好想回到童年|Material Design 拥趸| Praise Google</p>
-<p><em>待补充…</em></p>
-<h2 id="联系到我"><a href="#联系到我" class="headerlink" title="联系到我"></a>联系到我</h2><p><strong>QQ</strong> (主要): 1409122313</p>
-<p><strong>Telegram </strong>(随缘上线): xjunz</p>
-
+        
         
     
 
@@ -471,8 +471,8 @@
     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://www.xjunz.top/About-me/index.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://www.xjunz.top/About-me/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://www.xjunz.top/tagcloud/index.html';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://www.xjunz.top/tagcloud/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 <script type="text/ls-javascript" id="disqus-thread-script">
@@ -619,16 +619,6 @@
     <!-- Pages  -->
     
         <li>
-            <a href="/About-me" title="关于">
-                
-                    <i class="material-icons sidebar-material-icons">person</i>
-                
-                关于
-            </a>
-        </li>
-        
-    
-        <li>
             <a href="/timeline" title="时光轴">
                 
                     <i class="material-icons sidebar-material-icons">history</i>
@@ -644,6 +634,16 @@
                     <i class="material-icons sidebar-material-icons">local_florist</i>
                 
                 画廊
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于
             </a>
         </li>
         
