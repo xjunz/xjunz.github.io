@@ -251,7 +251,7 @@
 
     
         <meta property="article:published_time" content="Mon Mar 08 2021 19:37:37 GMT+0800">
-        <meta property="article:modified_time" content="Tue Mar 09 2021 19:50:04 GMT+0800">
+        <meta property="article:modified_time" content="Wed May 19 2021 23:28:22 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -274,7 +274,7 @@
     "mainEntityOfPage": "http://www.xjunz.top/2021/03/08/Databinding使用笔记/index.html",
     "headline": "Databinding使用笔记",
     "datePublished": "Mon Mar 08 2021 19:37:37 GMT+0800",
-    "dateModified": "Tue Mar 09 2021 19:50:04 GMT+0800",
+    "dateModified": "Wed May 19 2021 23:28:22 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "xjunz",
@@ -595,6 +595,8 @@ public static void setWidthWatcher(View view, final InverseBindingListener liste
 <li><p>在xml中调用方法传参为<code>null</code>时，如果不将<code>null</code>显式强转为参数所要求的类型，Databinding框架会将<code>null</code>强转为<code>Object</code>类型，若该方法所需参数不是<code>Object</code>，那么就会无法通过编译。</p>
 </li>
 <li><p><code>ViewDataBinding.inflate(inflater)</code>直接可以获得实例，我居然用<code>ViewDataBindingUtils.inflate()</code>用了这么久。</p>
+</li>
+<li><p>Databinding支持<code>LiveData</code>，也就是说<code>LiveData</code>(通常是<code>MutableLiveData</code>)可以代替<code>ObservableXx</code>进行数据绑定。<code>LiveData</code>和<code>Observable</code>的区别在于，<code>LiveData</code>是<em>Lifecycle Perceptive</em>(生命周期可感知)的，即<code>LiveData</code>的订阅事件只在其宿主处于活跃状态时才会执行。正因为如此，使用LiveData进行数据绑定需要通过<code>ViewDatabinding.setLifecyclerOwner</code>设置宿主，绑定才会生效。</p>
 </li>
 </ul>
 
@@ -1061,7 +1063,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
     
         
-            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?c6/fDry+v0W678tXeRVWrw==", true)</script>
         
     
 
