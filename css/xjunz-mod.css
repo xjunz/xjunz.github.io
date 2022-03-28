@@ -1,0 +1,7 @@
+#post-content .prettyprint{
+    padding: 0 !important;
+}
+
+#post-content ol, #post-content ul {
+    padding-left: 30px !important;
+}

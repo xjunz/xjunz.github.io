@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/bollnh/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
+
+
+    <link rel="dns-prefetch" href="https://.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            安卓开发中的奇技淫巧（长期更新...） | 
+        
+        Me, xjunz&#39;s blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.svg">
+    <link rel="icon" href="/img/favicon.svg">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="xjunz&#39;s blog">
+    <meta name="keywords" content=",长期更新">
+    <meta name="theme-color" content="#fec3ab">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?WIaO2pFteur6q8OoZKmpZw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #FF4981;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #FF4981 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #FF4981 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #FF4981 !important;
+  }
+
+  .toTop {
+    background: #2f063e !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #2f063e;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #2f063e;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #2f063e;
+  }
+
+  .post-toc a:hover {
+    color: #FF4981;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body {
+        background-color: #F3F3F3;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Me, xjunz&#39;s blog">
+    <meta name="msapplication-starturl" content="http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/">
+    <meta name="msapplication-navbutton-color" content="#fec3ab">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Me, xjunz&#39;s blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.svg">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="安卓开发中的奇技淫巧（长期更新...） | Me, xjunz&#39;s blog">
+    <meta property="og:image" content="/img/favicon.svg">
+    <meta property="og:description" content="xjunz&#39;s blog">
+    <meta property="og:article:tag" content="长期更新"> 
+
+    
+        <meta property="article:published_time" content="Fri Jan 01 2021 19:06:00 GMT+0800">
+        <meta property="article:modified_time" content="Wed May 19 2021 23:36:46 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/index.html",
+    "headline": "安卓开发中的奇技淫巧（长期更新...）",
+    "datePublished": "Fri Jan 01 2021 19:06:00 GMT+0800",
+    "dateModified": "Wed May 19 2021 23:36:46 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "xjunz",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": ""
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Me, xjunz&#39;s blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.svg"
+        }
+    },
+    "keywords": ",长期更新",
+    "description": "xjunz&#39;s blog",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%F0%9F%8E%83-%E5%BC%80%E5%8F%91%E4%B8%AD%E8%AE%B0%E5%BD%95%E4%B8%8B%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8FTricks"><span class="post-toc-text">🎃 开发中记录下的一些小Tricks</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                安卓开发中的奇技淫巧（长期更新...）
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>xjunz</strong>
+        <span>1月 01, 2021</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+CAAAAAAxUyPsAAAE0UlEQVR42u3ay24jMQwEQP//T2evCwRJukna3kfpFEziGanGQKimHh/GYjwQ4MOHD5+BDx8+fAY+fH8J3yMenz+VXMnv9vv1z3+TXP98h+/nOVw7Pnz48OHDt+b74V91MK38s19NPVl2y5Fcz+ePDx8+fPjw3fK1j8kX832pkRAnlLPipl07Pnz48OHD9y6+ZMFJuDB7Je3MN3fGhw8fPnz43sWXFzSzsL4taJLwvX3x+PDhw4cP32v42mJi1kTPF1ksqYz+39brwIcPHz58+MpDWv/ezy8934cPHz58+P57vquRo2+ih/zIWn6Erl4pPnz48OHDt+CbhfL7g2htrH91fdaex4cPHz58+K74viLIg+82iJ9F8+1Bt/xvVmE9Pnz48OHDN+J7XrM5+W1e+szC9+QLURRt+PDhw4cP3ylfXmS00UNeuOSvoZ1hQj/sdeDDhw8fPnwx3yZwn90hLz7aoCEvWVpufPjw4cOH74ovKWXaac025/UG/igIOAjr8eHDhw8fvoCv/ae+ORD2KMdVnJEXKNFM8OHDhw8fvjVfQtDG3LP7bGjaUqb9GuHDhw8fPnxXfLONehujz0L2feiwwcKHDx8+fPhu+drgID/I1RYc+zhgVjAd9Drw4cOHDx++Ed/mn3oekbfheF647MP6qGjDhw8fPnz41nyzMD0pL4oQPI4Ycoi2NT6MDPDhw4cPH75FWJ9Pa7+Nf0Yon0cG7RV8+PDhw4fviq8tXPLNf7ul34f17ajDC3z48OHDh2/B10JsmtB5IZIfX9tcb++ADx8+fPjw3fLlpcPmKNusNd6GEXlbPX8WPnz48OHDd8s3a5A/o4jJN/N50z1vAPzwxcKHDx8+fPgWfHl7OInL29+2hUsCl7fGZ3PDhw8fPnz4Nnybtvfst1ctgXz++zXiw4cPHz58V3yzUmAzudnTi8JiVAwla8eHDx8+fPhu+XKsfOq30JvyKA84igNq+PDhw4cP34ivaBIHDfLntds3wX3ylFWvAx8+fPjw4RvxbR6QlAv503Pi5FPtZ/Hhw4cPH77X8LWRd4LVFiX76/nL+ygHPnz48OHDt+FL4oA87G43+bOn7AOFWYsCHz58+PDhu+JLtv2Pcuxj9FkwcXU07cvr+PDhw4cP34Ivb423JUi7pd+E7MWGf3EYDh8+fPjw4dvzzSL4zVZ/s3WfvaR9UYUPHz58+PA9o00+e3w+odnBtTayT35eHWvDhw8fPnz4FnyzMmIftSeb87YxvymS8vngw4cPHz58e7588cky2k9tiqQ8yp89vT6ghg8fPnz48MV8bWkyW2p+/aowytsMUXGDDx8+fPjwLfhyuLYtnQcNbeEye1XJE6MCCB8+fPjw4VvwtWPWfm7DhVn5cnuHuteBDx8+fPjwBXzDwDreqOcH4Nom+v56fiwPHz58+PDhu+XbH+3KY/3ker6kvGCaHQiIChd8+PDhw4dvxHdVTLQlS87UNt1nc/jhq4APHz58+PC9kC8vRK6i/KRImuHmgQI+fPjw4cP3Lr42pm/LhWSrvwkI2ufiw4cPHz58z+O7Ct83S8oPjW2e3r5+fPjw4cOH75bvKjTPl5cse99ISOL4JHrAhw8fPnz4rviMduDDhw8fPgMfPnz4DHz4/uDxC8fPwH5m+GOWAAAAAElFTkSuQmCC">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-none-link" href="/tags/%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/" rel="tag">长期更新</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=安卓开发中的奇技淫巧（长期更新...）&url=http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/index.html&pic=http://www.xjunz.top/img/favicon.svg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=安卓开发中的奇技淫巧（长期更新...）&url=http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/index.html&via=xjunz" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Me, xjunz&#39;s blog&title=安卓开发中的奇技淫巧（长期更新...）&summary=xjunz&#39;s blog&pics=http://www.xjunz.top/img/favicon.svg&url=http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/index.html&text=安卓开发中的奇技淫巧（长期更新...）" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="🎃-开发中记录下的一些小Tricks"><a href="#🎃-开发中记录下的一些小Tricks" class="headerlink" title="🎃 开发中记录下的一些小Tricks"></a>🎃 开发中记录下的一些小Tricks</h1><blockquote>
+<p>一些内容可能包含错误或瑕疵，待完善… </p>
+</blockquote>
+<ul>
+<li><p>activity如果设为<code>windowIsTranslucent=true</code></p>
+<p>那么，它的默认进入退出动画不再是系统默认动画，而是非常原始的滑入滑出动画。因为系统会自动设置过渡动画为<code>@android:style/Animation.Translucent</code></p>
+</li>
+<li><p><code>RecyclerView</code>的Item并不是离开屏幕就会被重新回收利用，这意味着一个Item滑出屏幕再划回来并不一定会调用<code>onBindViewHolder</code>更新Item，可以通过<code>setItemViewCacheSize</code>方法设置缓存的Item数，默认的缓存数是2。</p>
+</li>
+<li><p><code>ColorUtils.compositeColors</code>可以根据前景色和背景色合成颜色，还有<code>ColorUtils</code>里的其他方法。</p>
+</li>
+<li><p>父控件设置<code>android:descendantFocusability=&quot;beforeDescendants&quot;</code>属性可用切断子控件的焦点，触摸事件会直接穿透到父控件，变成父控件的触摸事件。特别适用于操控<code>Checkable</code>视图的父布局。</p>
+</li>
+<li><p>保留两位小数**%.2f<strong>；保留两位小数的百分比</strong>%.2f%%**，”%%”是“%”的转义，注意数值要乘以100才行。 或者使用<code>NumberFormat.getPercentInstance()</code></p>
+</li>
+<li><p><code>Objects.equals(Object a,Object b)</code>，比较两个对象是否相同并且**允许为<code>null</code>**。</p>
+</li>
+<li><p><code>ConstraintLayout</code>中的<code>layout_goneMargin</code>属性，可以让被约束的View的margin仍然生效，即使目标View的<code>visibility</code>已为<code>gone</code>。</p>
+</li>
+<li><p>动态设置<code>textStyle</code>的方法：使用<code>setTypeface(Typeface typeface,int style)</code>，注意第一个参数不要使用<code>getTypeface()</code>，这样设置会导致第二个参数style如果为<code>Typeface.NORMAL</code>无效，第一个参数用null即可。</p>
+</li>
+<li><p>判断某个对象是否为数组<code>obj.getClass().isArray()</code>，注意基本类型的数组是不继承自<code>Object[]</code>的，直接继承自<code>Object</code>。因此，基本类型数组不能强转为 <code>Object[]</code>。</p>
+</li>
+<li><p>才发现有<code>MessageFormat</code>这个类，太好用了。</p>
+</li>
+<li><p>在style中加入</p>
+<pre><code class="xml">&lt;item name=&quot;android:windowSoftInputMode&quot;&gt;adjustResize&lt;/item&gt;
+</code></pre>
+<p>   可以让布局自动根据软键盘resize。</p>
+</li>
+<li><p><code>view.supressLayout</code>可以阻止布局进行layout，该方法虽然在<strong>API 29</strong>才被引入，但是其实在<strong>API 18</strong>就已经有了，只是未设为公开， 添加这两个注解消除编译器警告。</p>
+<pre><code class="java">@RequiresApi(18)
+@SuppressLint(&quot;NewApi&quot;)
+</code></pre>
+</li>
+<li><p>androidx中的工具类: <code>OneShotOnPreDrawListener</code>，快速一次性监听<code>onPreDraw</code>事件。</p>
+</li>
+<li><p><code>setMovementMethod(LinkMovementMethod.getInstance())</code>，可以让<code>TextView</code>支持点击<code>&lt;/a&gt;</code>标签，也可支持自定义协议，比如在清单标签中为<code>Activity</code>设置<code>IntentFilter</code>标签：</p>
+<pre><code class="xml">&lt;action android:name=&quot;android.intent.action.VIEW&quot; /&gt;
+&lt;data android:scheme=&quot;[自定义协议]&quot; /&gt;
+&lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;
+&lt;category android:name=&quot;android.intent.category.BROWSABLE&quot; /&gt;
+</code></pre>
+<p>点击文字就可以跳转到<code>Activity</code>，根据<code>Intent</code>执行自定义逻辑。</p>
+</li>
+<li><p><code>layout_constarintedWidth</code>，即使<code>layou_width</code>设为<code>wrap_content</code>也适用约束，类似于<code>maxWidth</code>效果，非常好用的属性。类似地，还有<code>layout_constarintedHieght</code>。</p>
+</li>
+<li><p><code>shouldInterceptTouchEvent</code>如果返回<code>true</code>，就会截获事件，所有<code>MotionEvent</code>都会走<code>onTouchEvent</code>，并且接下来的<code>MotionEvent</code>不会再走<code>shouldInterceptTouchEvent</code>，直到<code>ACTION_UP</code>；如果<code>return false</code>, 所有 <code>MotionEvent</code>都不会走<code>onTouchEvent</code>，则会交由parent寻找合适的目标处理，接下来的所有事件依然会走<code>shouldInterceptTouchEvent</code>直到<code>ACTION_UP</code>; 如果已交由正确的目标处理<code>MotionEvent</code>后<code>return true</code>，该目标就会收到一个<code>ACTION_CANCEL</code>事件。 </p>
+</li>
+<li><p>TextView走马灯效果很多时候不生效，但是以下配置实测生效：</p>
+<pre><code class="xml">&lt;!--Databinding适用中--&gt;
+&lt;!--suppress AndroidUnknownAttribute --&gt;
+&lt;TextView
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:ellipsize=&quot;marquee&quot;
+        android:focusable=&quot;true&quot;
+        android:focusableInTouchMode=&quot;true&quot;
+         android:selected=&quot;@&#123;true&#125;&quot;
+        android:singleLine=&quot;true&quot;&gt;
+        &lt;requestFocus /&gt;
+&lt;/TextView&gt;
+</code></pre>
+</li>
+<li><p>View的Fading Edge特性。Fading Edge可以让可滚动的View在其边缘显示渐变遮罩，提示用户仍有内容可以滚动，设置如下：</p>
+<pre><code class="xml">&lt;!--Databinding适用中--&gt;
+&lt;!--suppress AndroidUnknownAttribute --&gt;
+&lt;RecyclerView
+    android:fadingEdgeLength=&quot;@dimen/spacing_large&quot;
+    android:requiresFadingEdge=&quot;vertical&quot;
+    android:willNotDraw=&quot;@&#123;false&#125;&quot;
+    ...
+  /&gt;
+</code></pre>
+</li>
+</ul>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                        
+                            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />本作品采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/">http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://www.xjunz.top/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2021/01/01/%E5%BF%AB%E9%80%9F%E7%AC%94%E8%AE%B0-%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2019/04/25/%E5%85%B3%E4%BA%8E%E6%88%91%E6%90%AD%E5%8D%9A%E5%AE%A2%E8%BF%99%E4%BB%B6%E4%BA%8B/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="xjunz's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        1409122313@qq.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:1409122313@qq.com" target="_blank" title="发邮件">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        发邮件
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/01/">一月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Android-Dev/">Android Dev<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android-UI-UX/">Android UI/UX<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/">安卓开发<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline" title="时•光">
+                
+                    <i class="material-icons sidebar-material-icons">history</i>
+                
+                时•光
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/gallery" title="画廊">
+                
+                    <i class="material-icons sidebar-material-icons">local_florist</i>
+                
+                画廊
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">7</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+    <a href="mailto:ibh@live.com" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.help
+        <span class="mdl-button__ripple-container">
+          <span class="mdl-ripple"></span>
+        </span>
+      </div>
+    </a>
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/xjunz" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+        <a href="https://space.bilibili.com/124677178" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
+                <span class="visuallyhidden">Bilibili</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Telegram -->
+    
+        <a href="https://t.me/xjunz" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
+                <span class="visuallyhidden">Telegram</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Me, xjunz's blog
+            
+                <br>
+                
+                    <b>The confession of an average man</b>
+                
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/bollnh/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#FF4981'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #FF4981, 0 0 15px #FF4981'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#FF4981',
+        'border-left-color': '#FF4981'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
+
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+<script type="text/ls-javascript" id="Bing-Background-script">
+    queue.offer(function(){
+        $('body').attr('data-original', 'https://api.i-meto.com/bing?S');
+    });
+</script>
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2019;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
