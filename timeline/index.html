@@ -2,6 +2,7 @@
 <html style="display: none;" lang="zh">
     <head>
     <meta charset="utf-8">
+
     <!--
         © Material Theme
         https://github.com/bollnh/hexo-theme-material
@@ -83,7 +84,7 @@
     <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
 
     <!-- Import CSS -->
-    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?WIaO2pFteur6q8OoZKmpZw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?GLQMWrD2szokJmK8Wl41hg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
@@ -101,16 +102,31 @@
 <!-- Other Styles -->
 <style>
   body, html {
-    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", Arial, sans-serif;
+    font-family: Noto Serif SC, Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", Arial, sans-serif;
     overflow-x: hidden !important;
   }
   
   code {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    letter-spacing: .0em !important;
   }
 
   a {
     color: #FF4981;
+    letter-spacing: .1em;
+  }
+
+  p.article-headline-p{
+   font-family: Roboto !important;
+  }
+
+  p {
+    letter-spacing: .15em;
+    font-family: Noto Serif SC !important;
+  }
+
+  div {
+    letter-spacing: .15em;
   }
 
   .mdl-card__media,
@@ -206,7 +222,10 @@
 <!-- Import Font -->
 <!-- Import Roboto -->
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- "https://fonts.googleapis.com/css?family=Roboto:300,400,500" -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+
+
 
 
 <!-- Import Material Icons -->
@@ -272,7 +291,6 @@
 
     <!-- Custom Head -->
     
-
 <meta name="generator" content="Hexo 6.1.0"></head>
 
 
@@ -725,7 +743,7 @@
                 		</div>
 
                 		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2021/03/10/%E7%9C%9F%E7%9A%84%E6%9C%89%E8%BF%99%E4%B9%88%E4%B8%9D%E6%BB%91%E5%90%97-MotionLayout-ViewDragHelper/">真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合!</a></div>
+                    			<div class="md-timeline-title"><a href="/2021/03/10/MotionLayout+ViewDragHelper/">真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合!</a></div>
 					<div class="md-timeline-info">
 						<span class="md-timeline-info-span">Categories:
 							<a class="category-link" href="/categories/Android-UI-UX/">Android UI/UX</a>
@@ -749,85 +767,13 @@
                 		</div>
 
                 		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2021/03/08/%E8%87%AA%E5%AE%9A%E4%B9%89Shared%20Element%20Transition%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">自定义Shared Element Transition注意事项</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/">安卓开发</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">3月 08 2021</div>
-                		</div>
-
-                		<div class="md-timeline-content">
                     			<div class="md-timeline-title"><a href="/2021/03/08/Databinding%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">Databinding使用笔记</a></div>
 					<div class="md-timeline-info">
 						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/">安卓开发</a>
+							<a class="category-link" href="/categories/Android-Dev/">Android Dev</a>
 						</span>
 						<span class="md-timeline-info-span">Tags:
 							
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">1月 01 2021</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2021/01/01/%E5%BF%AB%E9%80%9F%E7%AC%94%E8%AE%B0-%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/">快速笔记 (长期更新...)</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/">安卓开发</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-none-link" href="/tags/%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/" rel="tag">长期更新</a>
-						</span>
-						
-					</div>
-					<p class="md-timeline-excerpt">
-						
-							📖...
-						...
-					</p>
-                    		</div>
-			</div>	
-   		
-			<div class="md-timeline-block">
-                		<div class="md-timeline-date blue">
-                   			<div class="md-date">1月 01 2021</div>
-                		</div>
-
-                		<div class="md-timeline-content">
-                    			<div class="md-timeline-title"><a href="/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/">安卓开发中的奇技淫巧（长期更新...）</a></div>
-					<div class="md-timeline-info">
-						<span class="md-timeline-info-span">Categories:
-							<a class="category-link" href="/categories/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/">安卓开发</a>
-						</span>
-						<span class="md-timeline-info-span">Tags:
-							<a class="tag-none-link" href="/tags/%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0/" rel="tag">长期更新</a>
 						</span>
 						
 					</div>
@@ -958,7 +904,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/01/">一月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -976,7 +922,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Android-Dev/">Android Dev<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android-UI-UX/">Android UI/UX<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/">安卓开发<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/Android-Dev/">Android Dev<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android-UI-UX/">Android UI/UX<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -1022,7 +968,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">7</span>
+                <span class="sidebar-badge">4</span>
             </a>
         </li>
         

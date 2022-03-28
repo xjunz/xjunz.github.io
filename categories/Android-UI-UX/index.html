@@ -2,6 +2,7 @@
 <html style="display: none;" lang="zh">
     <head>
     <meta charset="utf-8">
+
     <!--
         © Material Theme
         https://github.com/bollnh/hexo-theme-material
@@ -83,7 +84,7 @@
     <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
 
     <!-- Import CSS -->
-    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?WIaO2pFteur6q8OoZKmpZw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?GLQMWrD2szokJmK8Wl41hg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
@@ -101,16 +102,31 @@
 <!-- Other Styles -->
 <style>
   body, html {
-    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", Arial, sans-serif;
+    font-family: Noto Serif SC, Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", Arial, sans-serif;
     overflow-x: hidden !important;
   }
   
   code {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    letter-spacing: .0em !important;
   }
 
   a {
     color: #FF4981;
+    letter-spacing: .1em;
+  }
+
+  p.article-headline-p{
+   font-family: Roboto !important;
+  }
+
+  p {
+    letter-spacing: .15em;
+    font-family: Noto Serif SC !important;
+  }
+
+  div {
+    letter-spacing: .15em;
   }
 
   .mdl-card__media,
@@ -206,7 +222,10 @@
 <!-- Import Font -->
 <!-- Import Roboto -->
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- "https://fonts.googleapis.com/css?family=Roboto:300,400,500" -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+
+
 
 
 <!-- Import Material Icons -->
@@ -272,7 +291,6 @@
 
     <!-- Custom Head -->
     
-
 <meta name="generator" content="Hexo 6.1.0"></head>
 
 
@@ -310,14 +328,12 @@
                 <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
     <!-- Post Thumbnail -->
     
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="/2021/03/10/MotionLayout+ViewDragHelper/thumbnail.png">
     
 
         <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2021/03/10/%E7%9C%9F%E7%9A%84%E6%9C%89%E8%BF%99%E4%B9%88%E4%B8%9D%E6%BB%91%E5%90%97-MotionLayout-ViewDragHelper/">真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合!</a></p>
+        <p class="article-headline-p"><a href="/2021/03/10/MotionLayout+ViewDragHelper/">真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合!</a></p>
     </div>
 
     <!-- Post Excerpt -->
@@ -327,7 +343,7 @@
         
         &nbsp;&nbsp;&nbsp;
         <span>
-            <a href="/2021/03/10/%E7%9C%9F%E7%9A%84%E6%9C%89%E8%BF%99%E4%B9%88%E4%B8%9D%E6%BB%91%E5%90%97-MotionLayout-ViewDragHelper/" target="_self">阅读全文</a>
+            <a href="/2021/03/10/MotionLayout+ViewDragHelper/" target="_self">阅读全文</a>
         </span>
     </div>
     <!-- Post_entry Info-->
@@ -468,7 +484,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/01/">一月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -486,7 +502,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Android-Dev/">Android Dev<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android-UI-UX/">Android UI/UX<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/">安卓开发<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/Android-Dev/">Android Dev<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android-UI-UX/">Android UI/UX<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -532,7 +548,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">7</span>
+                <span class="sidebar-badge">4</span>
             </a>
         </li>
         

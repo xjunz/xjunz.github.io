@@ -5,3 +5,26 @@
 #post-content ol, #post-content ul {
     padding-left: 30px !important;
 }
+
+#scheme-Paradox .material-layout .mdl-card {
+    border-radius: 16px !important;
+}
+
+@media screen and (max-width: 480px) {
+    #scheme-Paradox .material-post .mdl-card {
+        border-radius: 16px !important;
+    }
+}
+
+#scheme-Paradox .material-layout .something-else {
+    border-radius: 4px !important;
+}
+
+.md-timeline-content {
+    -webkit-box-shadow: 0px 4px 15px 0px rgb(0 0 0 / 7%) !important;
+}
+
+.md-timeline-date.blue {
+    background: #0D395F;
+    -webkit-box-shadow: 0px 4px 15px 0px rgb(0 0 0 / 38%) !important;
+}

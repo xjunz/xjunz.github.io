@@ -2,6 +2,7 @@
 <html style="display: none;" lang="zh">
     <head>
     <meta charset="utf-8">
+
     <!--
         © Material Theme
         https://github.com/bollnh/hexo-theme-material
@@ -83,7 +84,7 @@
     <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
 
     <!-- Import CSS -->
-    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?WIaO2pFteur6q8OoZKmpZw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?GLQMWrD2szokJmK8Wl41hg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
@@ -104,16 +105,31 @@
 <!-- Other Styles -->
 <style>
   body, html {
-    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", Arial, sans-serif;
+    font-family: Noto Serif SC, Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", Arial, sans-serif;
     overflow-x: hidden !important;
   }
   
   code {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    letter-spacing: .0em !important;
   }
 
   a {
     color: #FF4981;
+    letter-spacing: .1em;
+  }
+
+  p.article-headline-p{
+   font-family: Roboto !important;
+  }
+
+  p {
+    letter-spacing: .15em;
+    font-family: Noto Serif SC !important;
+  }
+
+  div {
+    letter-spacing: .15em;
   }
 
   .mdl-card__media,
@@ -209,7 +225,10 @@
 <!-- Import Font -->
 <!-- Import Roboto -->
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- "https://fonts.googleapis.com/css?family=Roboto:300,400,500" -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+
+
 
 
 <!-- Import Material Icons -->
@@ -252,7 +271,7 @@
 
     
         <meta property="article:published_time" content="Thu Apr 25 2019 23:04:19 GMT+0800">
-        <meta property="article:modified_time" content="Mon Mar 28 2022 22:04:41 GMT+0800">
+        <meta property="article:modified_time" content="Tue Mar 29 2022 02:14:50 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -275,7 +294,7 @@
     "mainEntityOfPage": "http://www.xjunz.top/2019/04/25/%E5%85%B3%E4%BA%8E%E6%88%91%E6%90%AD%E5%8D%9A%E5%AE%A2%E8%BF%99%E4%BB%B6%E4%BA%8B/index.html",
     "headline": "关于我搭博客这件事",
     "datePublished": "Thu Apr 25 2019 23:04:19 GMT+0800",
-    "dateModified": "Mon Mar 28 2022 22:04:41 GMT+0800",
+    "dateModified": "Tue Mar 29 2022 02:14:50 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "xjunz",
@@ -308,7 +327,6 @@
 
     <!-- Custom Head -->
     
-
 <meta name="generator" content="Hexo 6.1.0"></head>
 
 
@@ -379,7 +397,7 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(./thumbnail.webp)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/2019/04/25/关于我搭博客这件事/thumbnail.webp)">
     
             <p class="article-headline-p">
                 关于我搭博客这件事
@@ -416,7 +434,8 @@
 
     <!-- Qrcode -->
     
-        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="
+left: -20px;">
     <i class="material-icons" role="presentation">devices other</i>
     <span class="visuallyhidden">devices other</span>
 </button>
@@ -514,7 +533,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="关于起因"><a href="#关于起因" class="headerlink" title="关于起因"></a>关于起因</h1><p>其实早在2016年，那时候我还是高中生，就了解到<strong>Hexo</strong>框架下的精致博客，那是<a target="_blank" rel="noopener" href="https://github.com/bollnh/hexo-theme-material">Material</a>主题作者在简书发表的推广简介。那篇文章在我的收藏夹躺到现在。眼看该项目最近一条commit都是九个月前了，我才搭好，感觉像是看了一份糊在墙上的报纸。因为当时我觉得搭博客是一件非常麻烦的事，所以还没尝试就放弃了。最近，看到一位好友的博客，我又心血来潮，才下定决心。这一路下来，发现其实并不难。所以说，有时阻挡我们的不是荆棘，而是退却的心。</p>
+         <h1 id="关于起因"><a href="#关于起因" class="headerlink" title="关于起因"></a>关于起因</h1><p>其实早在2016年，那时候我还是高中生，就了解到<strong>Hexo</strong>框架下的精致博客，那是<a target="_blank" rel="noopener" href="https://github.com/bollnh/hexo-theme-material">Material</a>主题作者在简书发表的推广简介。那篇文章在我的收藏夹躺到现在。眼看该项目最近一条commit都是九个月前了，我才搭好，感觉像是看了一份糊在墙上的报纸。因为当时我觉得搭博客是一件非常麻烦的事，所以还没尝试就放弃了。最近，看到一位好友的博客，我又心血来潮，才下定决心。这一路下来，发现其实并不难。所以说，有时阻挡我们的不是荆棘，而是退却的心。</p>
 <h1 id="关于过程"><a href="#关于过程" class="headerlink" title="关于过程"></a>关于过程</h1><p>我完全不懂Web知识，搭博客几乎就是照着别人的教程一步一步下来的。从挑域名到成功deploy大约花了四五小时，虽然是成功了，但是一路都是云里雾里的，完全不懂为什么，只知道<code>Ctrl C</code> + <code>Ctrl V</code>…回头再看，才有了初步的了解。接下来就是一堆配置工作，我这个从未接触过<code>yaml</code>的小白以至于不知道冒号后面要加空格而被坑了好一会儿。生而为人，我很抱歉🥲。</p>
 <h1 id="一些细节"><a href="#一些细节" class="headerlink" title="一些细节"></a>一些细节</h1><blockquote>
 <p>关于如何搭建hexo以及如何托管到github（抑或是自己的服务器）我就不赘述了，网上教程及官方文档已经说得很明白了。</p>
@@ -557,8 +576,8 @@ hexo d
 <p>然后在Hexo的<code>_config.yml</code>里配置 （如果不存在就添加进去）：</p>
 <pre><code class="yaml">post_asset_folder: true
 </code></pre>
-<p>这个插件的作用有两个：一是当我们用 <code>hexo new post</code>新建文章的时候，它会自动在这个文章的同级目录下新建一个和文章同名的目录，用于存放资源。这样，我们在Typora中配置图片插入的方式为<code>./$&#123;filename&#125;</code>就可以了（<strong>别忘了勾选优先使用相对路径</strong>），这个操作一下解决了上面那个方案的两个问题。但是问题是，我们之所以会有上面那个方案，是因为主题目录下的<code>img</code>目录渲染的时候会被复制到<code>public</code>目录里，最后部署到远端，而现在这个方式单纯建立一个目录，渲染的时候是会被忽略的。这就是这个模块的第二个作用，帮我们把这个资源目录也复制到<code>public</code>目录下，现在可算两全了。</p>
-<h4 id="头图的特殊处理"><a href="#头图的特殊处理" class="headerlink" title="头图的特殊处理"></a>头图的特殊处理</h4><p>对于文章的头图，即文章头部<code>yaml</code>配置中的<code>thumbnail</code>字段，我们不能像在文章中一样使用<code>./&#123;filename&#125;/xxx.jpg</code>这样的相对路径因为头部的<code>yaml</code>被渲染后是保持不变的，图片的位置不会已经不再是那个相对路径了，而是和文章同级，所以我们要写成<code>./xxx.jpg</code>。</p>
+<p>这个插件的作用有两个：一是当我们用 <code>hexo new post</code>新建文章的时候，它会自动在这个文章的同级目录下新建一个和文章同名的目录，用于存放资源。这样，我们在Typora中配置图片插入的方式为<code>./$&#123;filename&#125;</code>就可以了（<strong>别忘了勾选优先使用相对路径</strong>），这个操作一下解决了上面那个方案的两个问题。但是问题是，我们之所以会有上面那个方案，是因为主题目录下的<code>img</code>目录渲染的时候会被复制到<code>public</code>目录里，最后部署到远端，而现在这个方式单纯建立一个目录，渲染的时候是会被忽略的。这就是这个模块的第二个作用，帮我们把这个资源目录也复制到<code>public</code>目录下，并且将图片的路径转为web上的绝对路径，现在可算两全了。</p>
+<h4 id="头图的特殊处理"><a href="#头图的特殊处理" class="headerlink" title="头图的特殊处理"></a>头图的特殊处理</h4><p>对于文章的头图，即文章头部<code>yaml</code>配置中的<code>thumbnail</code>字段，我们不能像在文章中一样使用<code>./&#123;filename&#125;/xxx.jpg</code>这样的相对路径因为头部的<code>yaml</code>被渲染后是保持不变的，图片的位置不会已经不再是那个相对路径了，而且这个头图会在预览和详细两个页面都显示，所以使用相对路径肯定是不行的，我们只好手动改成绝对路径，格式为<code>/YYYY/MM/dd/文章名/xxx.jpg</code>。</p>
 <h3 id="如何建立时光轴、标签云、图库等？"><a href="#如何建立时光轴、标签云、图库等？" class="headerlink" title="如何建立时光轴、标签云、图库等？"></a>如何建立时光轴、标签云、图库等？</h3><p>其实建立这些的原理和我上面说的建立“自我介绍”页面时一样的，本质也是建立一个新Page,只不过这个Page里的<code>index.md</code>的layout类型是特定的罢了。具体的方法参考上文以及<a target="_blank" rel="noopener" href="https://neko-dev.github.io/material-theme-docs/#/">官方文档</a>。</p>
 <h3 id="如何在博客主页添加网易云音乐歌单-x2F-歌曲外链播放器？"><a href="#如何在博客主页添加网易云音乐歌单-x2F-歌曲外链播放器？" class="headerlink" title="如何在博客主页添加网易云音乐歌单&#x2F;歌曲外链播放器？"></a>如何在博客主页添加网易云音乐歌单&#x2F;歌曲外链播放器？</h3><p>这是什么呢？看图，或者到我的博客主页底部就能看到这个<img src="/2019/04/25/%E5%85%B3%E4%BA%8E%E6%88%91%E6%90%AD%E5%8D%9A%E5%AE%A2%E8%BF%99%E4%BB%B6%E4%BA%8B/outchain.png"></p>
 <p>那这是怎么是怎么实现的呢？其实主要得益于网易云音乐提供的外链播放器功能，首先登录网页版网易云音乐，登录以后，点击进入一个歌单，如下图<img src="/2019/04/25/%E5%85%B3%E4%BA%8E%E6%88%91%E6%90%AD%E5%8D%9A%E5%AE%A2%E8%BF%99%E4%BB%B6%E4%BA%8B/outchain1.png"></p>
@@ -628,7 +647,7 @@ hexo d
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2021/01/01/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/" id="post_nav-newer" class="prev-content">
+        <a href="/2021/03/08/Databinding%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -726,7 +745,7 @@ hexo d
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/01/">一月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -744,7 +763,7 @@ hexo d
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Android-Dev/">Android Dev<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android-UI-UX/">Android UI/UX<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/">安卓开发<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/Android-Dev/">Android Dev<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android-UI-UX/">Android UI/UX<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -790,7 +809,7 @@ hexo d
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">7</span>
+                <span class="sidebar-badge">4</span>
             </a>
         </li>
         
