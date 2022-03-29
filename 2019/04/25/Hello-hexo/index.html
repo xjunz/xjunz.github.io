@@ -271,7 +271,7 @@
 
     
         <meta property="article:published_time" content="Thu Apr 25 2019 23:04:19 GMT+0800">
-        <meta property="article:modified_time" content="Tue Mar 29 2022 18:21:51 GMT+0800">
+        <meta property="article:modified_time" content="Tue Mar 29 2022 22:17:11 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -294,7 +294,7 @@
     "mainEntityOfPage": "http://www.xjunz.top/2019/04/25/Hello-hexo/index.html",
     "headline": "关于我从零开始搭博客这件事儿",
     "datePublished": "Thu Apr 25 2019 23:04:19 GMT+0800",
-    "dateModified": "Tue Mar 29 2022 18:21:51 GMT+0800",
+    "dateModified": "Tue Mar 29 2022 22:17:11 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "xjunz",
@@ -564,7 +564,7 @@ hexo d
     divider: false #是否显示下方分割线
 </code></pre>
 <p>完成后 <code>hexo s</code>，就可以预览效果啦！</p>
-<h3 id="如何在博客中使用图片？"><a href="#如何在博客中使用图片？" class="headerlink" title="如何在博客中使用图片？"></a>如何在博客中使用图片？</h3><h4 id="笨方法（已弃用）："><a href="#笨方法（已弃用）：" class="headerlink" title="笨方法（已弃用）："></a>笨方法（已弃用）：</h4><p>看到这个大佬可能笑了，怎么插入图片还要你教？等等，我的意思是如何在在线网页上使用你写博客时用的本地的图片。大佬可能会说用图床啊！当然这是一种方法，但是还有更方便的方法。以Typora为例（看下图），插入图片时可选择<strong>设置图像根目录</strong>，第一步，我们把它设置为，**<code>...\hexo-theme-material\source</code><strong>。第二步，我们可以看到有个</strong>复制图片到文件夹**的选项，可以点击配置，当然如果不想每次写新博客都手动配置呢，我们可以点击<div align="center"><strong>全局图像设置</strong><img src="/2019/04/25/Hello-hexo/typro2.PNG"></div></p>
+<h3 id="如何在博客中使用图片？"><a href="#如何在博客中使用图片？" class="headerlink" title="如何在博客中使用图片？"></a>如何在博客中使用图片？</h3><h4 id="笨方法（已弃用）："><a href="#笨方法（已弃用）：" class="headerlink" title="笨方法（已弃用）："></a>笨方法（已弃用）：</h4><p>看到这个大佬可能笑了，怎么插入图片还要你教？等等，我的意思是如何在在线网页上使用你写博客时用的本地的图片。大佬可能会说用图床啊！当然这是一种方法，但是还有更方便的方法。以Typora为例（看下图），插入图片时可选择<strong>设置图像根目录</strong>，第一步，我们把它设置为，**<code>...\hexo-theme-material\source</code><strong>。第二步，我们可以看到有个</strong>复制图片到文件夹<strong>的选项，可以点击配置，当然如果不想每次写新博客都手动配置呢，我们可以点击</strong>全局图像设置**<img src="/2019/04/25/Hello-hexo/typro2.PNG"></p>
 <p>打开全局图像配置后，选择“复制到指定目录”<img src="/2019/04/25/Hello-hexo/typora3.PNG"></p>
 <p>最关键的部分来啦！这时，在你的**<code>...\hexo-theme-material\source\img</code><strong>文件夹下新建一个post_imgs文件夹（文件夹名字随意，主要用于存放博客的图片，以下以<code>post_imgs</code>为例），然后将</strong>复制到指定目录<strong>的目标目录选为</strong><code>...\hexo-theme-material\source\img\post_imgs\$&#123;filename&#125;</code>**，即你新建的目录的路径，如上图。现在，你在博客中插入图片，可以看到，我们的图像路径是<code>/img</code>开头的<img src="/2019/04/25/Hello-hexo/TIM%E5%9B%BE%E7%89%8720190427110356.png"></p>
 <p>而这正是网页寻址的相对目录，这意味着，我们的图片就能被网页正常引用，只要配置好了，网页博客插入图片就和在本地写博客一样简单，最后运行 <code>hexo d</code> ,看看效果。<del>唯一的缺点就是每次写新博客就得花几秒钟配置一下图片根目录，Typora也没有全局的选项。</del>打开博客根目录，找到<code>scaffolds</code>（脚手架）文件夹，这里面定义了每次<code>hexo new</code>新建文章的模板，打开<code>post.md</code>，加入一行：</p>
@@ -589,7 +589,7 @@ hexo d
 <p>此时，如果你的歌单里包含没有版权的歌曲，网页会提示是无法生成外链播放器。这时看我图示标注的歌单id，把生成的外链中的id参数替换掉就行，即使这样，没有版权的歌曲还是无法播放的，但是聊胜于无嘛。当然，自己建立一个博客专用歌单也是阔以的。</p>
 <p>最关键的步骤来啦，以我的Material主题为例，打开**<code>...\themes\hexo-theme-material\layout\index.ejs</code>**这个文件，看图<img src="/2019/04/25/Hello-hexo/outchain2.png"></p>
 <p>选择合适的位置粘贴你的代码，我选择了主页最底部，当然如果你想置顶，把它放到<code>Normal Post</code>上面就行，不过可能没有那么协调。</p>
-<h4 id="2022年更新"><a href="#2022年更新" class="headerlink" title="2022年更新"></a>2022年更新</h4><p>不知何时开始，发现网易云外链播放器突然坏掉了，一直弹窗显示无法加载资源。试了一下发现，以前包含版权保护歌曲的外链已经无法用之前的方式生成了，好像也没有解决办法，那就选一个没有保护歌曲的歌单吧，或者直接用单曲。</p>
+<h4 id="2022年更新"><a href="#2022年更新" class="headerlink" title="2022年更新"></a>2022年更新</h4><p>不知何时开始，网易云外链播放器坏掉了，一直弹窗显示无法加载资源。原来以前包含版权保护歌曲的外链已经无法用之前的方式生成了，好像也没有解决办法，那就选一个没有保护歌曲的歌单吧，或者直接用单曲。</p>
 
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
