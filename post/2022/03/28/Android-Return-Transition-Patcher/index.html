@@ -51,7 +51,7 @@
     
     <title>
         
-            真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合! | 
+            Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究 | 
         
         Me, xjunz&#39;s blog
     </title>
@@ -247,7 +247,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Me, xjunz&#39;s blog">
-    <meta name="msapplication-starturl" content="http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/">
+    <meta name="msapplication-starturl" content="http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/">
     <meta name="msapplication-navbutton-color" content="#ffc3ac">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Me, xjunz&#39;s blog">
@@ -262,16 +262,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/">
+    <meta property="og:url" content="http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合! | Me, xjunz&#39;s blog">
+    <meta property="og:title" content="Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究 | Me, xjunz&#39;s blog">
     <meta property="og:image" content="/img/favicon.svg">
     <meta property="og:description" content="xjunz&#39;s blog">
     
 
     
-        <meta property="article:published_time" content="Wed Mar 10 2021 09:34:18 GMT+0800">
-        <meta property="article:modified_time" content="Tue Mar 29 2022 22:08:05 GMT+0800">
+        <meta property="article:published_time" content="Mon Mar 28 2022 01:50:00 GMT+0800">
+        <meta property="article:modified_time" content="Wed Mar 30 2022 00:23:58 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -279,7 +279,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/index.html" />
+        <link rel="canonical" href="http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -291,10 +291,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/index.html",
-    "headline": "真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合!",
-    "datePublished": "Wed Mar 10 2021 09:34:18 GMT+0800",
-    "dateModified": "Tue Mar 29 2022 22:08:05 GMT+0800",
+    "mainEntityOfPage": "http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/index.html",
+    "headline": "Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究",
+    "datePublished": "Mon Mar 28 2022 01:50:00 GMT+0800",
+    "dateModified": "Wed Mar 30 2022 00:23:58 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "xjunz",
@@ -377,7 +377,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#MotionLayout-ViewDragHelper-%E7%BB%9D%E8%B5%9E%E7%BB%84%E5%90%88"><span class="post-toc-text">MotionLayout + ViewDragHelper 绝赞组合!</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%89%8D%E8%A8%80"><span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%95%88%E6%9E%9C%E9%A2%84%E8%A7%88"><span class="post-toc-text">效果预览</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%9C%80%E6%B1%82%E5%AE%9E%E7%8E%B0%E5%88%86%E6%9E%90"><span class="post-toc-text">需求实现分析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#MotionLayout%E7%AE%80%E4%BB%8B"><span class="post-toc-text">MotionLayout简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ViewDragHelper%E7%AE%80%E4%BB%8B"><span class="post-toc-text">ViewDragHelper简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="post-toc-text">准备工作</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%85%8D%E7%BD%AEMotionLayout%E5%B8%83%E5%B1%80"><span class="post-toc-text">配置MotionLayout布局</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BD%BF%E7%94%A8ViewDragHelper"><span class="post-toc-text">使用ViewDragHelper</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%85%B6%E4%BB%96%E5%86%B7%E7%9F%A5%E8%AF%86"><span class="post-toc-text">其他冷知识</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%A6%82%E4%BD%95%E6%B8%90%E5%8F%98%E5%9C%86%E8%A7%92%EF%BC%9F"><span class="post-toc-text">如何渐变圆角？</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#MaterialShapeDrawable"><span class="post-toc-text">MaterialShapeDrawable</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Custom-Attributes"><span class="post-toc-text">Custom Attributes</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%A6%82%E4%BD%95%E6%B8%90%E5%8F%98%E7%8A%B6%E6%80%81%E6%A0%8F%E9%A2%9C%E8%89%B2"><span class="post-toc-text">如何渐变状态栏颜色?</span></a></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android-10-%E5%8F%8A%E4%BB%A5%E4%B8%8A%EF%BC%8C-Shared-Element-Return-Transition%E5%9C%A8%E7%89%B9%E5%AE%9A%E6%83%85%E5%86%B5%E4%B8%8B%E5%A4%B1%E6%95%88%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%A2%E7%A9%B6"><span class="post-toc-text">Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%A4%8D%E7%8E%B0"><span class="post-toc-text">复现</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%88%87%E5%85%A5"><span class="post-toc-text">切入</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%AE%89%E5%8D%9310%E4%B9%8B%E5%89%8D%EF%BC%9F"><span class="post-toc-text">安卓10之前？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%A1%A5%E4%B8%81%E4%BB%A3%E7%A0%81"><span class="post-toc-text">补丁代码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%8F%8D%E5%B0%84%E5%BC%8F"><span class="post-toc-text">反射式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E9%9D%9E%E5%8F%8D%E5%B0%84%E5%BC%8F"><span class="post-toc-text">非反射式</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Android-12-PE%E4%B8%8A%E5%A5%87%E6%80%AA%E7%9A%84%E7%8E%B0%E8%B1%A1"><span class="post-toc-text">Android 12 PE上奇怪的现象</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BD%BF%E7%94%A8ReturnTransitionPatcher"><span class="post-toc-text">使用ReturnTransitionPatcher</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -397,10 +397,10 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/2021/03/10/MotionLayout+ViewDragHelper/thumbnail.png)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/post/2022/03/28/Android-Return-Transition-Patcher/thumbnail.webp)">
     
             <p class="article-headline-p">
-                真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合!
+                Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究
             </p>
         </div>
 
@@ -419,7 +419,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>xjunz</strong>
-        <span>3月 10, 2021</span>
+        <span>3月 28, 2022</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -441,7 +441,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC3ElEQVR42u3awW4iQQwE0Pz/T2evK0VAlQ0Cet6couzQ26+RUrLdP7+XfH6wsbGxsbGxsbGxP5L9Ez9/37+1wv+/v/Xz/d/c2uFsz9jY2NhXYD/40/93ieC/ubXC7M18hZt7xsbGxr4AO4mi9iAehEqAST4V7RkbGxsbe1RgJGG5WQcbGxsbe8NuYyYpHvLGFjY2Njb2rEGTH8cr3nxbLw0bGxv749mb8HjXz2+Yb2NjY2N/JLt98is7beHx++IHGxsb+1R227LPL+jkVypn1zTzETI2Njb21dj5JtooagcP+fHd3yE2Njb2Fdj342QTMHtA/qm6FMHGxsY+iL1p97TBVpcQwXWcp+U2NjY29heyk0jYhNwekx/xg3ewsbGxj2Zvxq5JgLXt/nxvRdBiY2NjH8puw6ZtJM0CrB0DR+0nbGxs7EPZs6CaXdxJjq9oErXvY2NjYx/NzguGpBX16tZ/G7HY2NjYZ7M3zZrZ8LXdehJj0U6wsbGxj2a3W7//2Q1yNrRYjQewsbGxD2Lvo6uNwzyi9qGLjY2NfTY7b9PPmjvtEHfTeCoCDBsbG/s4dr7dtnmU/2tyQEm8YWNjY1+HHf3pXwRVvsVZS6toPGFjY2Nfhp1fuJk1mIo2ULAyNjY2NvambJjFUrLF5Ctpr/hgY2Njn8rOm0ebNv1+oJtfD1pNRbCxsbG/kJ1HSF4w7C/utONkbGxsbOxnjWZbzP3gbEe/dQWGjY2NfQR7dk2nbs3H5Uf7lRSHgo2NjX0oe1aWPKsZlA+G20LoCRUYNjY29pewZwXDZoV2nf3FIGxsbOwrsNvQaps+7YBhtocHXw82Njb2BdhteLSD4Vlbf9ZUKgIMGxsb+2LsvH0/C7nZAUWlDjY2Njb2k0YC+Zr7N7GxsbGvxp4Nd/NCYjamTS6ArkoRbGxs7CPY7aA3GeLOhgHtQRS7wsbGxj6UfZ0HGxsbGxsbGxsb+2Oef+Xamt1GOj7oAAAAAElFTkSuQmCC">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAACz0lEQVR42u3aQXLbMBAEQP//08kHImpmgbhYQPOksiQSDR3WO4ufP1deP9jY2NjY2NjY2NivZP/E15ebPn7m092eXyfv5mvGxsbGPpu9Tnr+5PPf/7HEeAvyNWNjY2PfwM7LzHNhy5f4zPsIKNeMjY2Njd22BEmrU5ef8mfAxsbGxp495pk9a1ewsbGxsfeGSm0RyrdjFjn9UpaGjY2N/Xp2PjR9z+tfnW9jY2Njv5jdXrNSlLQl+chhuHJsbGzsQ9l5YWgjnr1xf150sbGxse9k731YMkLIN6INkj6uHxsbG/todj00LRuS9WNA7do2z7exsbGxX8xeiWzWxwl5ILUeQmFjY2Pfxk6KSr59+RHMtpnZXMCwsbGxD2Lng962zOTNT36f4XwbGxsb+zh28rAkyt8VRe0aNmBjY2Ofzc6/lo9X243IB8bFAR1sbGzs69k5qT24kz9lNn4o5tvY2NjYB7HzyL4d+ubDhr33/xIqYWNjYx/EnpWxNvofBvrl2KAoYNjY2NgHsWcHYvJF5N9NAqmVgTQ2Njb2bex8ZNuG+zlvczODjY2NfQG7bQyScGpW8GZb/2X92NjY2Iey87ak+Kd/9K287OWfwcbGxr6HvT7uzYcHbfC0sjXY2NjYN7DbxbXs2bbuDaqwsbGx72TPxgDJEmcHKDccAMLGxsY+mp0Pcf/HQZx2s/JGBRsbG/tOdg5oh755s9GOlrGxsbGxZ4PeldjoS9tQXtF2Y2NjYx/Kbq9d0dL6SDj/ebCxsbHPZrdFYmVr8pI2G1p82VxsbGzso9n5stqgJ4+NVg59RlEXNjY29gXsPKyZNSR5wctLVNG0YGNjY2OP4p42YGrLZ7H12NjY2NhxiLNy3Gc2AIiejo2NjX0Buw108uB+dud8DByVT2xsbOyj2e0Bx/wQZFFgRi1KEXhhY2NjH8q+58LGxsbGxsbGxsZ+zfUXerD3qjNq0HAAAAAASUVORK5CYII=">
     
 </ul>
 
@@ -474,7 +474,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合!&url=http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/index.html&pic=http://www.xjunz.top/img/favicon.svg&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究&url=http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/index.html&pic=http://www.xjunz.top/img/favicon.svg&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -483,7 +483,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合!&url=http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/index.html&via=xjunz" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究&url=http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/index.html&via=xjunz" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -492,7 +492,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -507,7 +507,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Me, xjunz&#39;s blog&title=真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合!&summary=xjunz&#39;s blog&pics=http://www.xjunz.top/img/favicon.svg&url=http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Me, xjunz&#39;s blog&title=Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究&summary=xjunz&#39;s blog&pics=http://www.xjunz.top/img/favicon.svg&url=http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -516,7 +516,7 @@
 
     <!-- Share Telegram -->
     
-        <a class="post_share-link" href="https://telegram.me/share/url?url=http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/index.html&text=真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合!" target="_blank">
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/index.html&text=Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Telegram
             </li>
@@ -532,363 +532,58 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-         <h1 id="MotionLayout-ViewDragHelper-绝赞组合"><a href="#MotionLayout-ViewDragHelper-绝赞组合" class="headerlink" title="MotionLayout + ViewDragHelper 绝赞组合!"></a>MotionLayout + ViewDragHelper 绝赞组合!</h1><blockquote>
-<p>内容可能存在错误或疏漏，欢迎批评斧正…</p>
+         <h1 id="Android-10-及以上，-Shared-Element-Return-Transition在特定情况下失效的问题探究"><a href="#Android-10-及以上，-Shared-Element-Return-Transition在特定情况下失效的问题探究" class="headerlink" title="Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究"></a>Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究</h1><blockquote>
+<p>文章可能存在错误或疏漏，欢迎批评斧正…</p>
 </blockquote>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>目前各大视频、音乐播放器都有小窗（折叠）和全屏（展开）模式。但是对我而言，一直没找到任何一个产品能完美地通过用户交互在这两个模式之间优雅地过渡，唯一差强人意的是YouTube移动客户端。但是它对用户手指松开后的动画处理仍然不够自然。所以我思考着能不能自己实现一个。</p>
-<h2 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a>效果预览</h2><div align="center"> <img src="/2021/03/10/MotionLayout+ViewDragHelper/preview.gif"> </div>
-
-<hr>
-<p>上面时我实现后的成品，展示了一个可根据用户拖动而在小窗和全屏之间过渡的音乐播放器。可以看到，无论是交互还是动画，都非常自然，也没有过度设计导致的低效。</p>
-<h2 id="需求实现分析"><a href="#需求实现分析" class="headerlink" title="需求实现分析"></a>需求实现分析</h2><p>对于这样的需求，我首先想到的就是使用<code>ViewDragHelper</code>，因为它可以自然地处理手势拖拽。然后根据拖拽的比例设置控件的属性从而实现动画效果。但是这个界面上控件如此之多，其位置、大小、透明度、颜色、可见性乃至圆角大小都在变化，且不考虑工作量问题，就算实现了可维护性也非常糟糕。如果中途需求更改，某处要添加、移除一个控件，或者更换某个控件的动画效果，都是会牵一发而动全身的。这就是我们为什么要引入<code>MotionLayout</code>，因为它可以声明式地实现两个布局之间的过渡动画。其实，<code>MotionLayout</code>本身也可以通过<code>&lt;OnSwipe/&gt;</code>标签实现手势拖拽，但是效果真的差强人意，因为它无法实现像<code>ViewDragHelper</code>一样，当手指松开后，自然地过渡到结束状态。只有<code>linear</code>、<code>accelerate</code>、<code>decelerate</code>三种插值选项。所以我们还是使用<code>ViewDragHelper</code>处理手势。</p>
-<h2 id="MotionLayout简介"><a href="#MotionLayout简介" class="headerlink" title="MotionLayout简介"></a>MotionLayout简介</h2><blockquote>
-<p><strong>MotionLayout</strong> is intended to move, resize, and animate UI elements with which <strong>users interact</strong>, such as buttons and title bars. Motion in your app should <strong>not</strong> be simply a gratuitous special effect in your application. It should be used to help users understand what your application is doing. </p>
-</blockquote>
-<p><code>MotionLayout</code>是谷歌 I&#x2F;O 2018引入<strong>Material Design 2</strong>后不久推出的旨在实现丝滑交互动画的布局组件。官方设计指南特别强调，<code>MotionLayout</code>的存在不是为了简单的动画特效，而是为了处理与<strong>User Interact</strong>相关的UI过渡。它对动画的实现完全是声明式的，即你只需要声明动画的开始、结束状态、关键帧等，而不需要考虑动画的具体实现。它还内置各种效果超赞的<code>PathMotion</code>和插值器，Android Studio还提供可视化编辑器的支持<del>（实际体验并不是很友好）</del>。那么，这么强大的东西学习成本是不是很高？这里打个预防针，要实现我们的需求，并不需要对<code>MotionLayout</code>有深入的了解，掌握一些基础用法就足够了。</p>
-<h2 id="ViewDragHelper简介"><a href="#ViewDragHelper简介" class="headerlink" title="ViewDragHelper简介"></a>ViewDragHelper简介</h2><p><code>ViewDragHelper</code>年代可就久远了，早在支持库年代就有了，大约可以追溯到2015年，MD一代推出之后。它的作用就如它的名字一样，帮助实现控件拖拽，网上的教程也是多如牛毛。我们会在下面的代码中介绍如何使用这玩意儿，使用起来也并不复杂。</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先在你的项目中引入：</p>
-<pre><code class="groovy">// 内置ViewDragHelper
-implementation &#39;androidx.appcompat:appcompat:1.2.0&#39;
-// 须2.0+版本，内置MotionLayout
-implementation &#39;com.android.support.constraint:constraint-layout:2.0.4&#39;
-</code></pre>
-<h2 id="配置MotionLayout布局"><a href="#配置MotionLayout布局" class="headerlink" title="配置MotionLayout布局"></a>配置MotionLayout布局</h2><p>首先，我们新建一个布局文件，命名为<code>fragment_player.xml</code>。为了解耦，我们使用<code>Fragment</code>，将播放器界面与主界面分开。打开此布局文件，可以看到默认根布局是<code>ConstranitLayout</code>，我们进入design模式，选中我们的根布局后单击鼠标右键。可以看到，有一个选项：<strong>Convert to MotionLayout</strong>：</p>
-<img src="/2021/03/10/MotionLayout+ViewDragHelper/image-20210310123457587.png" alt="image-20210310123457587">
-
-<p>点击后，可以发现我们布局的根节点变成了<code>MotionLayout</code>，并且自动添加了一个<code>app:layoutDescription</code>属性，该属性指向了一个<code>fragment_player_scene.xml</code>文件。没错，这个文件就是用于声明动画的，点进去：</p>
-<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;MotionScene
-    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-    xmlns:motion=&quot;http://schemas.android.com/apk/res-auto&quot;&gt;
-
-    &lt;Transition
-        motion:constraintSetEnd=&quot;@+id/end&quot;
-        motion:constraintSetStart=&quot;@id/start&quot;
-        motion:duration=&quot;1000&quot;&gt;
-       &lt;KeyFrameSet&gt;
-       &lt;/KeyFrameSet&gt;
-    &lt;/Transition&gt;
-
-    &lt;ConstraintSet android:id=&quot;@+id/start&quot;&gt;
-    &lt;/ConstraintSet&gt;
-
-    &lt;ConstraintSet android:id=&quot;@+id/end&quot;&gt;
-    &lt;/ConstraintSet&gt;
-&lt;/MotionScene&gt;
-</code></pre>
-<p>其中<code>Transition</code>节点定义了过渡动画的起始场景、结束场景、关键帧等；<code>ConstraintSet</code>节点则用于存放视图约束条件，这是什么意思呢？往后看。</p>
-<p>接下来，我们试着往<code>MotionLayout</code>中增加一个<code>View</code>，用作播放器的背景。等等，你是不是有疑惑，为什么背景不直接设置<code>android:background</code>属性在<code>MotionLayout</code>上呢？是这样的，因为<code>MotionLayout</code>只支持其<strong>直接子View</strong>进行动画，而<code>MotionLayout</code>本身要求高度为<code>match_parent</code>，我们才能实现全屏的效果。所以既要支持背景动画，又要保证能全屏，我们就需要使用一个<code>View</code>来作为背景。</p>
-<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;!--
-  ~ Copyright (c) 2021 xjunz. All Rights Reserved.
-  --&gt;
-&lt;androidx.constraintlayout.motion.widget.MotionLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;
-    android:layout_width=&quot;match_parent&quot;
-    android:layout_height=&quot;match_parent&quot;
-    app:layoutDescription=&quot;@xml/sample_scene&quot;&gt;
-
-    &lt;View
-        android:id=&quot;@+id/player_background&quot;
-        android:background=&quot;#333&quot;
-        android:layout_width=&quot;wrap_content&quot;
-        android:layout_height=&quot;wrap_content&quot; /&gt;
-&lt;/androidx.constraintlayout.motion.widget.MotionLayout&gt;
-</code></pre>
-<p>接下来，进入布局编辑器的design模式，可以看到<code>MotionLayout</code>的可视化编辑器，我们试着体验一下。</p>
-<img src="/2021/03/10/MotionLayout+ViewDragHelper/image-20210310132816444.png" alt="image-20210310132816444" style="zoom:67%;">
-
-<p>可以看到，右上有两个分别标着“start”和“end”的矩形页面，这就是我们<code>fragment_player_scene.xml</code>中定义的两个<code>Transition</code>节点的id。下方，可以编辑<code>ConstrantSet</code>。我们先选中”start“页面，再选中下方的<code>player_background</code>，然后点击红色方框中的按钮，选择<img src="/2021/03/10/MotionLayout+ViewDragHelper/image-20210310132922715.png" alt="image-20210310132922715" style="zoom:67%;"></p>
-<p>就可以在右侧工具栏像使用<code>ConstraintLayout</code>一样设置约束了。</p>
-<img src="/2021/03/10/MotionLayout+ViewDragHelper/image-20210310133032363.png" alt="image-20210310133032363" style="zoom:67%;">
-
-<p>我们把背景约束到布局底部，然后宽度设为<code>match_parent</code>，高度设为<code>?actionBarSize</code> (Action Bar的高度)。</p>
-<img src="/2021/03/10/MotionLayout+ViewDragHelper/image-20210310133532255.png" alt="image-20210310133532255" style="zoom:67%;">
-
-<p>设置完之后，再查看XML代码，发现诶？好奇怪，怎么XML没变化？是的，与<code>ConstraintLayout</code>不同的是，对View设置的所有约束都需要在<code>scene</code>文件中定义，而不是在<code>MotionLayout</code>中定义，编辑器已经自动帮我们重定向到<code>fragment_player_scene.xml</code>了：</p>
-<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;MotionScene xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-    xmlns:motion=&quot;http://schemas.android.com/apk/res-auto&quot;&gt;
-
-    &lt;Transition
-        motion:constraintSetEnd=&quot;@+id/end&quot;
-        motion:constraintSetStart=&quot;@id/start&quot;
-        motion:duration=&quot;1000&quot;&gt;
-        &lt;KeyFrameSet&gt;
-
-        &lt;/KeyFrameSet&gt;
-    &lt;/Transition&gt;
-
-    &lt;ConstraintSet android:id=&quot;@+id/start&quot;&gt;
-        &lt;!-- 约束节点 --&gt;
-        &lt;Constraint
-            android:id=&quot;@+id/player_background&quot;
-            android:layout_width=&quot;match_parent&quot;
-            android:layout_height=&quot;?actionBarSize&quot;
-            motion:layout_constraintBottom_toBottomOf=&quot;parent&quot; /&gt;
-    &lt;/ConstraintSet&gt;
-
-    &lt;ConstraintSet android:id=&quot;@+id/end&quot;&gt;
-        
-    &lt;/ConstraintSet&gt;
-&lt;/MotionScene&gt;
-</code></pre>
-<p>这样<code>player_background</code>的初始约束就完成了。同理，当我们选中“end”页面，再为其添加结束约束：</p>
-<pre><code class="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;MotionScene xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-    xmlns:motion=&quot;http://schemas.android.com/apk/res-auto&quot;&gt;
-
-    &lt;Transition
-        motion:constraintSetEnd=&quot;@+id/end&quot;
-        motion:constraintSetStart=&quot;@id/start&quot;
-        motion:duration=&quot;1000&quot;&gt;
-        &lt;KeyFrameSet&gt;
-
-        &lt;/KeyFrameSet&gt;
-    &lt;/Transition&gt;
-
-    &lt;ConstraintSet android:id=&quot;@+id/start&quot;&gt;
-        &lt;Constraint
-            android:id=&quot;@+id/player_background&quot;
-            android:layout_width=&quot;match_parent&quot;
-            android:layout_height=&quot;?actionBarSize&quot;
-            motion:layout_constraintBottom_toBottomOf=&quot;parent&quot; /&gt;
-    &lt;/ConstraintSet&gt;
-
-    &lt;ConstraintSet android:id=&quot;@+id/end&quot;&gt;
-        &lt;Constraint
-            android:id=&quot;@+id/player_background&quot;
-            android:layout_width=&quot;match_parent&quot;
-            android:layout_height=&quot;wrap_content&quot;
-            motion:layout_constraintTop_toTopOf=&quot;parent&quot;
-            motion:layout_constraintBottom_toBottomOf=&quot;parent&quot; /&gt;
-    &lt;/ConstraintSet&gt;
-&lt;/MotionScene&gt;
-</code></pre>
-<p>此时回到可视化编辑器：</p>
-<img src="/2021/03/10/MotionLayout+ViewDragHelper/image-20210310135030327.png" alt="image-20210310135030327" style="zoom:67%;">
-
-<p>先点击上方红色框部分，再点击播放按钮，就可以预览我们的动画了!</p>
-<img src="/2021/03/10/MotionLayout+ViewDragHelper/GIF 2021-3-10 13-55-30.gif" alt="GIF 2021-3-10 13-55-30" style="zoom: 67%;">
-
-<p>除了约束可以被动画以外，我们还可以设置各种<code>transform</code>属性:</p>
-<p><img src="/2021/03/10/MotionLayout+ViewDragHelper/image-20210310135806189.png" alt="image-20210310135806189"></p>
-<p>甚至是可见性<code>visibility</code>，<code>MotionLayou</code>t也会自动使用透明度动画来过渡。除此之外，还支持<strong>View Transition</strong>属性，和自定义<strong>Attributes</strong>：</p>
-<p><img src="/2021/03/10/MotionLayout+ViewDragHelper/image-20210310140143967.png" alt="image-20210310140143967"></p>
-<p>这些用法可以参考官方文档或网上的博文，本人不再赘述，因为这不是重点。</p>
-<p>现在如果你在<code>Transition</code>节点下使用<code>OnSwipe</code>标签：</p>
-<pre><code class="xml">&lt;MotionScene xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
-    xmlns:motion=&quot;http://schemas.android.com/apk/res-auto&quot;&gt;
-
-    &lt;Transition
-        motion:constraintSetEnd=&quot;@+id/end&quot;
-        motion:constraintSetStart=&quot;@id/start&quot;
-        motion:duration=&quot;1000&quot;&gt;
-        &lt;OnSwipe
-            motion:dragDirection=&quot;dragUp&quot;
-            motion:touchAnchorId=&quot;@id/player_background&quot;
-            motion:touchAnchorSide=&quot;top&quot; /&gt;
-    &lt;/Transition&gt;
-    ...
-&lt;/MotionScene&gt;
-</code></pre>
-<p>就可以在“start”和“end”约束之间拖动<code>player_background</code>。但是如我前面所言，<code>MotionLayout</code>自带的拖动释放效果非常拉跨，我们需要使用<code>ViewDagHelper</code>来配合。</p>
-<h2 id="使用ViewDragHelper"><a href="#使用ViewDragHelper" class="headerlink" title="使用ViewDragHelper"></a>使用ViewDragHelper</h2><p>新建一个类<code>PlayerLayout</code>，继承自<code>MotionLayout</code>，并在其中初始化<code>ViewDragHelper</code>:</p>
-<pre><code class="java">public class PlayerLayout extends MotionLayout &#123;
-    private ViewDragHelper mHelper;
-    private ViewDragHelper.Callback mCallback;
-    /**
-     * Background view
-     */
-    private View mBackground;
-    /**
-     * Background view在折叠时候的Top
-     */
-    private int mTopWhenCollapsed;
-    /**
-     * Background view在折叠时候的高度
-     */
-    private int mHeightWhenCollapsed;
-
-
-    public PlayerLayout(@NonNull Context context, @Nullable AttributeSet attrs) &#123;
-        super(context, attrs);
-        init();
-    &#125;
-
-    public PlayerLayout(@NonNull Context context) &#123;
-        super(context);
-        init();
-    &#125;
-
-    public PlayerLayout(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) &#123;
-        super(context, attrs, defStyleAttr);
-        init();
-    &#125;
-
-    private void init() &#123;
-        mHelper = ViewDragHelper.create(this, mCallback);
-        OneShotPreDrawListener.add(this, () -&gt; &#123;
-            // 在这里获取Top和Height
-            mTopWhenCollapsed = mBackground.getTop();
-            mHeightWhenCollapsed = mBackground.getHeight();
-        &#125;);
-    &#125;
-    
-     @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) &#123;
-        super.onSizeChanged(w, h, oldw, oldh);
-        // 当布局大小改变时(如软键盘弹起)，更新Top
-        mTopWhenCollapsed = h - mHeightWhenCollapsed;
-    &#125;
-    
-    @Override
-    protected void onFinishInflate() &#123;
-        super.onFinishInflate();
-        mBackground = findViewById(R.id.player_background);
-    &#125;
-    
-    
-    @Override
-    public boolean onInterceptTouchEvent(@NotNull MotionEvent event) &#123;
-        // 让Helper判断是否应该切断事件
-        return mHelper.shouldInterceptTouchEvent(event);
-    &#125;
-    
-    @SuppressLint(&quot;ClickableViewAccessibility&quot;)
-    @Override
-    public boolean onTouchEvent(@NotNull MotionEvent event) &#123;
-        // 这里判断一下Helper是否处于拖拽状态，拖拽状态就返回true消耗掉
-        // 不是的话将事件传递下去交给其他View处理，否则MotionLayout会
-        // block掉整个屏幕的触摸事件
-        mHelper.processTouchEvent(event);
-        boolean block = mHelper.getCapturedView() != null;
-        // 拖动的时候禁止打断（ACTION_CANCEL）
-        requestDisallowInterceptTouchEvent(block);
-        return block;
-    &#125;
-&#125;
-</code></pre>
-<p>上面很多代码是<code>ViewDragHelper</code>固定的用法，有不懂的可以看注释。<code>mTopWhenCollapsed</code>后面会用到。我们还有一个<code>mCallback</code>变量未初始化，因为这个比较重要，单独拿出来：</p>
-<pre><code class="java">mCallback = new ViewDragHelper.Callback() &#123;
-
-    @Override
-    public boolean tryCaptureView(@NonNull View child, int pointerId) &#123;
-        // 在这里定义允许哪个子视图拖动
-        // 我们允许MotionLayout中的所有子视图拖动
-        return true;
-    &#125;
-
-    @Override
-    public void onViewCaptured(@NonNull View capturedChild, int activePointerId) &#123;
-        super.onViewCaptured(capturedChild, activePointerId);
-        try &#123;
-            // 因为MotionLayout只支持其直接子视图的动画，而我们需要允许所有子视图拖动
-            // 这样的话，就需要处理非常多的View的拖动，因此重定向我们的&#39;mCapturedChild&#39;
-            // 到Background view, 这样就只要处理一个View就够了
-            Field capturedViewField = mHelper.getClass().getDeclaredField(&quot;mCapturedView&quot;);
-            capturedViewField.setAccessible(true);
-            capturedViewField.set(mHelper, mBackground);
-        &#125; catch (NoSuchFieldException | IllegalAccessException e) &#123;
-            // Ho hum
+<h2 id="复现"><a href="#复现" class="headerlink" title="复现"></a>复现</h2><p><strong>复现方式</strong>：<strong>Activity A</strong>通过<code>(Shared Element) Enter Transition</code> 进入<strong>Activity B</strong>, 在<strong>Actitivty B</strong> 内进入另一个<strong>Activity</strong>（APP内或其他APP都行），然后回到<strong>Activity B</strong>，点击返回键</p>
+<p><strong>预期结果</strong>：<strong>Activity B</strong> 会通过<code>(Shared Element) Return Trasition</code> 回到<strong>Activity A</strong></p>
+<p><strong>实际结果</strong>：完全没有执行任何<code>Transition</code>动画，直接回到了<strong>Activity A</strong></p>
+<p><strong>影响范围</strong>：<strong>Android 10</strong>及以上版本，并且到目前（<em>2022-3-26</em>）都没有修复</p>
+<h2 id="切入"><a href="#切入" class="headerlink" title="切入"></a>切入</h2><p>其实很久以前就发现了这个问题，但是一直没有实际去解决，因为这个BUG的影响并不是很大。在搜索引擎上，国内外许多人也遇到了相同的问题，可是看起来大家都很忙，并没有人提供一个特别好的解决方案。不巧我今天正好又遇到了，而且有点闲暇时间，便决定去一探究竟。</p>
+<p>切入点很好找，当我们点击返回键时，就会走<code>finishAfterTransition</code>以执行<code>Transition</code>动画，那么就从这里入手：</p>
+<p><img src="/post/2022/03/28/Android-Return-Transition-Patcher/image-20220327022215849.png" alt="image-20220327022215849"></p>
+<p>很明显在异常情况下<code>startExitBackTransition</code>返回了<code>false</code>。点这个方法，进入到<code>android.app.ActivityTransitionState</code>类中（<strong>注</strong>：以下所有图片中的代码若未说明都来自这个类）：</p>
+<p><img src="/post/2022/03/28/Android-Return-Transition-Patcher/image-20220327022518986.png" alt="image-20220327022518986">通过断点调试发现正常情况和异常情况的区别在于<code>getPendingExitNames()</code>是否为<code>null</code>：如果它为<code>null</code>，该方法就会返回<code>false</code>，那么<code>Transition</code>就不会执行。这个方法里的逻辑很简单，就是懒加载并返回了<code>mPendingExitNames</code>这个成员变量：</p>
+<p><img src="/post/2022/03/28/Android-Return-Transition-Patcher/image-20220327022714802.png" alt="image-20220327022714802"></p>
+<p>还是通过断点发现，正常和异常情况的区别在于<code>mEnterTransitionCoordinator</code>是否为<code>null</code>，异常情况下这个变量为<code>null</code>，导致<code>mPendingExitNames</code>无法初始化，从而返回<code>null</code>。那么我们的思路就是找到何时<code>mEnterTransitionCoordinator</code>被置空。代码里有多处置空的地方，但是鉴于异常情况只有在<code>Activity</code>切换出去以后才会发生。那么，最可疑的地方莫过于<code>onStop</code>方法里面的置空处理：</p>
+<p><img src="/post/2022/03/28/Android-Return-Transition-Patcher/image-20220327022929123.png" alt="image-20220327022929123">验证之后，问题就明了了：正常情况下，<code>getPendingExitNames</code>会初始化<code>mPendingExitNames</code>。但是异常情况下，由于走了<code>onStop</code>，<code>mEnterTransitionCoordinator</code>被置空，导致<code>mPendingExitNames</code>始终无法初始化最终导致了这个BUG。</p>
+<h2 id="安卓10之前？"><a href="#安卓10之前？" class="headerlink" title="安卓10之前？"></a>安卓10之前？</h2><p>但是为什么在安卓10之前没有这个问题呢？我们看一下源码的修改记录，发现了一条可疑的commit: <a target="_blank" rel="noopener" href="https://cs.android.com/android/_/android/platform/frameworks/base/+/d85bed510fd1aad7f5d764b9fb6ddfea3e5bb56e">d85bed5</a> ，我们看一下此commit对<a target="_blank" rel="noopener" href="https://cs.android.com/android/_/android/platform/frameworks/base/+/d85bed510fd1aad7f5d764b9fb6ddfea3e5bb56e:core/java/android/app/ActivityTransitionState.java;dlc=67f94b40024e07e64fd2875b7382b762805bebae"><code>android.app.ActivityTransitionState</code></a>这个类的修改：</p>
+<p><img src="/post/2022/03/28/Android-Return-Transition-Patcher/image-20220327024045779.png" alt="image-20220327024045779"></p>
+<p>这个提交对这个类的修改在逻辑上的改动不大，主要修改就是成员<code>mEnteringNames</code>在语义上改为<code>mPendingExitNames</code>，本质上就是储存进入退出的共享元素的<code>Transition Name</code>的列表。关键在于，他将<code>mPendingExitNames</code>的获取方式变成了<code>getPendingExitNames()</code>方法来懒加载。而在安卓9的源码中，<code>mEnteringNames</code>会在<code>startEnter</code>方法中就被初始化，并且只会在<code>clear</code>方法中清空，那么此变量在整个<code>Acitivity Transition</code>的生命周期中始终是可用的，所以安卓10以前没有这个问题。</p>
+<p>但是我们不禁疑问，谷歌程序员真的会犯这样的错误吗？继续看上面代码的第<strong>154</strong>行的<code>saveState</code>方法，这个方法会在<code>Acitivty.onSaveInstance()</code>中调用。因为<code>onSaveInstance</code>会在<code>onStop</code>之前调用，那么实际上<code>onStop</code>之前<code>mPendingExitNames</code>就会被初始化，所以…理论上…Android 10上的代码也是没有问题的，🤔怎么会是呢？</p>
+<p>通过断点发现，实际上<code>onSaveInstance</code>在<code>onStop</code>之后调用了，所以<code>mPendingExitNames</code>保存了个寂寞。查阅文档发现，原来<code>onSaveInstance</code>在安卓9有行为变更：</p>
+<p><img src="/post/2022/03/28/Android-Return-Transition-Patcher/image-20220327160844844.png" alt="image-20220327160844844"></p>
+<p>显然，那位代码贡献者并没有考虑到这一变更，所以这才是罪魁祸首~</p>
+<h2 id="补丁代码"><a href="#补丁代码" class="headerlink" title="补丁代码"></a>补丁代码</h2><h3 id="反射式"><a href="#反射式" class="headerlink" title="反射式"></a>反射式</h3><p>既然已经知道了问题所在，那么解决方法便呼之欲出了。解决方法很简单，在<code>onStop</code>前，我们调用至少一次<code>saveState</code>对<code>mPendingExitNames</code>进行初始化，这个方法是无副作用的，我们可以放心调用。但是<code>onStop</code>之前有很多时机，我们要确保<code>mEnterTransitionCoordinator</code>已经初始化。搜索发现，<code>mEnterTransitionCoordinator</code>初始化的地方在<code>enterReady(Activity)</code>中，而这个方法在<code>Activity.onStart()</code>中调用的，那么我们在<code>Activity</code>的<code>onStart</code>和<code>onStop</code>之间打补丁就行了：</p>
+<ul>
+<li><strong>注</strong>：这个<code>Acitivty</code>指的是复现方式中的<strong>Acitivty B</strong>；<code>saveState</code>不在反射黑名单，我们可以反射调用。</li>
+</ul>
+<pre><code class="kotlin">@SuppressLint(&quot;DiscouragedPrivateApi&quot;)
+fun patchActivity(activity: Activity) &#123;
+    if (Build.VERSION.SDK_INT &lt; Build.VERSION_CODES.Q) return
+    try &#123;
+        val field = Activity::class.java.getDeclaredField(&quot;mActivityTransitionState&quot;).run &#123;
+            isAccessible = true
+            get(activity)
         &#125;
-    &#125;
-
-    @Override
-    public void onViewPositionChanged(@NonNull View changedView, int left, int top, int dx, int dy) &#123;
-        super.onViewPositionChanged(changedView, left, top, dx, dy);
-        if (dy == 0) &#123;
-            return;
+        field.javaClass.getDeclaredMethod(&quot;saveState&quot;, Bundle::class.java).run &#123;
+            invoke(field, Bundle())
         &#125;
-        // 当Background view拖动位置改变时，我们获取其拖动的百分比
-        // mTopWhenCollapsed就是能拖动的总距离
-        float fraction = 1 - mBackground.getTop() / (float) mTopWhenCollapsed;//from 0 to 1
-        // 在这里根据拖动的百分比设置动画进度
-        setProgress(fraction);
-    &#125;
-
-    @Override
-    public void onViewReleased(@NonNull View releasedChild, float xvel, float yvel) &#123;
-        // 当手指松开取消拖动时
-        super.onViewReleased(releasedChild, xvel, yvel);
-        // 根据Background view的速度、位置分别处理打开还是关闭Player
-        if (yvel &gt; 0) &#123;
-            collapsePlayer();
-        &#125; else if (yvel &lt; 0) &#123;
-            expandPlayer();
-        &#125; else &#123;
-            if (releasedChild.getTop() / (float) mTopWhenCollapsed &gt; .5f) &#123;
-                collapsePlayer();
-            &#125; else &#123;
-                expandPlayer();
-            &#125;
-        &#125;
-    &#125;
-
-    @Override
-    public int getViewVerticalDragRange(@NonNull View child) &#123;
-        // 返回Background view所能垂直拖动的距离
-        return mTopWhenCollapsed;
-    &#125;
-
-    @Override
-    public int clampViewPositionVertical(@NonNull View child, int top, int dy) &#123;
-        // 约束Background view在拖动中垂直方向上所允许Top范围
-        // 返回值约束在0和mTopWhenCollapsed之间
-        return Math.min(Math.max(0, top), mTopWhenCollapsed);
-    &#125;
-
-    @Override
-    public int clampViewPositionHorizontal(@NonNull View child, int left, int dx) &#123;
-        // 水平方向自适应
-        return child.getLeft();
-    &#125;
-&#125;;
-</code></pre>
-<p>最后，是松手后实现自然折叠、展开的方法：</p>
-<pre><code class="java">public void expandPlayer() &#123;
-    if (mHelper.smoothSlideViewTo(mBackground, 0, 0)) &#123;
-        ViewCompat.postInvalidateOnAnimation(this);
-    &#125;
-&#125;
-
-public void collapsePlayer() &#123;
-    if (mHelper.smoothSlideViewTo(mBackground, 0, mTopWhenCollapsed)) &#123;
-        ViewCompat.postInvalidateOnAnimation(this);
-    &#125;
-&#125;
-
-@Override
-public void computeScroll() &#123;
-    if (mHelper.continueSettling(true)) &#123;
-        ViewCompat.postInvalidateOnAnimation(this);
+    &#125; catch (t: Throwable) &#123;
+        Log.e(&quot;ReturnTransitionPatcher&quot;, &quot;Patch failed for [$&#123;activity.javaClass.simpleName&#125;]&quot;)
+        t.printStackTrace()
     &#125;
 &#125;
 </code></pre>
-<p>这样，就完成了最基本的框架就完成了，核心思想就是在<code>ViewDragHelper.Callback</code><strong>中监听滑动的比例，然后为<code>MotionLayout</code>设置动画的比例</strong>，当然还有很多小细节的处理。预览图那样的效果不过是在此基础上增加了更多的<code>view</code>和动画。</p>
-<h2 id="其他冷知识"><a href="#其他冷知识" class="headerlink" title="其他冷知识"></a>其他冷知识</h2><h3 id="如何渐变圆角？"><a href="#如何渐变圆角？" class="headerlink" title="如何渐变圆角？"></a>如何渐变圆角？</h3><p>可以看到我们的预览图中，播放器折叠时左上角有圆角，但是随着滑动，圆角逐渐消失最终不见。这是如何实现的呢？</p>
-<h4 id="MaterialShapeDrawable"><a href="#MaterialShapeDrawable" class="headerlink" title="MaterialShapeDrawable"></a>MaterialShapeDrawable</h4><p>使用前先导入google的design库：</p>
-<pre><code class="groovy">implementation &#39;com.google.android.material:material:1.2.1&#39;
-</code></pre>
-<p>构造实例并使用：</p>
-<pre><code class="java">// 构造左上角圆角的ShapeAppearanceModel
-mDefShapeAppearance = ShapeAppearanceModel.builder().setTopLeftCorner(CornerFamily.ROUNDED, defCornerSize).build();
-// 根据ShapeAppearanceModel初始化MaterialShapeDrawable
-mBackgroundDrawable = new MaterialShapeDrawable(mDefShapeAppearance);
-// 将此Drawable设为View的背景
-view.setBackground(mBackgroundDrawable);
-</code></pre>
-<p>提供改变圆角的方法：</p>
-<pre><code class="java">public void setTopLeftCornerSize(float cornerSize) &#123;
-  mBackgroundDrawable.setShapeAppearanceModel(mDefShapeAppearance.toBuilder().setTopLeftCorner(CornerFamily.ROUNDED, cornerSize).build());
+<h3 id="非反射式"><a href="#非反射式" class="headerlink" title="非反射式"></a>非反射式</h3><p>反射的代码总让人感觉嘎吱作响，需要很小心地维护，那么我们能否找到不需要反射的解决方法呢？我们之前分析过了，<code>saveState</code>在<code>Activity.onSaveInstance</code>中调用，那么我们手动在<code>onStop</code>之前<code>onStart</code>之后手动调用<code>onSaveInstance</code>也能修复这个问题，这个方法不用反射调用，稳健性较好：</p>
+<pre><code class="kotlin">fun patchActivity(activity: Activity) &#123;
+    if (Build.VERSION.SDK_INT &lt; Build.VERSION_CODES.Q) return
+    Instrumentation().callActivityOnSaveInstanceState(activity, Bundle())
 &#125;
 </code></pre>
-<h4 id="Custom-Attributes"><a href="#Custom-Attributes" class="headerlink" title="Custom Attributes"></a>Custom Attributes</h4><p>如果想要<code>MotionLayout</code>自动在动画过程中改变圆角，而不用手动设置，可以使用上面提及的<strong>自定义属性</strong>。新建一个自定义View继承自你想设置圆角的那个View的类，然后把上面设置圆角的方法内置到该类中。</p>
-<p>在编辑器中选中该view，在其约束编辑窗口中找到此按钮<img src="/2021/03/10/MotionLayout+ViewDragHelper/image-20210310151249634.png" alt="image-20210310151249634" style="zoom:67%;">然后会弹出此窗口：</p>
-<img src="/2021/03/10/MotionLayout+ViewDragHelper/image-20210310151412639.png" alt="image-20210310151412639" style="zoom:67%;">
-
-<p>在“start”和“end”两个<code>ConstranitSet</code>中分别配置<code>Value</code>就行了。</p>
-<h3 id="如何渐变状态栏颜色"><a href="#如何渐变状态栏颜色" class="headerlink" title="如何渐变状态栏颜色?"></a>如何渐变状态栏颜色?</h3><pre><code class="java">// 前提是windowTranslucentStatus = false且windowDrawsSystemBarBackgrounds = true
-ObjectAnimator.ofArgb(activity.getWindow(), &quot;statusBarColor&quot;, customColor);
+<h2 id="Android-12-PE上奇怪的现象"><a href="#Android-12-PE上奇怪的现象" class="headerlink" title="Android 12 PE上奇怪的现象"></a>Android 12 PE上奇怪的现象</h2><p>在Android 11及以前，将APP退回出到最近任务，也会走<code>onStop</code>触发这个BUG。但是在我的Pixel 5的Android 12上，退出到最近任务，并不会触发这个BUG。调试发现，是因为没走<code>onStop</code>。把玩后发现，原来PE 的Launcher对于刚刚退回到最近任务的APP的显示，不再是显示其静态快照，而是将APP缩放，因此在最预览页面仍然能看到APP的UI更新。谷歌你做得好啊，做得好啊。</p>
+<h2 id="使用ReturnTransitionPatcher"><a href="#使用ReturnTransitionPatcher" class="headerlink" title="使用ReturnTransitionPatcher"></a>使用<em>ReturnTransitionPatcher</em></h2><p>代码已经上传到<a target="_blank" rel="noopener" href="https://github.com/xjunz/ReturnTransitionPatcher">github</a>和Maven仓库，如果你想在项目中修复这个问题，可以在项目中引入，该库提供了完美的Patch时机和全局Patch功能:</p>
+<pre><code class="groovy">implementation &#39;io.github.xjunz:return-transition-patcher:+&#39;
 </code></pre>
 
         
@@ -898,7 +593,7 @@ ObjectAnimator.ofArgb(activity.getWindow(), &quot;statusBarColor&quot;, customCo
                             <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />本作品采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
                         </strong>
                         <br>
-                        <strong>本文链接：</strong><a href="http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/">http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/</a>
+                        <strong>本文链接：</strong><a href="http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/">http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/</a>
                     </p>
                 </blockquote>
         
@@ -918,8 +613,8 @@ ObjectAnimator.ofArgb(activity.getWindow(), &quot;statusBarColor&quot;, customCo
     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://www.xjunz.top/2021/03/10/MotionLayout+ViewDragHelper/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://www.xjunz.top/post/2022/03/28/Android-Return-Transition-Patcher/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 <script type="text/ls-javascript" id="disqus-thread-script">
@@ -949,7 +644,7 @@ ObjectAnimator.ofArgb(activity.getWindow(), &quot;statusBarColor&quot;, customCo
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2022/03/28/Android-Return-Transition-Patcher/" id="post_nav-newer" class="prev-content">
+        <a href="/post/2022/03/29/RetroMaterialTheme/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -963,7 +658,7 @@ ObjectAnimator.ofArgb(activity.getWindow(), &quot;statusBarColor&quot;, customCo
 
     <!-- Next Nav -->
     
-        <a href="/2021/03/08/DatabindingNotes/" id="post_nav-older" class="next-content">
+        <a href="/post/2021/03/10/MotionLayout+ViewDragHelper/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">

@@ -51,7 +51,7 @@
     
     <title>
         
-            Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究 | 
+            Material主题个性化改造 | 
         
         Me, xjunz&#39;s blog
     </title>
@@ -247,7 +247,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Me, xjunz&#39;s blog">
-    <meta name="msapplication-starturl" content="http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/">
+    <meta name="msapplication-starturl" content="http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/">
     <meta name="msapplication-navbutton-color" content="#ffc3ac">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Me, xjunz&#39;s blog">
@@ -262,16 +262,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/">
+    <meta property="og:url" content="http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究 | Me, xjunz&#39;s blog">
+    <meta property="og:title" content="Material主题个性化改造 | Me, xjunz&#39;s blog">
     <meta property="og:image" content="/img/favicon.svg">
     <meta property="og:description" content="xjunz&#39;s blog">
     
 
     
-        <meta property="article:published_time" content="Mon Mar 28 2022 01:50:00 GMT+0800">
-        <meta property="article:modified_time" content="Tue Mar 29 2022 22:51:08 GMT+0800">
+        <meta property="article:published_time" content="Tue Mar 29 2022 18:31:07 GMT+0800">
+        <meta property="article:modified_time" content="Wed Mar 30 2022 00:24:07 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -279,7 +279,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/index.html" />
+        <link rel="canonical" href="http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -291,10 +291,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/index.html",
-    "headline": "Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究",
-    "datePublished": "Mon Mar 28 2022 01:50:00 GMT+0800",
-    "dateModified": "Tue Mar 29 2022 22:51:08 GMT+0800",
+    "mainEntityOfPage": "http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/index.html",
+    "headline": "Material主题个性化改造",
+    "datePublished": "Tue Mar 29 2022 18:31:07 GMT+0800",
+    "dateModified": "Wed Mar 30 2022 00:24:07 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "xjunz",
@@ -377,7 +377,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Android-10-%E5%8F%8A%E4%BB%A5%E4%B8%8A%EF%BC%8C-Shared-Element-Return-Transition%E5%9C%A8%E7%89%B9%E5%AE%9A%E6%83%85%E5%86%B5%E4%B8%8B%E5%A4%B1%E6%95%88%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%A2%E7%A9%B6"><span class="post-toc-text">Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%A4%8D%E7%8E%B0"><span class="post-toc-text">复现</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%88%87%E5%85%A5"><span class="post-toc-text">切入</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%AE%89%E5%8D%9310%E4%B9%8B%E5%89%8D%EF%BC%9F"><span class="post-toc-text">安卓10之前？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%A1%A5%E4%B8%81%E4%BB%A3%E7%A0%81"><span class="post-toc-text">补丁代码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%8F%8D%E5%B0%84%E5%BC%8F"><span class="post-toc-text">反射式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E9%9D%9E%E5%8F%8D%E5%B0%84%E5%BC%8F"><span class="post-toc-text">非反射式</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Android-12-PE%E4%B8%8A%E5%A5%87%E6%80%AA%E7%9A%84%E7%8E%B0%E8%B1%A1"><span class="post-toc-text">Android 12 PE上奇怪的现象</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BD%BF%E7%94%A8ReturnTransitionPatcher"><span class="post-toc-text">使用ReturnTransitionPatcher</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Material%E4%B8%BB%E9%A2%98%E6%94%B9%E9%80%A0-Intro-to-Retro-Material"><span class="post-toc-text">Material主题改造 | Intro to Retro Material</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%8F%90%E8%A6%81"><span class="post-toc-text">提要</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%9B%AE%E6%A0%87"><span class="post-toc-text">目标</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%95%88%E6%9E%9C"><span class="post-toc-text">效果</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%AE%9E%E7%8E%B0"><span class="post-toc-text">实现</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -397,10 +397,10 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/2022/03/28/Android-Return-Transition-Patcher/thumbnail.webp)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/post/2022/03/29/RetroMaterialTheme/thumbnail.jpg)">
     
             <p class="article-headline-p">
-                Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究
+                Material主题个性化改造
             </p>
         </div>
 
@@ -419,7 +419,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>xjunz</strong>
-        <span>3月 28, 2022</span>
+        <span>3月 29, 2022</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -441,7 +441,7 @@
 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
     <li class="mdl-menu__item">在其它设备中阅读本文章</li>
     
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAACxUlEQVR42u3aUW4bMQwEUN//0u0BisQz5LZ1pKcvI7F39TZAaHL0+nXlemFjY2NjY2NjY2N/JPsVr6fe/+fdv3r91B6wsbGxb2C/+dcfM756oN9fJ6fO9oyNjY19Dzu55fe85LP5ezZ/BmxsbGzsWeFpy1jSlrRNCzY2Njb2vgi15ScvjdjY2NjY+6HS90VrP8RvC9g/mqVhY2Njfzy7DW4/4fV/yLexsbGxP5LdrjbcnV2nDZWjnWNjY2Mfym6P0bRB7ywqmA253rRJ2NjY2BezkwYgHznlA6k8Wog+i42NjX00Oy9d+wFQPtJ6uE3CxsbGvoCdA/LCsy9v+2YJGxsb+wZ2W8yeimzrwVC5sLGxse9h77/651vch8f5YAsbGxv7HvZm67PmJKHOHv0wFcHGxsY+jp3w8jZjE/fmB3dWR3awsbGxfyx79qU/Hy3lmPbx1UURGxsb+1D2ps14qtS18W3+WLGxsbHvYSe3b5uKqD1YlLo6MMDGxsY+lL1fm4h3Nn4aDr+wsbGxr2HPRjzJ5pICmZfPvO3BxsbGPpvdNgl5y/FUC5E3LUUBw8bGxj6O3QLyxiN/vT/u8+az2NjY2Iey21H+5rf7GHh2ZWxsbGzsNu5NxvftezajK2xsbOwb2G1R2cQJm2M6s9EVNjY29m3sV7ly2Czo3cQP2NjY2DewNwOgWWSbh8ezGKA4soONjY19BHsWDOSlaz8SGjYe2NjY2Fey88LQBgbt1fJBVREtYGNjYx/KbsvD5jBl8pO2QRrGA9jY2NjHsfMBTb71dlttQcr3j42NjX0POz9A2Y6K2juuClUb9GJjY2Nfxm4jhGRglLclq2ETNjY2NnYc+iaba0tRXiD/SiuCjY2N/UPYyVBptul2u7OR05trYmNjYx/NfironbUTNSA+pomNjY19A/uehY2NjY2NjY2Njf0x6zeybJEDcxlPfAAAAABJRU5ErkJggg==">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC2ElEQVR42u3aUVLDMAwFwNz/0nAApumTZEqwN18MbZ2smUGVnq+vI68LGxsbGxsbGxsb+5HsK77u3/9zzZe3D+5yv071mbGxsbFPYL/51x/cfvLOfJ3JM2NjY2OfwL4vWi+XCwC9Eni/ifkzY2NjY2Pn1OT3k3WwsbGxsVex70c8k089uoBhY2NjP56dDGjysVFvU6rv+dAsDRsbG/vx7GrQ+4Sf/yDfxsbGxn4ku3et2qC88UiK1ptnxsbGxt6UPTlwMw+Dk8KTrBk9AzY2NvbW7FX46tAnWWES/WJjY2NjJ21Aju81JEnk0Ax6sbGxsTdi51/315auvB3qxcbY2NjY57Dzr/69IDbZxGSzegMmbGxs7HPY1VFO3jDkG9oLEkZDJWxsbOzt2MkQp9c2VCOBeRSNjY2NfQK78LF4OyaHbCbHgN5sDTY2Nvam7LwZqBazZhwbtzTlwBgbGxv7AHYS4k6ahOrRn+ofAxsbG/tkdh6yzgdSa0tU4VPY2NjYW7Mnx2uqwW11i6/4erMyNjY29qbsyWGaZJQTjXta4XG53GJjY2Nvyl4Vr1Yjh1URRaEQYmNjY2/KTkpF8kCTQ5bVdapjKWxsbOy92dWR/X3x6JWfvBTlgXS5FcHGxsb+t+xqsDppJ3oFMgc34wFsbGzsjdh5dFqNB9bGw8uGStjY2NhbsCcRbzVaqBawSfSLjY2NfQ678FW+GA8k1OoIKSmH2NjY2KexewUsP7hTbUWqpS4/0IONjY29K7tXxvLxfR76VkdL5eYHGxsbe1P2qoOPk6KYD4/y4leo29jY2NhbsPOi1Rs89V6dRMjY2NjYZ7JXFa15gzEpsYVWBBsbG/tgdq/49Q7f5IFueaiEjY2NfSQ7D2h7zUbvAFAULWNjY2MfwJ4Ple63bx4w/0orgo2Njb0FuzcG6h3NzNuJQnH6ZL6NjY2N/TD2ORc2NjY2NjY2Njb2Y65vgb4qXBF0mXkAAAAASUVORK5CYII=">
     
 </ul>
 
@@ -474,7 +474,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究&url=http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/index.html&pic=http://www.xjunz.top/img/favicon.svg&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Material主题个性化改造&url=http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/index.html&pic=http://www.xjunz.top/img/favicon.svg&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -483,7 +483,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究&url=http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/index.html&via=xjunz" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Material主题个性化改造&url=http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/index.html&via=xjunz" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -492,7 +492,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -507,7 +507,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Me, xjunz&#39;s blog&title=Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究&summary=xjunz&#39;s blog&pics=http://www.xjunz.top/img/favicon.svg&url=http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Me, xjunz&#39;s blog&title=Material主题个性化改造&summary=xjunz&#39;s blog&pics=http://www.xjunz.top/img/favicon.svg&url=http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -516,7 +516,7 @@
 
     <!-- Share Telegram -->
     
-        <a class="post_share-link" href="https://telegram.me/share/url?url=http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/index.html&text=Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究" target="_blank">
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/index.html&text=Material主题个性化改造" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Telegram
             </li>
@@ -532,59 +532,15 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-         <h1 id="Android-10-及以上，-Shared-Element-Return-Transition在特定情况下失效的问题探究"><a href="#Android-10-及以上，-Shared-Element-Return-Transition在特定情况下失效的问题探究" class="headerlink" title="Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究"></a>Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究</h1><blockquote>
-<p>文章可能存在错误或疏漏，欢迎批评斧正…</p>
+         <h1 id="Material主题改造-Intro-to-Retro-Material"><a href="#Material主题改造-Intro-to-Retro-Material" class="headerlink" title="Material主题改造 | Intro to Retro Material"></a>Material主题改造 | Intro to <em>Retro Material</em></h1><h2 id="提要"><a href="#提要" class="headerlink" title="提要"></a>提要</h2><blockquote>
+<p><strong>Material</strong>主题已经若干年没有维护了，虽然还能用，但是<strong>Material 1</strong> 的设计现在看来已然过时。奈何翻了一圈主题商店，都没有找到心仪的主题，反而觉得还是<strong>Material</strong>越看越顺眼。为了跟上时代潮流，我决定亲手改造这个主题。可是，我根本没有任何前端知识，一切从零开始。不过幸运的是，在我的朋友 <strong>@Haleclipse</strong> 的帮助下，我较快地上手了<strong>CSS</strong>，并且完成了第一轮改造。</p>
 </blockquote>
-<h2 id="复现"><a href="#复现" class="headerlink" title="复现"></a>复现</h2><p><strong>复现方式</strong>：<strong>Activity A</strong>通过<code>(Shared Element) Enter Transition</code> 进入<strong>Activity B</strong>, 在<strong>Actitivty B</strong> 内进入另一个<strong>Activity</strong>（APP内或其他APP都行），然后回到<strong>Activity B</strong>，点击返回键</p>
-<p><strong>预期结果</strong>：<strong>Activity B</strong> 会通过<code>(Shared Element) Return Trasition</code> 回到<strong>Activity A</strong></p>
-<p><strong>实际结果</strong>：完全没有执行任何<code>Transition</code>动画，直接回到了<strong>Activity A</strong></p>
-<p><strong>影响范围</strong>：<strong>Android 10</strong>及以上版本，并且到目前（<em>2022-3-26</em>）都没有修复</p>
-<h2 id="切入"><a href="#切入" class="headerlink" title="切入"></a>切入</h2><p>其实很久以前就发现了这个问题，但是一直没有实际去解决，因为这个BUG的影响并不是很大。在搜索引擎上，国内外许多人也遇到了相同的问题，可是看起来大家都很忙，并没有人提供一个特别好的解决方案。不巧我今天正好又遇到了，而且有点闲暇时间，便决定去一探究竟。</p>
-<p>切入点很好找，当我们点击返回键时，就会走<code>finishAfterTransition</code>以执行<code>Transition</code>动画，那么就从这里入手：</p>
-<p><img src="/2022/03/28/Android-Return-Transition-Patcher/image-20220327022215849.png" alt="image-20220327022215849"></p>
-<p>很明显在异常情况下<code>startExitBackTransition</code>返回了<code>false</code>。点这个方法，进入到<code>android.app.ActivityTransitionState</code>类中（<strong>注</strong>：以下所有图片中的代码若未说明都来自这个类）：</p>
-<p><img src="/2022/03/28/Android-Return-Transition-Patcher/image-20220327022518986.png" alt="image-20220327022518986">通过断点调试发现正常情况和异常情况的区别在于<code>getPendingExitNames()</code>是否为<code>null</code>：如果它为<code>null</code>，该方法就会返回<code>false</code>，那么<code>Transition</code>就不会执行。这个方法里的逻辑很简单，就是懒加载并返回了<code>mPendingExitNames</code>这个成员变量：</p>
-<p><img src="/2022/03/28/Android-Return-Transition-Patcher/image-20220327022714802.png" alt="image-20220327022714802"></p>
-<p>还是通过断点发现，正常和异常情况的区别在于<code>mEnterTransitionCoordinator</code>是否为<code>null</code>，异常情况下这个变量为<code>null</code>，导致<code>mPendingExitNames</code>无法初始化，从而返回<code>null</code>。那么我们的思路就是找到何时<code>mEnterTransitionCoordinator</code>被置空。代码里有多处置空的地方，但是鉴于异常情况只有在<code>Activity</code>切换出去以后才会发生。那么，最可疑的地方莫过于<code>onStop</code>方法里面的置空处理：</p>
-<p><img src="/2022/03/28/Android-Return-Transition-Patcher/image-20220327022929123.png" alt="image-20220327022929123">验证之后，问题就明了了：正常情况下，<code>getPendingExitNames</code>会初始化<code>mPendingExitNames</code>。但是异常情况下，由于走了<code>onStop</code>，<code>mEnterTransitionCoordinator</code>被置空，导致<code>mPendingExitNames</code>始终无法初始化最终导致了这个BUG。</p>
-<h2 id="安卓10之前？"><a href="#安卓10之前？" class="headerlink" title="安卓10之前？"></a>安卓10之前？</h2><p>但是为什么在安卓10之前没有这个问题呢？我们看一下源码的修改记录，发现了一条可疑的commit: <a target="_blank" rel="noopener" href="https://cs.android.com/android/_/android/platform/frameworks/base/+/d85bed510fd1aad7f5d764b9fb6ddfea3e5bb56e">d85bed5</a> ，我们看一下此commit对<a target="_blank" rel="noopener" href="https://cs.android.com/android/_/android/platform/frameworks/base/+/d85bed510fd1aad7f5d764b9fb6ddfea3e5bb56e:core/java/android/app/ActivityTransitionState.java;dlc=67f94b40024e07e64fd2875b7382b762805bebae"><code>android.app.ActivityTransitionState</code></a>这个类的修改：</p>
-<p><img src="/2022/03/28/Android-Return-Transition-Patcher/image-20220327024045779.png" alt="image-20220327024045779"></p>
-<p>这个提交对这个类的修改在逻辑上的改动不大，主要修改就是成员<code>mEnteringNames</code>在语义上改为<code>mPendingExitNames</code>，本质上就是储存进入退出的共享元素的<code>Transition Name</code>的列表。关键在于，他将<code>mPendingExitNames</code>的获取方式变成了<code>getPendingExitNames()</code>方法来懒加载。而在安卓9的源码中，<code>mEnteringNames</code>会在<code>startEnter</code>方法中就被初始化，并且只会在<code>clear</code>方法中清空，那么此变量在整个<code>Acitivity Transition</code>的生命周期中始终是可用的，所以安卓10以前没有这个问题。</p>
-<p>但是我们不禁疑问，谷歌程序员真的会犯这样的错误吗？继续看上面代码的第<strong>154</strong>行的<code>saveState</code>方法，这个方法会在<code>Acitivty.onSaveInstance()</code>中调用。因为<code>onSaveInstance</code>会在<code>onStop</code>之前调用，那么实际上<code>onStop</code>之前<code>mPendingExitNames</code>就会被初始化，所以…理论上…Android 10上的代码也是没有问题的，🤔怎么会是呢？</p>
-<p>通过断点发现，实际上<code>onSaveInstance</code>在<code>onStop</code>之后调用了，所以<code>mPendingExitNames</code>保存了个寂寞。查阅文档发现，原来<code>onSaveInstance</code>在安卓9有行为变更：</p>
-<p><img src="/2022/03/28/Android-Return-Transition-Patcher/image-20220327160844844.png" alt="image-20220327160844844"></p>
-<p>显然，那位代码贡献者并没有考虑到这一变更，所以这才是罪魁祸首~</p>
-<h2 id="补丁代码"><a href="#补丁代码" class="headerlink" title="补丁代码"></a>补丁代码</h2><h3 id="反射式"><a href="#反射式" class="headerlink" title="反射式"></a>反射式</h3><p>既然已经知道了问题所在，那么解决方法便呼之欲出了。解决方法很简单，在<code>onStop</code>前，我们调用至少一次<code>saveState</code>对<code>mPendingExitNames</code>进行初始化，这个方法是无副作用的，我们可以放心调用。但是<code>onStop</code>之前有很多时机，我们要确保<code>mEnterTransitionCoordinator</code>已经初始化。搜索发现，<code>mEnterTransitionCoordinator</code>初始化的地方在<code>enterReady(Activity)</code>中，而这个方法在<code>Activity.onStart()</code>中调用的，那么我们在<code>Activity</code>的<code>onStart</code>和<code>onStop</code>之间打补丁就行了：</p>
-<ul>
-<li><strong>注</strong>：这个<code>Acitivty</code>指的是复现方式中的<strong>Acitivty B</strong>；<code>saveState</code>不在反射黑名单，我们可以反射调用。</li>
-</ul>
-<pre><code class="kotlin">@SuppressLint(&quot;DiscouragedPrivateApi&quot;)
-fun patchActivity(activity: Activity) &#123;
-    if (Build.VERSION.SDK_INT &lt; Build.VERSION_CODES.Q) return
-    try &#123;
-        val field = Activity::class.java.getDeclaredField(&quot;mActivityTransitionState&quot;).run &#123;
-            isAccessible = true
-            get(activity)
-        &#125;
-        field.javaClass.getDeclaredMethod(&quot;saveState&quot;, Bundle::class.java).run &#123;
-            invoke(field, Bundle())
-        &#125;
-    &#125; catch (t: Throwable) &#123;
-        Log.e(&quot;ReturnTransitionPatcher&quot;, &quot;Patch failed for [$&#123;activity.javaClass.simpleName&#125;]&quot;)
-        t.printStackTrace()
-    &#125;
-&#125;
-</code></pre>
-<h3 id="非反射式"><a href="#非反射式" class="headerlink" title="非反射式"></a>非反射式</h3><p>反射的代码总让人感觉嘎吱作响，需要很小心地维护，那么我们能否找到不需要反射的解决方法呢？我们之前分析过了，<code>saveState</code>在<code>Activity.onSaveInstance</code>中调用，那么我们手动在<code>onStop</code>之前<code>onStart</code>之后手动调用<code>onSaveInstance</code>也能修复这个问题，这个方法不用反射调用，稳健性较好：</p>
-<pre><code class="kotlin">fun patchActivity(activity: Activity) &#123;
-    if (Build.VERSION.SDK_INT &lt; Build.VERSION_CODES.Q) return
-    Instrumentation().callActivityOnSaveInstanceState(activity, Bundle())
-&#125;
-</code></pre>
-<h2 id="Android-12-PE上奇怪的现象"><a href="#Android-12-PE上奇怪的现象" class="headerlink" title="Android 12 PE上奇怪的现象"></a>Android 12 PE上奇怪的现象</h2><p>在Android 11及以前，将APP退回出到最近任务，也会走<code>onStop</code>触发这个BUG。但是在我的Pixel 5的Android 12上，退出到最近任务，并不会触发这个BUG。调试发现，是因为没走<code>onStop</code>。把玩后发现，原来PE 的Launcher对于刚刚退回到最近任务的APP的显示，不再是显示其静态快照，而是将APP缩放，因此在最预览页面仍然能看到APP的UI更新。谷歌你做得好啊，做得好啊。</p>
-<h2 id="使用ReturnTransitionPatcher"><a href="#使用ReturnTransitionPatcher" class="headerlink" title="使用ReturnTransitionPatcher"></a>使用<em>ReturnTransitionPatcher</em></h2><p>代码已经上传到<a target="_blank" rel="noopener" href="https://github.com/xjunz/ReturnTransitionPatcher">github</a>和Maven仓库，如果你想在项目中修复这个问题，可以在项目中引入，该库提供了完美的Patch时机和全局Patch功能:</p>
-<pre><code class="groovy">implementation &#39;io.github.xjunz:return-transition-patcher:+&#39;
-</code></pre>
+<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>将较老式的<strong>Material 1</strong>主题改成<strong>MD2</strong>或<strong>MDU</strong>样式，并且尽可能减少对原有代码的入侵，尽可能不引入第三方样式库。这个新的主题，我美其名曰 🙌 <em><strong>Retro Material</strong></em></p>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="/post/2022/03/29/RetroMaterialTheme/preview1.webp" alt="img"></p>
+<img src="/post/2022/03/29/RetroMaterialTheme/preview2.webp" alt="img">
+
+<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>代码较长，暂不贴出。您可在<a href="./xjunz-mod.css">这里</a>查看或下载<em><strong>Retro Material</strong></em>主题<strong>CSS</strong> (2022-3-29) 补丁。</p>
+<p><strong>使用协议</strong>：如果您使用了此补丁，请在博客内第三人可见处注明本文链接，否则将被视为侵权行为。</p>
 
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
@@ -593,7 +549,7 @@ fun patchActivity(activity: Activity) &#123;
                             <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />本作品采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
                         </strong>
                         <br>
-                        <strong>本文链接：</strong><a href="http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/">http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/</a>
+                        <strong>本文链接：</strong><a href="http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/">http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/</a>
                     </p>
                 </blockquote>
         
@@ -613,8 +569,8 @@ fun patchActivity(activity: Activity) &#123;
     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://www.xjunz.top/2022/03/28/Android-Return-Transition-Patcher/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://www.xjunz.top/post/2022/03/29/RetroMaterialTheme/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 <script type="text/ls-javascript" id="disqus-thread-script">
@@ -644,21 +600,13 @@ fun patchActivity(activity: Activity) &#123;
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2022/03/29/RetroMaterialTheme/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2021/03/10/MotionLayout+ViewDragHelper/" id="post_nav-older" class="next-content">
+        <a href="/post/2022/03/28/Android-Return-Transition-Patcher/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
