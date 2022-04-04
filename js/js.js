@@ -88,7 +88,11 @@ $(document).ready(function() {
     $(document).click(function() {
         $("#local-search-result ul").css("display", "none");
     });
+
+    document.getElementsByTagName('iframe')[0].contentWindow.document.body.style.visibility="hidden"
 });
+
+
 
 //**********************************
 //**********************************

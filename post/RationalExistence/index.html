@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="Is5NCRh3gMI3ic8PKbNsXzLtoQu1b2ywfIoPhkv3JYA" />
+    <!--
+        © Material Theme
+        https://github.com/bollnh/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
+
+
+    <link rel="dns-prefetch" href="https://www-xjunz-top.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            理性与存在 | 
+        
+        Me, xjunz&#39;s blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.svg">
+    <link rel="icon" href="/img/favicon.svg">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="xjunz&#39;s blog">
+    <meta name="keywords" content=",trite">
+    <meta name="theme-color" content="#ffc3ac">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?9Ek1IaWYyaMzGQpPQlUepA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Noto Serif SC, Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    letter-spacing: .0em !important;
+  }
+
+  a {
+    color: #ff4e58;
+    letter-spacing: .1em;
+  }
+
+  p.article-headline-p{
+   font-family: Roboto !important;
+  }
+
+  p {
+    letter-spacing: .15em;
+    font-family: Noto Serif SC !important;
+  }
+
+  div {
+    letter-spacing: .15em;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #ff4e58 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #ff4e58 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #ff4e58 !important;
+  }
+
+  .toTop {
+    background: #ff4e58 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #ff4e58;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #ff4e58;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #ff4e58;
+  }
+
+  .post-toc a:hover {
+    color: #ff4e58;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body {
+        background-color: #faf2f1;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <!-- "https://fonts.googleapis.com/css?family=Roboto:300,400,500" -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+
+
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Me, xjunz&#39;s blog">
+    <meta name="msapplication-starturl" content="http://www.xjunz.top/post/RationalExistence/">
+    <meta name="msapplication-navbutton-color" content="#ffc3ac">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Me, xjunz&#39;s blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.svg">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://www.xjunz.top/post/RationalExistence/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="理性与存在 | Me, xjunz&#39;s blog">
+    <meta property="og:image" content="/img/favicon.svg">
+    <meta property="og:description" content="xjunz&#39;s blog">
+    <meta property="og:article:tag" content="trite"> 
+
+    
+        <meta property="article:published_time" content="Wed Mar 30 2022 03:54:03 GMT+0800">
+        <meta property="article:modified_time" content="Mon Apr 04 2022 20:32:35 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://www.xjunz.top/post/RationalExistence/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://www.xjunz.top/post/RationalExistence/index.html",
+    "headline": "理性与存在",
+    "datePublished": "Wed Mar 30 2022 03:54:03 GMT+0800",
+    "dateModified": "Mon Apr 04 2022 20:32:35 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "xjunz",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": ""
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Me, xjunz&#39;s blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.svg"
+        }
+    },
+    "keywords": ",trite",
+    "description": "xjunz&#39;s blog",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+        
+            
+        
+    
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="/custom_css_source.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E7%90%86%E6%80%A7%E4%B8%8E%E5%AD%98%E5%9C%A8"><span class="post-toc-text">理性与存在</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%BB%9D%E5%AF%B9%E7%90%86%E6%80%A7%E4%BA%BA%E5%81%87%E8%AE%BE"><span class="post-toc-text">绝对理性人假设</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%8F%97%E9%99%90%E7%90%86%E6%80%A7%E4%BA%BA%E5%81%87%E8%AE%BE-Hypothesis-of-Contextedly-Rational-Man"><span class="post-toc-text">受限理性人假设 Hypothesis of Contextedly Rational Man</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%90%86%E6%80%A7%EF%BC%9F"><span class="post-toc-text">什么是理性？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%90%86%E6%80%A7%E7%B3%BB%E7%BB%9F-Reason-System"><span class="post-toc-text">理性系统 Reason System</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%BE%A4%E4%BD%93%E5%8F%97%E9%99%90%E4%B8%8B%E7%9A%84%E4%B8%AA%E4%BD%93%E7%90%86%E6%80%A7-Group-Contexted-Individual-Reason"><span class="post-toc-text">群体受限下的个体理性 Group-Contexted Individual Reason</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BA%BA%E7%B1%BB%E4%B8%AA%E4%BD%93%E4%B8%8E%E4%BA%BA%E7%B1%BB%E7%A4%BE%E4%BC%9A"><span class="post-toc-text">人类个体与人类社会</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%A4%BE%E4%BC%9A%E5%88%B6%E5%BA%A6"><span class="post-toc-text">社会制度</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%B8%8D%E5%8F%AF%E8%B0%83%E5%92%8C%E7%9A%84%E7%A4%BE%E4%BC%9A%E7%9F%9B%E7%9B%BE"><span class="post-toc-text">不可调和的社会矛盾</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%8B%AC%E8%A3%81%E7%9A%84%E6%9C%80%E7%BB%88%E5%BD%A2%E5%BC%8F"><span class="post-toc-text">独裁的最终形式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%9B%BD%E5%AE%B6%E4%B8%BB%E4%B9%89"><span class="post-toc-text">国家主义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89"><span class="post-toc-text">资本主义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%B0%91%E6%97%8F%E4%BC%81%E4%B8%9A"><span class="post-toc-text">民族企业</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89"><span class="post-toc-text">社会主义</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%A4%BE%E4%BC%9A%E5%8F%98%E9%9D%A9"><span class="post-toc-text">社会变革</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%80%A7%E5%88%AB%E6%9C%BA%E5%88%B6-Gender-Mechanism"><span class="post-toc-text">性别机制 Gender Mechanism</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%8F%98%E5%BC%82%E6%9C%BA%E5%88%B6"><span class="post-toc-text">变异机制</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%80%A7%E5%88%AB%E8%B5%B7%E6%BA%90"><span class="post-toc-text">性别起源</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%9C%89%E6%80%A7%E7%B9%81%E6%AE%96%E9%80%89%E6%8B%A9"><span class="post-toc-text">有性繁殖选择</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%AD%90%E5%AE%AB%E5%AF%B9%E9%9B%8C%E6%80%A7%E7%9A%84%E5%BC%82%E5%8C%96-Alienation-of-Womb-to-Female"><span class="post-toc-text">子宫对雌性的异化  Alienation of  Womb to Female</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%AF%8D%E7%B3%BB%E7%A4%BE%E4%BC%9A%E5%92%8C%E7%88%B6%E7%B3%BB%E7%A4%BE%E4%BC%9A"><span class="post-toc-text">母系社会和父系社会</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%A9%9A%E5%A7%BB%E5%88%B6%E5%BA%A6"><span class="post-toc-text">婚姻制度</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%80%A7%E5%88%AB%E7%9F%9B%E7%9B%BE%E7%9A%84%E6%9C%AC%E8%B4%A8"><span class="post-toc-text">性别矛盾的本质</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%8E%B0%E4%BB%A3%E7%A4%BE%E4%BC%9A%E7%9A%84%E6%80%A7%E5%88%AB%E7%9F%9B%E7%9B%BE"><span class="post-toc-text">现代社会的性别矛盾</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E7%BB%88%E6%9E%81%E9%97%AE%E9%A2%98"><span class="post-toc-text">终极问题</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/post/RationalExistence/thumbnail.webp)">
+    
+            <p class="article-headline-p">
+                理性与存在
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>xjunz</strong>
+        <span>3月 30, 2022</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACbklEQVR42u3aQXLjMAwEQP//08kDvNHOgCLlpFqnVEWW2ToQ8BCvrz99vfDw8PDw8PDw8D6M94qv9/vfn3P9zH8s5fKedm14eHh4J3n/2WovMflzkjvfX1O9Njw8PLyDvOti0LKTUtFSk7Xh4eHhfRpvve2elRA8PDy8386bNc15GcDDw8P7Lbx2g04C2Xtb9u1ZCx4eHl7Maw/ATv79wPkeHh4e3iWvvfLDsHwsYHaQ9uMK8fDw8DbzknZ2tkH/xHgtXzf8YsDDw8PbzLsuEu3Srz87OwbDw8PDO8nLo9h8RCAPf6/vH96Dh4eHt5mXt8L5hj5ruNsYAg8PD+8p3mwgYLbQvAVv/4uHh4d3kteS6mhg+WlJG42Hh4d3kpf81F8JWPPF5S9rKWvBw8PDuynnbEPbPG5oW/bZ8/Hw8PBO8pKS0AasbWlpy0A9OoCHh4e3gZcsqD0MWy8bw7YbDw8PbzNvdmTVHm4lm/vGoSs8PDy8DbxZmJvc2Y5k1dHDbHQADw8Pb4HXRrrJ5t4WktnQ1XB0AA8PD2+ZlzSvs+Ag2sTL0jIMI/Dw8PBu5SUh6XrBaMPZPETGw8PDe5Z3vbjkECtpl3NMfniGh4eHd5KXf02+6Sf3rwyw4uHh4T3LWwkUomigjC3yoYFhS42Hh4e3zGtb3tngVI6ffRceHh7eed7s4KqNXNuxg1lzj4eHh3eSlxeDdWQ7aHXD0BUeHh7eQ7xZK7w+LlAMIuDh4eF9JG/WOq+PYR0qDHh4eHgbcs68YMzKw+yl4OHh4Z3ktQdgK7HFrAAUrxgPDw9vM+/vXXh4eHh4eHh4eB9wfQO0at5y/5EK4wAAAABJRU5ErkJggg==">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-none-link" href="/tags/trite/" rel="tag">trite</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=理性与存在&url=http://www.xjunz.top/post/RationalExistence/index.html&pic=http://www.xjunz.top/img/favicon.svg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=理性与存在&url=http://www.xjunz.top/post/RationalExistence/index.html&via=xjunz" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.xjunz.top/post/RationalExistence/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Me, xjunz&#39;s blog&title=理性与存在&summary=xjunz&#39;s blog&pics=http://www.xjunz.top/img/favicon.svg&url=http://www.xjunz.top/post/RationalExistence/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://www.xjunz.top/post/RationalExistence/index.html&text=理性与存在" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+            
+         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"> <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="https://music.163.com/outchain/player?type=2&id=1322089622&auto=1&height=66" style="margin-top: 20px;"></iframe>
+
+<h1 id="理性与存在"><a href="#理性与存在" class="headerlink" title="理性与存在"></a>理性与存在</h1><blockquote>
+<p><em>Human is “the limited rational existence” of limitless.</em></p>
+</blockquote>
+<h2 id="绝对理性人假设"><a href="#绝对理性人假设" class="headerlink" title="绝对理性人假设"></a>绝对理性人假设</h2><p>经济学中有一个概念叫做<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Homo_economicus">理性人假设</a>，也叫做“经济人”假设。顾名思义，即认为所有人都是理性的假设。经济学家们为了构建量化模型，将这个假设定义地无比苛刻，总而言之就是完美的、绝对的理性，甚至不考虑信息不对称和不完备市场。也因为如此，这个假设遭受到了很多批判的声音。在一个混沌的人类社会中，用理想化的假设去构建模型，显然无法和现实很好地拟合。但是绝对理性人假设仍然是一个伟大的创想，如果我们让绝对理性人假设跳出严苛的桎梏，跳出“经济人”的躯体，或许能窥探到人类社会深处的运行逻辑。</p>
+<h2 id="受限理性人假设-Hypothesis-of-Contextedly-Rational-Man"><a href="#受限理性人假设-Hypothesis-of-Contextedly-Rational-Man" class="headerlink" title="受限理性人假设 Hypothesis of Contextedly Rational Man"></a>受限理性人假设 <em>Hypothesis of Contextedly Rational Man</em></h2><p>经济学中的绝对理性人假设不是我现在要谈的理性人假设，我们需要一个更符合现实的理性人假设，或者叫<strong>受限理性人假设</strong>。他的基本思想和和狭义的“经济人”假设是一样，即人都是尽可能理性的。但是这个理性是受限，因为现实中的人不可能预料到所有后果，不可能收集到所有的信息，不可能保持永远的绝对的理性。我们要为这个理性加上一个范围<em>（Context）</em>，这个范围内的种种因素限制了人的绝对理性，但是人会在这个范围内保持最大的理性。</p>
+<blockquote>
+<p>注：下文某些地方，我们也会将“受限理性人假设”简称为“理性人假设”，注意和“绝对理性人假设”区分。</p>
+</blockquote>
+<h2 id="什么是理性？"><a href="#什么是理性？" class="headerlink" title="什么是理性？"></a>什么是理性？</h2><p>要论证这个假设，我们首先要知道所谓的“理性”本质上是什么。</p>
+<p>自然界所有能<strong>持续存在</strong>的事物分为两类，一种依靠在时间中维持自己而存在，一种依靠在时间中复制自己而存在。前者是非生物持续存在的方式，后者是生物持续存在的方式。就生物而言，尽管如今世界上的物种有成千上万种，但无一例外都是<em>DNA&#x2F;RNA</em>或者说基因在复制自己的过程中产生的衍生物。英国演化理论学者<em>Clinton Richard Dawkins</em>曾创作<em>《The Selfish Gene》</em>一书，这本书也表达了类似的观点，但是较为有诱导性的是颇具感情色彩的”<em>Selfish</em>“一词。从基因对自身贪婪的复制欲望和对躯壳的奴役这种表现形式来看，它确实是自私的，但是从宏观无意识，即自然的角度来说，这无非是一种幸存者偏差，任何基因都不存在自私的属性，只是那些无法尽可能复制自身的基因都无法持续存在到现在，或者说目前存在的基因，都是如此完美地适合复制自己。所以<strong>基因的自私是存在的结果，而不是的存在的原因</strong>。从碱基对在“原始汤”中的配对，到生物通过有性繁殖复制，本质并没有改变，生物的躯壳不过是保护基因复制的工具。<strong>基因的本质属性是复制自身的属性</strong>，这是它的存在方式所赋予它的。生物不过是协助基因在复杂多变的环境中稳定自我复制的载体，所以<strong>基因的属性就是生物的属性</strong>。这个属性在生物上的表现为所有生物都趋向于选择更有利于基因复制的行为，避开不利于基因复制的行为，<strong>这种趋向性就是我们所说的理性</strong><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="有了理性这个词，我们就可以将无意识的被动选择表述为被选择物有意识的主动适应，这种表述更方便且便于理解，我们在后面的论述中会普遍这样表述。">[1]</span></a></sup>，也可以叫做生物的<strong>基因理性</strong>，而某种行为&#x2F;特性对于理性的满足程度便可以量化为<strong>理性值</strong>。生物的所有行为都在原则上都符合其基因理性，但是这个理性的受到生物自身、外界环境等的因素的限制，而表现得多样复杂，即我们所说的<strong>受限理性</strong>。举个例子，当一只狗过马路时，正好有一辆汽车行驶而来，这只狗迅速地跑向了马路另一边，差一点被车撞到。虽然有惊无险，但是在我们看来，这只狗往回跑会更快，这似乎是更好的选择。我们能否说狗不够理性？不能，这样因为它的理性是受限的，它已经保持了它所能达到的最大理性。生物个体会在其受限理性范围内保持其最大理性，我们姑且把这个假设叫做<strong>受限理性个体假设</strong>。人作为生物个体的时候，显然也是满足受限理性个体假设的，换句话说，人作为生物满足受限理性人假设。</p>
+<h2 id="理性系统-Reason-System"><a href="#理性系统-Reason-System" class="headerlink" title="理性系统 Reason System"></a>理性系统 <em>Reason System</em></h2><p>人和其他生物的不同在于，人拥有<strong>自由意识</strong>，考虑到自由意识，这个假设是否还成立呢？其实，在自由意识诞生之前，生物就已经诞生了潜意识来对环境做出理性的反应，尽管大多数生物通过潜意识就能很好地延续基因，但是在无数次的随机变异和自然选择中，还是诞生了更好的反应机制，即自由意识。不要将自由意识和潜意识视为截然不同的两个事物，两者本质上都是基因的对外界的反应机制，只是潜意识基于纯粹的条件反射，而自由意识基于可以塑造的条件反射。这种可塑造性，来自于愈发复杂的条件反射系统：对于病毒来说，它唯一的条件反射就是找到宿主后释放自己的基因，任由其复制，这是基于复杂化学反应的条件反射（这也是为什么病毒是否为生物仍然存在争议）。对于草履虫来说，他的条件反射系统就存在若干条固定的规则，比如从外界捕获食物，用鞭毛移动自己远离不利环境。对于狗来说，他的条件反射系统就具有简单的可塑造性，最知名的例子莫过于巴普洛夫的狗。而人无非是更高级的狗，人的条件反射系统可以具有极高的可塑性，以至于形成了能自发塑造自己的错觉。如果我们将生物的条件反射系统视为一个黑箱<em>F</em>，输入为自身的和外界的条件<em>C</em>，输出为生物做出的反应<em>Reaction</em>，表述如下：<br>$$<br>Reaction &#x3D; F(C)<br>$$<br>这个黑箱内部具体有什么规则我们是不确定的，但是所有规则都源于并且最终服务于<strong>元条件反射</strong> <em>(Meta Reflect，也可简称元反射)<em>。元反射的规则为，输入条件</em>C</em>，从所有可选反射中选择一条预期理性值最大的反射，然后输出这条反射对应的<em>Reaction</em>，元反射是<strong>对基因理性的抽象</strong>，这时候条件反射系统<em>F</em>在语义上转变为<strong>理性系统</strong>。将元反射定义为<em>Selector</em>，上述表达式在语义上变为：<br>$$<br>Reaction &#x3D; Selector(C)<br>$$<br>为了方便阐述和理解，我们使用了“<strong>选择</strong>”这样有意识的动词。但是记住这只是一种过程的抽象，对于潜意识反射<em>f</em>而言，这是一种机制，它自动根据<em>Env</em>生成<em>Reaction</em>，比如病毒的反射机制：<br>$$<br>Reaction &#x3D; Selector(C) &#x3D; f(C)<br>$$<br>这样的条件反射系统为纯条件反射系统，或者叫潜意识系统。而作为拥有自由意识的人类，我们的条件反射系统同时包含潜意识系统和自由意识系统。自由意识系统基于理性值预期，即人会预测各个反射对应的<em>Reaction</em>的理性值，选择最理性值最大<em>Reaction</em>的去执行。尽管我们拥有两种系统，但这两种系统并不是简单的叠加：有些潜意识反射是无法用自由意识控制，有些可以控制。那些无法用自由意识控制的反射可视为拥有最高的理性值，而那些可以用意识控制的反射都可以对其进行估值选择理性值预期最高的反射去执行，我们将这个过程记为<em>Eval</em>，那么考虑自由意识的理性系统可表述为：<br>$$<br>Reaction &#x3D; Selector(C) &#x3D; Eval(f(C),f_1(C),\ldots,f_n(C))<br>$$<br>有人可能会意识到，到目前为止我们都在讨论<em>Reaction</em>（反应），但是对于人来说，还有<em>Action</em>（行动），这两者的区别在于，<em>Reaction</em>需要有条件的的输入，而<em>Action</em>则不需要，它是自发产生的。举个例子，有些人总是会不由自主地去照镜子，照镜子这个动作是似乎是自发产生的，不依靠外界输入，那么我们要如何理解？我们试着分析一下她&#x2F;他为什么会想要照镜子，是因为他&#x2F;她从多次照镜子中获得愉悦感或者他&#x2F;她经常照镜子打扮自己让自己更受欢迎，总之照镜子有预期的理性值，因而形成了条件反射。等等，我们说到了条件反射，条件反射能没有条件吗？一个人突然想要照镜子，绝对不是没有条件的，只是这个条件并不明显。他&#x2F;她想要照镜子，是因为处在空闲的时候或者，举个例子，是因为他&#x2F;她吃完东西之后。这些条件反射需要的条件几乎不需要我们刻意去察觉，所以我们认为好像没有条件。再举一个极端的例子，人会不受控制地想到悲伤的事。这看似无法用这套理论去解释：一想象似乎不需要条件，二想到悲伤的事似乎无法带来正的理性值。首先想象是需要条件的，这和照镜子一样，通常是在空闲的时候，或者处在某个特定的环境，执行某个特定的动作之后。但是如何解释想到悲伤的事呢？首先，想到悲伤的事分为两种情况，基于潜意识的，比如当我们接触到某个事物的时候，不由自主想到与这件事相关的悲伤的事，这有助于让我们反省自己，避免再犯同样的错误，这是潜意识里的纠错机制，拥有最大的理性值。二是自主地想到悲伤的事物，这是因为悲伤的事能间接地给你带来理性值，比如当你向朋友讲倾诉时，倾诉带来的理性值要大于想起悲伤的事所减少的理性值。总之，人不会在没有任何预期理性值的情况下去主动想象悲伤的事。你说你现在就要想想一件悲伤的事来反驳我的观点？那是因为你认为反驳我带来的理性值要大于这件悲伤的事所带来的负面影响。</p>
+<blockquote>
+<p>尽管我们否定了没有输入条件的Action（行动），但是在输入条件对论述不是必要时候，我们仍然可以使用Action这个词。</p>
+</blockquote>
+<p>现实中，我们确实能看到很多看似不理性的事物，比如无偿献血、见义勇为、义务服兵役等。这些行为显然是违背绝对理性人假设的，但是这仍然在受限理性人假设的解释范围之内：无偿献血的人，认为献血带来的道德上的满足大于献血所造成的损失，那么无偿献血这件事对他而言便拥有正的预期理性值，那么他便有可能去做这件事。见义勇为同理。但是义务服兵役可以分情况讨论，有人是义务的，因为他认为军人的身份很光荣或者对自己未来的发展有好处；而有人是被强迫的，他不认为服兵役能给他带来什么好处，但是如果他不去，他就要面对牢狱之灾。如果他只有这两种选择，那么服兵役仍然是这两种选择中预期理性值较高的，因此他仍然会去执行。所以，当人执行某个动作时，不一定是因为这件事能给他带来正的理性值，而是这件事在他所有选择中拥有较大的理性值，哪怕是负值。这些例子都是典型的受限理性的例子。</p>
+<h2 id="群体受限下的个体理性-Group-Contexted-Individual-Reason"><a href="#群体受限下的个体理性-Group-Contexted-Individual-Reason" class="headerlink" title="群体受限下的个体理性 Group-Contexted Individual Reason"></a>群体受限下的个体理性 <em>Group-Contexted Individual Reason</em></h2><p>群体诞生后，群体中的所有个体的理性就开始被群体所塑造。因为当个体聚集成为群体之后，这个群体在很大程度上代替了个人成为自然选择的标的物，如果对个体理性塑造能让这个群体相比于个体能更好地延续基因，那么这种对于个体理性塑造就会通过意识代代相传或者在多次变异中固化进潜意识，这种理性塑造甚至是可能是违反个体的基因理性的，这就是群体受限下的个体理性。类比于理性人假设，群体也符合<strong>理性群体假设</strong>。自然界中就存在非常极端的例子：蜂群。蜂群中只有蜂后拥有繁殖能力，作为群体绝大多数的工蜂却有着十分反常的违反基因理性的行为，比如日夜劳作，用生命守护蜂群，甚至不具有生育能力。我们从个体的角度用理性个体假设几乎不能解释这个现象，但是理性群体假设的角度，就能很好地解释这个现象：工蜂作为理性生物，他的理性是受群体理性限制的，这种受限存在于它的基因中，所以它的行为其实都拥有最大的理性值，这表明工蜂的行为仍然符合受限理性个体假设。尽管作为个体，它的基因无法延续，但是这种受限理性组成的群体，却能很好地延续其群体基因，这个群体的基因便在自然选择下存在至今。我们把这种因自然选择而诞生的群体理性称为<strong>自然群体理性</strong>，自然群体理性对个体理性的塑造符合整个群体的基因理性。例如在人类社会中，共情心、道德感、群体荣誉感、群体归属感等都是典型的自然群体理性，一个人的个体理性可能会在这些限制下，主动去做违背个人的基因理性的事，之前所提到的无偿献血就是一个很好的例子。当我们将自然群体理性的限制加入到个体的理性系统中时，对于潜意识理性系统而言，其潜意识反射都会受到自然群体理性的影响，对于自由意识理性系统而言，个体不能只考虑个体预期理性值，还要考虑群体预期理性值，我们将群体理性用<em><strong>g</strong></em>标记，个体的理性系统表示如下：<br>$$<br>Reaction &#x3D; Selector(C) &#x3D; Eval(f_g(C),\mu_1 \cdot Selector_g(f_1(C)),\ldots ,\mu_n \cdot Selector_g(f_n(C)))<br>$$<br>我们引入了系数<em><strong>μ</strong></em>来表示自由意识对群体理性的调整系数。对于无意识生物如蜜蜂，这个系数为<strong>0</strong>，因为他们没有自由意识，所有自然群体理性都存在于潜意识反射中。对于人类而言，这个系数因人而异，甚至对于每个反射都是不一样的，对于群体理性无关的反射，这个系数为<strong>1</strong>。</p>
+<p>当群体代替个体作为自然选择的标的物之后，个体就在很大程度上摆脱了自然选择，但是在群体内部，会形成了<strong>群体选择</strong>。群体选择的理论基础来自于理性群体假设，群体的行为总是符合其群体理性的，个体在群体中，如果违背了群体理性，就会被群体所淘汰，如果更符合群体理性，它的基因就会延续，这就是群体选择的机制。我们将群体中的个体定向地将其他个体淘汰的行为叫做<strong>群体淘汰</strong>，对于一个不存在群体淘汰的群体，群体选择在本质上还是是自然选择，其群体理性我们称作<strong>自然群体理性</strong>，自然群体理性主要表现为个体的集群性、个体对群体的维护、个体对群体内其他个体的维护等。但是群体理性在有群体淘汰机制的群体内表现是不同的，比如人类社会就是一个存在群体淘汰的群体，在人类社会中不符合群体理性的个体会被剥夺权利乃至生命。这是因为尽管一个群体看似是一个整体，但是其本质仍然是由个体组成的，组成群体的每个个体满足受限理性个体假设，而个体之间在生理上和境遇上又往往是不平等的，那么总会有某些个体率先通过其优势抢占或有限享有生存资源以满足其基因理性，这类个体便会成为群体的首领，群体首领在群体中拥有最大的受限理性。根据受限理性个体假设，他会会尽可能利用自己所掌握的资源，来满足自己的最大受限理性，而这又会反过来，形成正反馈，增加其最大受限理性值，以至于他会开始侵占群体中其他个体的生存资源。但是如果某个个体侵犯了群体中多数其他个体的生存资源，即使他在受限理性上要超过其他个体，但是在暴力上，他仍然是一个个体，其他个体仍然能够联合起来通过暴力让他的理性强行受限，甚至终结他的生命，让其不再拥有任何理性。这种理性和暴力不对等的关系，是群体革命的基础。尽管这种不对等关系，到目前为止依然是成立的，但是人类发明了<strong>暴力集团</strong>来尽可能消除这一不对等关系。群体的首领会通过其资源上的优势，通过理性值交换，号召其他个体组成暴力集团，首领承认这个暴力集团可以在一定程度上和他共享受限理性，作为交换，暴力集团在暴力上维护首领的地位，首领对于暴力集团的操控能力也叫做<strong>权力</strong>。这样，首领的受限理性和权力在一定程度上划上了等号。但是很多时候，首领想要统治群体中的其他个体，并不需要他和他的暴力集团在暴力上绝对大于所有其他个体的暴力总和，因为群体革命，往往意味着受伤、死亡、群体的破灭或重组，是一种预期理性值非常低的选择，可以说其预期理性值仅次于死亡。除非个体只有死亡和革命这两个选择，否则个体不会轻易发起革命。还有一种情况是，如果首领失去了实际的权力，比如说暴力集团无法从首领处得到受限理性的提升甚至减少了其受限理性，那么革命的预期理性值就要大得多。历史上真实发生的革命，多半是这两种情况在不同程度上的结合。一旦首领拥有了足以镇压所有人的权力，那么这个群体就成为了首领的人格化实体，这个群体的一切行为都符合群体首领的理性人假设，这个<strong>群体的群体理性便成为了首领个体的个体理性，群体选择在这个时候本质上是首领的个体选择</strong>。首领的个体选择自然是定向的、不平等的，他会尽可能淘汰掉妨碍他满足受限理性的个体。这样的群体下个体的理性便会受到首领理性的限制，具体表现为群体内所有个体在做任何决定之前都要考虑首领的理性值预期，因为违背了首领的理性的行为，其造成的后果的预期理性值非常之低，比如牢狱或死亡。我们将首领的理性系统用下表k标记，那么个体的反射系统则为在这样的群体理性受限下表示为：<br>$$<br>Reaction &#x3D; Selector(C) &#x3D; Eval(f_g(C),\mu_1\cdot Selector_k(f_1(C)),\ldots,\mu_n\cdot Selector_k(f_n(C)))<br>$$</p>
+<blockquote>
+<p>对于潜意识理性，我们不能假设群体首领的个体理性对其有影响，所以依然标记为下标g，即自然群体理性。</p>
+</blockquote>
+<h2 id="人类个体与人类社会"><a href="#人类个体与人类社会" class="headerlink" title="人类个体与人类社会"></a>人类个体与人类社会</h2><blockquote>
+<p>集体与个人的关系向来是人类社会中一直被探讨的重要命题，人作为社会性生物，无时无刻不处于集体之中，集体和个人的关系的改变也在不停地改变着人类社会的结构。通过上面的许多结论，我们似乎可以探讨一些与人类社会相关的一些比较难以解释的问题。</p>
+</blockquote>
+<h3 id="社会制度"><a href="#社会制度" class="headerlink" title="社会制度"></a>社会制度</h3><p>很多人可能都有过这个疑问，在人类组成群体的初期，个体与个体之间肯定是相对平等的，但是为什么最终人类社会却普遍走向了奴隶制？如果有人不同意奴隶制这个词，那也没有关系，我们不讨论表述，而是在讨论一种事实：即少数人奴役多数人的制度。为什么不能一直民主共和制度至今呢？那是因为人与人本质上并不是平等的，那些生理上的差异和境遇上的差异会让群体内部某个人率先成为首领，基于理性人假设和群体理性理论，原始社会的群体理性本质上就是首领的个体理性，这些我们都阐述过。换句话说，这个群体不过是首领的理性实体，首领便会通过奴役群体内部其他个体满足其最大受限理性。奴隶制社会出现的对内徭役重税、对外侵略扩张都是首领的个体理性的体现。显然在一个少数人奴役多数人的社会，无论是奴隶制社会，封建制社会还是帝制社会，这个群体就是统治阶级的理性实体，统治阶级为了满足其最大受限理性，会很自然地去剥削群体中其他个体，所以这样的社会中统治阶级的理性与集体的大多数人的理性是相悖的。当社会的统治阶级只有一个人时，那便是奴隶制社会；当统治阶级是世袭的贵族时，便是封建制社会；当统治者是一个人，但是统治阶级是整个官僚机构时，便是帝制社会。奴隶制社会和帝制社会本质上都是服务于一人的社会，但是帝制较为温和，能管理较为广阔的土地和大量人口。而在封建社会，由于贵族之间会在政治上互相掣肘，相比于其他两种社会可能更为“民主”。那么，在现代社会，个人与集体的是什么关系？对于这个问题，我们不能将全世界的人类视为处于一个社会，因为国际主义还远远没有实现，目前社会的组织形式是国家，和任何群体一样，国家也是统治阶级的理性实体，当一个国家的统治阶级为少数人时，基于理性人假设，少数人会尽可能地从多数人中攫取生存资源，那么这个国家的个人和集体本质上是利益相悖的关系；在一个多数人为统治阶级的国家，同样基于理性人假设，多数人会侵占少数人的生存资源，那么这个国家内多数人的利益和集体的利益是一致的；如果在一个完全民主的社会，那么这个国家就是国家内所有人的理性实体，这个国家内的个体与集体是利益统一的关系，这个国家便会尽可能从其他国家获取生存资源。但是在上古社会，还存在禅让制，这是否矛盾？禅让制是一种明显违背绝对理性人假设的行为，但是仍然符合受限理性人假设。首先禅让制普遍诞生于生产力低下上古时代，那时候人类群体的首领可能仍然要躬耕，部落的首领所能满足的最大首先理性可能并不会比群体中的其他大很多。并且受限于社会理性下朴素的道德观念，禅让制所带来的理性值或许能大于世袭所带来的理性值，那么，禅让制便存在可能。</p>
+<h3 id="不可调和的社会矛盾"><a href="#不可调和的社会矛盾" class="headerlink" title="不可调和的社会矛盾"></a>不可调和的社会矛盾</h3><p>如果一个社会内部存在一个群体，这个群体为满足其群体理性，必须通过剥削其他个体的生存资源的方式进行，那么剥削方和被剥削方就可以视为两个阶级，并且这两个阶级就拥有不可调和的社会矛盾，典型例子有：专制社会中统治阶级与被统治阶级之间的矛盾，资本主义社会中资产阶级与无产阶级之间的矛盾。但是要注意的是，剥削阶级是一个真正的群体，因为他们是真实存在的，并且拥有剥削基础和群体理性。而<strong>被剥削阶级只是一个名义上的阶级</strong>，如果对应的剥削阶级消失了，这个阶级也就消失了，这个阶级只是被概括在一起而不是自发地组织在一起。换句话说，剥削阶级内部之间存在直接的利害关系，而被剥削阶级的个体之间没有直接的利害关系，只有当被剥削阶级发动群体革命的时候，他们才是一个真正的群体，并且拥有唯一的群体理性：即推翻剥削阶级。但是在发动革命之前，革命激进人士可以通过宣传这个名义上的共同体来煽动革命情绪，并最终组成真正的共同体发动暴力革命。</p>
+<h3 id="独裁的最终形式"><a href="#独裁的最终形式" class="headerlink" title="独裁的最终形式"></a>独裁的最终形式</h3><p>所有独裁的基础最终都来自于对暴力集团的操控力，或者叫权力，而所有革命的基础都来自于独裁者理性与暴力的不统一，因为独裁者和他的暴力集团看似是一个整体，但是实际上两者只是利益交换的关系，无论独裁者的暴力集团规模多大，能力多强，如果这个整体从内部瓦解，那么独裁者就会失去统治基础，最终被革命。所以独裁者的最终目的是让他的理性和暴力画上等号，这便是独裁的最终形式。可能的一种形式为，核武器。如果独裁者能在不需要其他人的帮助下操控核武器，在理想情况下，任何革命都不会成功，那么他便拥有了绝对的暴力。基于理性人假设，绝对的暴力就意味着绝对的独裁。</p>
+<h3 id="国家主义"><a href="#国家主义" class="headerlink" title="国家主义"></a>国家主义</h3><p>我们已知在一个非民主的国家内部，存在少数的统治阶级和多数的被统治阶级，这两个阶级之间存在不可调和的矛盾。当这种矛盾被意识到并激化时，就可能诞生暴力革命。基于理性人假设，统治阶级会尽可能地在不放弃自己的既得利益的前提下预防革命发生，这便是维稳。维稳有很种手段：一是对自身权力的巩固，比如扩大暴力集团的规模和强度（如扩大军费支出、强征扩征军队），限制被统治阶级的暴力能力（如禁枪、刀具管制等）。二是对矛盾的缓解，比如加强社会福利政策，但是这些政策都是基于理性人假设的，这意味着这种利益共享只能在最小的可能的程度上发生，直到利益共享对群众增加的预期理性值足以超过其意识到被剥削后产生的负面理性值。三就是统治美化宣传，最典型的莫过于国家主义&#x2F;民族主义宣传，这种宣传强调整个国家都是利益共同体，国家的财富和成就就是每个人的财富和成就，让群众产生国家自豪感。同时树立假想敌，将假想敌视为真正的敌人，掩饰背后的统治真相。这是典型的群体受限下的个体理性的例子，假设我们将国家理性标记为<em><strong>n</strong></em>，那么这个国家内所有人的理性系统为：<br>$$<br>Reaction &#x3D; Selector(C) &#x3D; Eval(f_g(C),\mu_1\cdot Selector_n(f_1(C)),\ldots,\mu_n\cdot Selector_n(f_n(C)))<br>$$<br>实际上，这个国家内的所有人做决定前都会考虑国家理性，这是因为国家内部存在群体选择。但是在国家主义受限下的个体理性系统，调整系数<em><strong>μ</strong></em>在与国家相关的反射上要比未被国家主义受限的理性系统要高，甚至可能高得多。作为个体的我们要意识到，在一个统治阶级是少数人的国家，国家不过是这少数人的理性实体，并不代表多数人的理性。所以，当你为国家考虑时，你实际上是在为这少数统治阶级考虑。如果你不是既得利益者，请尽量客观看待国家主义：国家并非一个真正的利益共同体，不同国家的人也并非真正的敌人，个体真正的敌人只有其实际的利益侵害者。但是这样不意味着国家是虚无的，国家主义是错误的，当一个国家面对其他国家的入侵时，国家在这个时候就是真正的共同体，国家主义在这个时候有利于凝聚人心，抵御外敌。这一切的前提都基于，人类对国家的承认。而人类对国家的承认，本身也是一种群体理性，无可厚非。也许在一个可能的未来，人类可以不承认国家，那么也就不会有国家主义，也就不会有敌国，世界人民也就不必因为统治阶级的意志而互相憎恨，这便是国际主义的设想。</p>
+<h3 id="资本主义"><a href="#资本主义" class="headerlink" title="资本主义"></a>资本主义</h3><p>资本主义社会相比于封建专制社会的进步性在于，它在国家层面上实现了民主，尽管不一定是完全民主的。我们<a href="#%E4%B8%8D%E5%8F%AF%E8%B0%83%E5%92%8C%E7%9A%84%E7%A4%BE%E4%BC%9A%E7%9F%9B%E7%9B%BE">之前</a>说过，剥削阶级需要剥削基础，对于统治阶级而言，这个基础是其暴力集团或者说权力，而对于资产阶级而言，这个基础便是货币。货币相比于权力的优点在于，它是不基于暴力的，是低条件的，是普遍认同的。如何理解这三个特点：在资本主义社会，无产阶级可以主动放弃为资产阶级工作而不必被剥削，但是如果他不工作，就无法获得货币，而货币是普遍认同的一般等价物，即生存资源。所以不工作就难以获得生存资源，最终大多数无产阶级仍然会选择工作，尽管资产阶级不通过暴力强制无产阶级接受剥削，但是最终的结果几乎是一样的，大多数无产阶级只能“被主动”剥削。所谓低条件，是相对于组建暴力集团而言的，因为任何人都可以轻易地利用资本去剥削他人。但是货币并不可能完全代替暴力，因为革命的最终形式还是诉诸暴力，并且暴力是凌驾于货币的，或者说权力凌驾于资本，最终导致统治阶级凌驾于资产阶级。类比于社会，如果社会的组织形式不是民主的，就会诞生统治阶级，就会产生统治阶级剥削，那么如果资本的组织形式不是民主的，那就会诞生资产阶级，产生资产阶级剥削。在现代社会，社会的组织形式是国家，而资本的组织形式就是企业，之所以说这些组织形式是不民主的，本质在于这些群体存在一个必须通过损害其他个体的利益来满足最大受限理性的剥削阶级。以公司为例，公司的领导阶层必须想方设法剥削其员工才能满足其最大理性，这也是为什么公司的最终目标是利益最大化，因此员工的利益和公司的利益本质上是不一致的。但是在发达的资本主义国家，这种矛盾已经在无数的斗争和产业进化中逐渐趋于缓和，比如8小时工作制、丰厚的薪酬福利等，这让劳资关系更多地趋于利益交换而不是不平等的单方面剥削，特别是在高附加值的产业。但是这并不意味着剥削不存在，对于中产阶级来说，中产阶级从薪水中获得的理性值要大于他们为别人付出劳动而减少的理性值，那么工作这件事就拥有正的预期理性值。通俗而言，他们的薪水足够他们过上较为优渥的生活，他们愿意用工作去换这种生活，从而不会察觉到剥削的存在。但是只要公司的所有者权益的增长大于公司所有者的实际付出，剥削就是存在的。</p>
+<h3 id="民族企业"><a href="#民族企业" class="headerlink" title="民族企业"></a>民族企业</h3><p>爱国&#x2F;民族企业是国家&#x2F;民族主义和资本主义的“杂交儿”。如果政府宣传这个词，那么就是统治阶级接受资产阶级的利益交换而对资产阶级本质的掩饰。如果是企业自发宣传这个词，那么就是企业利用国家主义情绪对其剥削本质的美化。民族企业情绪本质上还是国家主义情绪，因为个体的理性系统受限于国家理性，如果将国家理性与民族企业理性绑定，那么个体在与企业有关的决定中将赋予民族企业更高的调整系数（相对于非民族企业），最终帮助所谓的民族企业实现利益最大化。对于没有国家主义情绪的个体，民族企业宣传是无意义的。但是民族企业并非毫无正面意义，请参考如何客观看待<a href="#%E5%9B%BD%E5%AE%B6%E4%B8%BB%E4%B9%89">国家主义</a>。</p>
+<h3 id="社会主义"><a href="#社会主义" class="headerlink" title="社会主义"></a>社会主义</h3><p>社会主义是一种为了消除资本主义弊端而设计的社会制度，它倡导计划经济、按劳分配、企业公有化。但是历史上的社会主义尝试几乎都走向了失败，最根本的原因就是它违背了多数人的理性人假设。具体的表现有两点，一点是低生产力下强行实行计划经济和公有化制度，对于个人来说，限制自由，强制劳动、平均主义是违背理性人假设的，那么为什么要强调说低生产力，高生产力的情况下不也是违背的吗？是的，但是高生产力下的社会主义这些都可以不基于强制的。其次，对于公有化制度来说，强制公有化的企业必定是中心化的，中心化意味着国有企业也并不是一个民主的资本组织形式，实际上强制国有化的企业不过是将企业的剥削阶级从资产阶级换成了统治阶级，即国家资本主义。第二点，低生产力下的社会主义制度，必须要一个强有力政府才能施行，否则，根据理性人假设，市场制度会自发地走向自由市场制度，从而走向资本主义。这个强有力的政府必然掌握着强有力的暴力集团，如果这个政府是少数人统治的，那必然会走向专制统治，造成人民和政府的不对等，从而形成不可调和的社会矛盾。我们可以看到，过去构想的社会主义制度都是基于强制的，这不但没有消除资本主义的弊端，反而带来了专制主义。真正的社会主义首先必须在社会的组织层面实现民主，然后才能尝试在资本组织层面实现民主。就像共和制度违背旧统治阶级的理性人假设一样，资本组织层面实现民主肯定是违反旧资产阶级的理性人假设的。而之所以不会有帝制复辟，那是因为共和国家制度已经深入人心。所以，如果我们要实现“共和公司”制度，就要让这种制度深入人心，让资本在组织之初就是共和的。而对于旧的资本组织形式，要逐渐通过改革变成员工共和制度，而不是国有制度。目前在发达的资本主义国家，已经诞生了民主    公司的<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1vf4y1F7E8">萌芽</a>。</p>
+<h3 id="社会变革"><a href="#社会变革" class="headerlink" title="社会变革"></a>社会变革</h3><p>革命有时会带来制度的革新，有时不过是开始新的轮回。这取决于革命者是以消除旧的社会制度还是以消灭旧的统治阶级为目的，前者会诞生新的社会制度，后者不过是诞生新的统治阶级。那么革命的动机又取决于什么呢？当革命者普遍意识到旧社会的弊端，并且拥有构建新社会的理论基础时，才会带来新的社会制度。其中，生产力的发展是最大的驱动力，因为旧的社会制度限制了个体因为生产力发展而增长的理性，新兴的既得利益阶级会很快意识到这种限制并构想一个没有这种限制的新社会。而对于那种因为统治阶级剥削而导致被统治阶级的理性严重受限而不得不发动的革命，革命者并不具备对社会制度的认识，只有对统治阶级的认识，更不具备理论基础。这一点也可以用于解释，为什么中国历史上封建帝制具有如此强大的惯性，因为从秦朝开始中国两千年中大大小小的革命，并没有任何一场革命是因为生产力的发展引起的，革命只是诞生了新的皇帝，帝制又会反过来抑制人的自由、剥夺人的私有财产、限制生产力的发展，从而在如此的混沌泥淖中轮回。</p>
+<h2 id="性别机制-Gender-Mechanism"><a href="#性别机制-Gender-Mechanism" class="headerlink" title="性别机制 Gender Mechanism"></a>性别机制 <em>Gender Mechanism</em></h2><blockquote>
+<p>人类社会除了最基本的阶级矛盾，还存在长久以来的性别矛盾，性别矛盾的本质是什么？是否为不可调和的矛盾？我们从性别机制说起。</p>
+</blockquote>
+<h3 id="变异机制"><a href="#变异机制" class="headerlink" title="变异机制"></a>变异机制</h3><blockquote>
+<p>注意我们讨论的变异是可遗传性变异，以下都简称为变异</p>
+</blockquote>
+<p>基因在复制过程中存在随机变异这是遗传学所公认的基本事实之一，我们在之前用到过这个词，但是并未解释过变异究竟是什么。很多人可能会认为，变异是基因基本的物理&#x2F;化学特性，是基因的天然属性。但我不认为是这样，基因在复制过程中会变异，这是一种被保留的理性。可以想象的是，“原始汤”中的某种物质，或者说是基因的前身，就已经具备自我复制的能力，但是并不具备表达的能力，所谓表达就是将基因表达为蛋白质。在无数次的穷举式的化学反应中，这种表达机制初具雏形，这种表达机制让基因可以生成蛋白质外壳保护自己，从而更稳定地复制自己，所以这种表达机制也是符合基因理性的。在此之前，基因的变异即使有也是无意义的，因为变异只是在碱基对层面的增减重组，不会对基因的化学性质产生影响。但是表达机制诞生后，这种变异机制就变得有意义了：变异的基因会表达出不同的蛋白质外壳，不同的蛋白质具有不同的特性，这些特性有的是不符合基因理性的，有的是中性的，有的更符合基因理性，那些更符合基因理性的变异就会持续存在并扩大存在规模，那么变异这个特性便会一直保留下来。变异作为基因理性之一，变异会在不影响基因增殖机制的前提下在最大的程度上发生。</p>
+<h3 id="性别起源"><a href="#性别起源" class="headerlink" title="性别起源"></a>性别起源</h3><p>可以想象，基因在诞生之初只存在自我复制这一种形式，这种形式也可以叫做无性增殖（在基因层面我们不使用“繁殖”一词）。如今世界上仍然有如此多的物种保持原始的无性繁殖方式，我们可以认为，基因的无性增殖过程所发生的变异已经足够基因适应外在环境存在至今。但是我们说过，变异会在不影响基因增殖机制的前提下在最大的程度上发生，有性增殖便是一种最大程度的变异行为，因为有性增殖可以让两个个体的基因重组成另一个，并且不影响增殖（当然也有异常的重组导致增殖失败的个例），可见有性增殖是比无性增殖更符合基因理性的一种增殖方式。可以想象的是，在有性增殖诞生之初，并不存在性别之分，只是简单地在两个个体之间进行同源染色体的重组，即使到今天，仍然有许多有性繁殖的生物几乎不存在性别之分。那么性别究竟是如何诞生的呢？毫无疑问，性别机制肯定比无性别机制更符合基因理性才能诞生并存在至今的。作为拥有性别机制的人类，我们可以发现异性个体之间会有互相吸引的关系（在生物界可能仅仅是一方吸引另一方），而这种吸引关系能让个体更有动机去繁殖。但是这种吸引关系又从何而来？其实这种吸引关系本质上来源于繁殖的奖励机制，即性快感。性快感的来源很容易解释，个体的突变导致某次无性生殖产生了微弱的奖励机制，因为这种奖励机制更符合基因理性，便被遗传并不断地在变异中加强。最后形成了生理结构差异较大的两种个体，这两种个体的生理差异的本质作用就是让繁殖过程产生快感，这便是性别的由来，也是第一性征的由来。</p>
+<h3 id="有性繁殖选择"><a href="#有性繁殖选择" class="headerlink" title="有性繁殖选择"></a>有性繁殖选择</h3><p>在如今的自然界中，我们可以发现，很多有性繁殖的生物，并不是简单地通过随机交配进行繁殖，而是定向地有选择地进行，我们将有性繁殖生物定向地选择配偶进行交配的机制叫做有性繁殖选择。例如某些鸟类中的雌性喜欢选择羽毛颜色较为鲜艳，鸣叫声较为响亮的雄性；狮群中最为强壮的雄狮拥有优先交配权而人类也会根据外貌、身材、性格等因素选择配偶。这种机制从何而来？可以想象的是，原始的有性繁殖并不存在这一选择机制，即使到现在也有许多生物（如爬行类）没有这个机制。在这种选择机制下，那些更符合选择条件的个体的基因会遗传下去，而那些不符合选择条件的基因会被淘汰。这和我们之前说过的自然选择、群体选择、个体选择的机理是一样的，这说明这些选择条件都是符合基因理性的，实际上有性繁殖选择是它们的具体表现。比如动物普遍喜欢选择体型较为强壮的个体作为配偶，因为这种个体能更好地适应环境。但是我们可以发现有一些选择条件似乎和自然选择没有关系，比如雌鸟喜欢羽毛鲜艳的雄鸟，人类喜欢容貌俊丽的异性，这些特性似乎并不能帮助个体更好地适应环境。这是因为，这些物种对于环境的适应能力已经远远超过了环境的选择能力，几乎所有的个体都能很好地适应环境，这也是为什么这种选择通常只发生在较为高级的物种上，比如鸟类和哺乳类。这样的话，一些外表上的差异也能形成选择条件，比如鸟类鲜艳羽毛和响亮的鸣叫声能在视觉和听觉上更有标志性，便更能吸引到异性的关注。而对于人类的外观，那些外观端正的个体则比那些外观不端正的个体更能受到异性的偏爱。</p>
+<h3 id="子宫对雌性的异化-Alienation-of-Womb-to-Female"><a href="#子宫对雌性的异化-Alienation-of-Womb-to-Female" class="headerlink" title="子宫对雌性的异化  Alienation of  Womb to Female"></a>子宫对雌性的异化  <em>Alienation of  Womb to Female</em></h3><p>生物界中最高级的动物哺乳动物普遍采用胎生的形式，这也意味着，胎生更符合基因理性，因为胎儿在子宫中完成生命最为脆弱也是最为重要的发育过程，这个过程被母体保护，就能大大提高幼体的存活概率。但是实际上，卵生动物通过大量排卵也能提高存活数，所以这种繁殖方式并没有被淘汰。在哺乳动物界，我们把拥有子宫的一方称为雌性，雌性负责生育。但是我们不禁会好奇，为什么不能是雄性负责生育，或者为什么不能是双方都负责生育？那是因为目前存在的性奖励系统是不平等的，即外生殖器的不平等，现行的这种设计下，必然存在某一方释放遗传物质，在另一方体内完成遗传物质的重组，那么后者就必然会存在子宫，或者类似于子宫的机构，否则有性繁殖就无法进行。子宫保证了基于性奖励的有性繁殖，也保证了幼体的存活概率。但是子宫的存在也给雌性带来的巨大的负担，比如生理结构上的牺牲、月经的负担、妊娠的负担等等，尽管这些牺牲对于女性个体而言是违背个体理性的，但是对于人类群体，这是符合群体理性的，所以能一直存在至今。因为子宫的存在，雌雄才开始真正产生差异。对于人类而言，雌性因为月经的存在，不能像雄性一样常年劳作，其次雌性在孕期不能劳作，分娩后，身体机能也需要大量时间恢复。这就导致了，在原始社会，男性成为了生存资料的生产主力，女性则负责生育和相对轻松的劳动。因为这种分工是有利于人类群体延续的，这种分工便会延续下去，可能是通过意识代代相传，也可以通过有性繁殖选择在基因上进行筛选。比如，那些强壮的更适合劳动的雄性就会更受雌性的青睐，雌雄在体力方面就渐渐地形成差距。但是实际上，雄性也会选择雌性，在原始社会，同样的强壮的雌性可能更受欢迎，因为雌性也能帮助生产生存资料。但是随着社会生产力的发展和男女分工的精细化，雄性对雌性在体力上的选择逐渐变弱，而对外表的选择逐渐加强。</p>
+<h3 id="母系社会和父系社会"><a href="#母系社会和父系社会" class="headerlink" title="母系社会和父系社会"></a>母系社会和父系社会</h3><p>因为人类雌雄生理上的差异，雄性可以不用担负育儿的责任，而雌性则不然：一是婴儿来自于母体，刚出生的婴儿可以确定其母系而不能确定其父系，二是雌性基于基因理性会照顾婴儿，那么母系社会很自然地就形成了。在母系社会中，个体依据母系的血缘关系而形成氏族，而父系的血缘关系是不必要的。但是母系社会的缺点在于，雄性不用担负育儿的责任，只依靠雌性，幼体的存活概率会大大降低。这样的话，那些更具有育儿意向的雄性便更能延续其基因，便会形成一个雌性和雄性共同育儿的群体，也叫做家庭。家庭形成后，个体的父系和母系都得以确定，母系的血缘关系和父系的血缘关系共同维系着这个家庭。家庭形成后，雌雄双方便拥有了稳定的性伴侣，这对于整个人类群体而言是符合基因理性，所以家庭这种形式也得以延续。但是，家庭的形成也让母系社会逐渐瓦解，因为雌雄在暴力上相对于雌雄有优势，雄性在家庭中自然而然地拥有了更大的权力，这也造成了父系血缘关系和母系血缘关系的不平等，曾经象征母系血缘关系的“氏”也被象征父系血缘关系的“姓”所取代，这便是父系冠姓权的由来。当维系个体的血缘关系从父系母系变为父系，母系社会也就土崩瓦解，父系社会便诞生了。</p>
+<h3 id="婚姻制度"><a href="#婚姻制度" class="headerlink" title="婚姻制度"></a>婚姻制度</h3><p>父系社会来源于家庭的诞生，因为雄性在家庭内可以依据其暴力上的优势凌驾于雌雄之上，这对于雌雄而言是不利的。但是这基于一个前提，那就是家族不可以随意重组，如果在一个家庭可以随意重组的社会，那么雄性的这种优势便会大幅削弱，因为雌性可以自由选择雄性组成家庭以尽可能免于处于不利地位。但是，显然我们并没有发展出这样一个社会。因为雄性会基于其理性个体假设，为了获得最高的理性值，便会凭借其暴力优势，强制与雌性签订契约，这个契约便是婚姻。当这个契约受到群体的认可后（尽管雌性可能是被动认可），婚姻制度便成为群体理性之一，所有人的个体理性都会受限于婚姻制度，否则就会遭到群体的淘汰。所以，婚姻制度是一种对于父系社会的维系制度。伴随着婚姻制度的诞生，也诞生了雄性对于雌性贞洁的渴求，也叫做贞洁观。贞洁观是父系社会的婚姻制度下对于女性不平等的一种群体理性，这种观念要求女性要尽可能保持一个性伴侣，不守贞节的雌性会被群体所淘汰，那么受限于这种群体理性下的雌性个体便会尽可能保持贞洁，这样便能阻碍家庭&#x2F;婚姻的自由重组，最终维护了父系社会。但是我们不禁疑问，如果婚姻制度对于雄性是有利的，为什么历史上许多地位较高财富较多的雄性都不会选择婚姻，或者较晚结婚？而那些王侯将相则根本无视婚姻制度？那是因为婚姻不只是限制了雌性，也限制了雄性，它让结婚的双方彼此保持稳定的性关系。但是基于理性人假设，对于那些拥有较大受限理性值的雄性，不受婚姻限制的性自由显然比稳定单一的性关系拥有更高的理性值，所以他们不会选择较早结婚。而对于那些拥有较小受限理性的雄性（自身条件较差），拥有稳定的性关系已经满足了其最大受限理性，他们就会选择结婚并且愿意维持婚姻关系。而对于古代的帝王将相，他们拥有的暴力足以让他们免受破坏婚姻制度所带来的群体淘汰，所以他们可以自由突破婚姻制度而不必担心被淘汰。</p>
+<h3 id="性别矛盾的本质"><a href="#性别矛盾的本质" class="headerlink" title="性别矛盾的本质"></a>性别矛盾的本质</h3><p>现在我们可以对性别矛盾的本质做一个总结：雌性与雄性的不平等来源于父系社会，而父系社会来源于母系社会的缺陷，母系社会的缺陷来源于子宫对于雌性的异化，而子宫来源于性奖励机制的不平等，这种性奖励机制来源于有性繁殖，而有性繁殖本质上是最大的可能的变异，而变异来源于基因理性，基因理性来源于其存在形式。我们有点需要讨论的是，性奖励机制的不平等并非是因为有性生殖，而是源于有性生殖，这意味着可能存在着一种平等的性奖励机制，但是在我们的世界，这种不平等的机制显然能创造最大的奖励，所以这种机制保留了下来。那么，性别矛盾是否是一种不可调和的矛盾呢？不可调和意味着一方为满足其最大受限理性，必须限制另一方的最大受限理性，并且这种矛盾只能通过革命解决。显然，性别矛盾并不是这样的一种矛盾，尽管雄性可能会侵害雌性的利益来满足其理性人假设，但是这种矛盾不像统治阶级于被统治阶级的矛盾发生在一个特定的群体内部，雄性与雌性组成的是整个人类群体，这意味着如果另一方发起革命消灭另一方，整个人类群体都将不复存在，这是不符合群体理性的。所以，这种侵害不是必须的，或者浪漫地说，雌雄双方在基因上永远爱着对方。</p>
+<h3 id="现代社会的性别矛盾"><a href="#现代社会的性别矛盾" class="headerlink" title="现代社会的性别矛盾"></a>现代社会的性别矛盾</h3><p>现代社会的性别矛盾主要来自于两个方面：一是遗留的父系社会中的一些对女性的不利的制度，比如男性优先冠性权、婚姻对于女性和男性的不平等、贞洁观对于女性的束缚等；二是因为直接的生理差异而导致的不平等。对于那些来源于父系社会遗留的落后制度，我们是可以改进甚至去除的，因为父系社会源于母系社会的弊端，即雌性单独抚育幼体的存活率较低，但是在现代社会，已然没有这个问题。比如对于冠姓制度，婴儿的冠姓权可以由夫妻双方协商。如果女性认为孩子发肤于自己，理应获得冠姓权，男性应该理解这个想法，因为母系社会就是这样诞生的，她们可以争取这样的权力。第二，对于婚姻制度的改进，尽管婚姻制度会同时限制男性和女性，但是由于男性在暴力上或者获取生存资料的能力上要强于女性，所以男性在婚姻中要处于优势地位<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="这只是一个统计意义上的说法，并不是一定的，某些婚姻中女性可能要强势于男性。
+">[2]</span></a></sup>，并且受到婚姻的束缚较少，对于这种制度的改进，我们要在婚姻制度上束缚男性，并且允许自由的离婚制度，并且这种制度要在一定程度上优待女性。那么我们能否取消婚姻制度？取消婚姻制度意味着取消家庭，也意味着男性和女性都可以获得性自由，对于男性来说这种性自由是无责任的，而对于女性来说，如果她们选择避孕，那么同样是无责任的，否则女性就需要单独抚养婴儿。如果女性考虑到生老病死等预期的低理性值事件，那么她们大概率还是会选择独自抚育婴儿，那么婚姻对于女性而言不是必须的。对于男性来说，他们同样要考虑生老病死，所以他们会比女性更渴望婚姻，如果女性集体反抗婚姻，那么就会爆发性别革命，由于男性在暴力上的优势，最终还是会回归婚姻制度。除此之外，人除了有生理需求还有心理需求，男女大概率还是会在一起组成家庭，而这种心理需求是排他的，即个体不希望自己的伴侣拥有多个其他伴侣，那么这种内驱力也会逐渐驱动契约的形成，最后促成婚姻制度，第三婚姻制度以及作为社会理性，在人类社会存在了几千年，想要一时去除这种制度，代价是非常大的。如果要彻底消灭婚姻制度，那么可能的实现有：女性普遍拥有单独抚育婴儿长大的能力，社会保障制度可以确保男性不需要育儿也能防老并且男性和女性都可以获得稳定的心灵伴侣，也许我们会等到这一天，但不是现在。第三，对于贞洁观的女性的束缚，这种观念不应该只束缚女性或者只放行女性。男性和女性要享受同等的贞洁观，不管是自由的贞洁观还是保守的贞洁观。当然，我们之前说到那些措施都是站在中性的角度的，如果站在任何一方性别考虑，根据理性人假设，都必然要侵害另一方的利益以让自己的理性得到满足。因此，最重要的一点，就是要向全社会灌输男女平等的社会理性，基于群体受限下的个体理性原理，这种社会理性可以让个体的理性系统为性别双方考虑。我们目前只考虑到了制度上的不平等，而有一些不平等是难以消除的，那些不平等直接<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="我们需要限定词“直接”，因为理论上所有男女的不平等本质上都来自于生理上的不平等。">[3]</span></a></sup>来自于男女生理上的不平等。这类的不平等应当尽量予以缓解但是难以消除，比如男女体力上的不平等，男女思维方式上的不平等等。对于这样的不平等，我们只能力求相对的平等，而不能要求绝对的平等。比如对于某些体力劳动，男性的薪酬通常要高于女性，这是因为男性在体力上具有优势，而不是因为优待男性，如果让男性和女性拥有相同的薪酬，那是对女性的优待而不是平等，我们只能尽量要求单位体力的薪酬相同。</p>
+<h2 id="终极问题"><a href="#终极问题" class="headerlink" title="终极问题"></a>终极问题</h2><p>我们的理论从存在到基因，从基因到生物个体，然后扩展到个人，再推广到群体和人类社会。可见这一切的源头都来自存在，我们都默认了存在是不可辩驳的事实，如果存在被推翻，那么我们的理论一文不值。那么存在究竟是什么？存在是否是一个不可辩驳的事实？</p>
+<p>冬天从我们口中呼出的雾气，转瞬即逝；花鸟鱼虫，在四季中轮回；河流能流淌千年；太阳能燃烧亿万年。尽管他们存在有长短，但是他们都存在，因为我们都能观测到，而所有的不存在都是因为我们没法观测到它存在的证据。那么存在是否是基于观测呢？存在是否基于我们的意识？那么自我意识的存在是不是一切存在的基础？最终，我们还是回到了哲学的终极问题。</p>
+<p><em>“存在和意识之间究竟是什么关系？”</em></p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">有了理性这个词，我们就可以将无意识的被动选择表述为被选择物有意识的主动适应，这种表述更方便且便于理解，我们在后面的论述中会普遍这样表述。<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">这只是一个统计意义上的说法，并不是一定的，某些婚姻中女性可能要强势于男性。<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">我们需要限定词“直接”，因为理论上所有男女的不平等本质上都来自于生理上的不平等。<a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div><!-- flag of hidden posts -->
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                        
+                            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />本作品采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="http://www.xjunz.top/post/RationalExistence/">http://www.xjunz.top/post/RationalExistence/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #ff4e58;
+            text-shadow: 0;
+            display: none
+        }
+</style>
+	
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button>
+</div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://www.xjunz.top/post/RationalExistence/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://www.xjunz.top/post/RationalExistence/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//www-xjunz-top.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//www-xjunz-top.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script>
+  	
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="xjunz's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        1409122313@qq.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:1409122313@qq.com" target="_blank" title="Mailto">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Mailto
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Android-Dev/">Android Dev<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android-UI-UX/">Android UI/UX<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline" title="时•光">
+                
+                    <i class="material-icons sidebar-material-icons">history</i>
+                
+                时•光
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags/trite" title="牙慧">
+                
+                    <i class="material-icons sidebar-material-icons">book</i>
+                
+                牙慧
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/gallery" title="画廊">
+                
+                    <i class="material-icons sidebar-material-icons">local_florist</i>
+                
+                画廊
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">5</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+    <a href="mailto:ibh@live.com" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.help
+        <span class="mdl-button__ripple-container">
+          <span class="mdl-ripple"></span>
+        </span>
+      </div>
+    </a>
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/xjunz" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+        <a href="https://space.bilibili.com/124677178" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
+                <span class="visuallyhidden">Bilibili</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Telegram -->
+    
+        <a href="https://t.me/xjunz" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
+                <span class="visuallyhidden">Telegram</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Me, xjunz's blog
+            
+                <br>
+                
+                    <b>The confession of an average man</b>
+                
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/bollnh/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#ff4e58'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #ff4e58, 0 0 15px #ff4e58'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#ff4e58',
+        'border-left-color': '#ff4e58'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
+
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
+        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+        messageStyle: "none"
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+    <script src="https://cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+<!-- Bing Background -->
+
+<script type="text/ls-javascript" id="Bing-Background-script">
+    queue.offer(function(){
+        $('body').attr('data-original', 'https://api.i-meto.com/bing?S');
+    });
+</script>
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+    
+        
+    
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2019;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
