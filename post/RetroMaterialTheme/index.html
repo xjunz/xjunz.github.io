@@ -84,7 +84,7 @@
     <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
 
     <!-- Import CSS -->
-    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?9Ek1IaWYyaMzGQpPQlUepA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?d684e0/w9qXktWXInVp03g==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
@@ -271,7 +271,7 @@
 
     
         <meta property="article:published_time" content="Tue Mar 29 2022 18:31:07 GMT+0800">
-        <meta property="article:modified_time" content="Sat Apr 02 2022 07:34:34 GMT+0800">
+        <meta property="article:modified_time" content="Tue Apr 05 2022 01:59:19 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -294,7 +294,7 @@
     "mainEntityOfPage": "http://www.xjunz.top/post/RetroMaterialTheme/index.html",
     "headline": "Material主题个性化改造",
     "datePublished": "Tue Mar 29 2022 18:31:07 GMT+0800",
-    "dateModified": "Sat Apr 02 2022 07:34:34 GMT+0800",
+    "dateModified": "Tue Apr 05 2022 01:59:19 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "xjunz",
@@ -539,14 +539,14 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
             
-         <h1 id="Material主题改造-Intro-to-Retro-Material"><a href="#Material主题改造-Intro-to-Retro-Material" class="headerlink" title="Material主题改造 | Intro to Retro Material"></a>Material主题改造 | Intro to <em>Retro Material</em></h1><h2 id="提要"><a href="#提要" class="headerlink" title="提要"></a>提要</h2><blockquote>
+         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="Material主题改造-Intro-to-Retro-Material"><a href="#Material主题改造-Intro-to-Retro-Material" class="headerlink" title="Material主题改造 | Intro to Retro Material"></a>Material主题改造 | Intro to <em>Retro Material</em></h1><h2 id="提要"><a href="#提要" class="headerlink" title="提要"></a>提要</h2><blockquote>
 <p><strong>Material</strong>主题已经若干年没有维护了，虽然还能用，但是<strong>Material 1</strong> 的设计现在看来已然过时。奈何翻了一圈主题商店，都没有找到心仪的主题，反而觉得还是<strong>Material</strong>越看越顺眼。为了跟上时代潮流，我决定亲手改造这个主题。可是，我根本没有任何前端知识，一切从零开始。不过幸运的是，在我的朋友 <strong>@Haleclipse</strong> 的帮助下，我较快地上手了<strong>CSS</strong>，并且完成了第一轮改造。</p>
 </blockquote>
 <h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>将较老式的<strong>Material 1</strong>主题改成<strong>MD2</strong>或<strong>MDU</strong>样式，并且尽可能减少对原有代码的入侵，尽可能不引入第三方样式库。这个新的主题，我美其名曰 🙌 <em><strong>Retro Material</strong></em></p>
 <h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="/post/RetroMaterialTheme/preview1.webp" alt="img"></p>
 <img src="/post/RetroMaterialTheme/preview2.webp" alt="img">
 
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>代码较长，暂不贴出。您可在<a href="./xjunz-mod.css">这里</a>查看或下载<em><strong>Retro Material</strong></em>主题<strong>CSS</strong> (2022-3-29) 补丁。</p>
+<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>代码较长，暂不贴出。您可在<a href="/css/xjunz-mod.css">这里</a>查看或下载<em><strong>Retro Material</strong></em>主题<strong>CSS</strong> (2022-3-29) 补丁。</p>
 <p><strong>使用协议</strong>：如果您使用了此补丁，请在博客内第三人可见处注明本文链接，否则将被视为侵权行为。</p>
 
         
