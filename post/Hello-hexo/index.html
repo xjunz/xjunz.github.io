@@ -578,7 +578,7 @@ hexo d
 <pre><code class="yaml">post_asset_folder: true
 </code></pre>
 <p>这个插件的作用有两个：一是当我们用 <code>hexo new post</code>新建文章的时候，它会自动在这个文章的同级目录下新建一个和文章同名的目录，用于存放资源。这样，我们在Typora中配置图片插入的方式为<code>./$&#123;filename&#125;</code>就可以了（<strong>别忘了勾选优先使用相对路径</strong>），这个操作一下解决了上面那个方案的两个问题。但是问题是，我们之所以会有上面那个方案，是因为主题目录下的<code>img</code>目录渲染的时候会被复制到<code>public</code>目录里，最后部署到远端，而现在这个方式单纯建立一个目录，渲染的时候是会被忽略的。这就是这个模块的第二个作用，帮我们把这个资源目录也复制到<code>public</code>目录下，并且将图片的路径转为web上的绝对路径，现在可算两全了。</p>
-<h4 id="头图的特殊处理"><a href="#头图的特殊处理" class="headerlink" title="头图的特殊处理"></a>头图的特殊处理</h4><p>对于文章的头图，即文章<code>front matter</code>配置中的<code>thumbnail</code>字段，我们不能像在文章中一样使用<code>./&#123;filename&#125;/xxx.jpg</code>这样的相对路径因为头部的<code>yaml</code>被渲染后是保持不变的，图片的位置不会已经不再是那个相对路径了，而且这个头图会在预览和详细两个页面都显示，所以使用相对路径肯定是不行的，我们只好手动改成绝对路径，格式为<code>/hexo配置中的permalink/xxx.jpg</code>。</p>
+<h4 id="头图的特殊处理"><a href="#头图的特殊处理" class="headerlink" title="头图的特殊处理"></a>头图的特殊处理</h4><p>对于文章的头图，即文章<code>front matter</code>配置中的<code>thumbnail</code>字段，我们不能像在文章中一样使用<code>./&#123;filename&#125;/xxx.jpg</code>这样的相对路径因为头部的<code>yaml</code>被渲染后是保持不变的，图片的位置不会已经不再是那个相对路径了，而且这个头图会在预览和详细两个页面都显示，所以使用相对路径肯定是不行的，我们只好手动改成绝对路径，格式为<code>/&#123;permalink&#125;/xxx.jpg</code>。</p>
 <h3 id="使用MathJax"><a href="#使用MathJax" class="headerlink" title="使用MathJax"></a>使用MathJax</h3><p><strong>MathJax</strong>可以让我们在markdown中使用并渲染公式。首先打开主题的的<code>_config.yml</code>，配置：</p>
 <pre><code class="yaml">mathjax: https://cdn.bootcss.com/mathjax/2.7.1/latest.js
 </code></pre>
