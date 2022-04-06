@@ -154,6 +154,13 @@ p.article-headline-p {
 
 /**********************POST CONTENT*****************************/
 
+/* pin footer to the bottom of viewport */
+.material-layout__content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
 /* add extra margin-right to this button */
 #article-functions-qrcode-button {
