@@ -271,7 +271,7 @@
 
     
         <meta property="article:published_time" content="Mon Mar 28 2022 01:50:00 GMT+0800">
-        <meta property="article:modified_time" content="Sat Apr 02 2022 07:33:59 GMT+0800">
+        <meta property="article:modified_time" content="Wed Apr 06 2022 22:49:56 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -294,7 +294,7 @@
     "mainEntityOfPage": "http://www.xjunz.top/post/Android-Return-Transition-Patcher/index.html",
     "headline": "Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究",
     "datePublished": "Mon Mar 28 2022 01:50:00 GMT+0800",
-    "dateModified": "Sat Apr 02 2022 07:33:59 GMT+0800",
+    "dateModified": "Wed Apr 06 2022 22:49:56 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "xjunz",
@@ -539,7 +539,7 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
             
-         <h1 id="Android-10-及以上，-Shared-Element-Return-Transition在特定情况下失效的问题探究"><a href="#Android-10-及以上，-Shared-Element-Return-Transition在特定情况下失效的问题探究" class="headerlink" title="Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究"></a>Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究</h1><blockquote>
+         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="Android-10-及以上，-Shared-Element-Return-Transition在特定情况下失效的问题探究"><a href="#Android-10-及以上，-Shared-Element-Return-Transition在特定情况下失效的问题探究" class="headerlink" title="Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究"></a>Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究</h1><blockquote>
 <p>文章可能存在错误或疏漏，欢迎批评斧正…</p>
 </blockquote>
 <h2 id="复现"><a href="#复现" class="headerlink" title="复现"></a>复现</h2><p><strong>复现方式</strong>：<strong>Activity A</strong>通过<code>(Shared Element) Enter Transition</code> 进入<strong>Activity B</strong>, 在<strong>Actitivty B</strong> 内进入另一个<strong>Activity</strong>（APP内或其他APP都行），然后回到<strong>Activity B</strong>，点击返回键</p>
@@ -549,16 +549,16 @@
 <h2 id="切入"><a href="#切入" class="headerlink" title="切入"></a>切入</h2><p>其实很久以前就发现了这个问题，但是一直没有实际去解决，因为这个BUG的影响并不是很大。在搜索引擎上，国内外许多人也遇到了相同的问题，可是看起来大家都很忙，并没有人提供一个特别好的解决方案。不巧我今天正好又遇到了，而且有点闲暇时间，便决定去一探究竟。</p>
 <p>切入点很好找，当我们点击返回键时，就会走<code>finishAfterTransition</code>以执行<code>Transition</code>动画，那么就从这里入手：</p>
 <p><img src="/post/Android-Return-Transition-Patcher/image-20220327022215849.png" alt="image-20220327022215849"></p>
-<p>很明显在异常情况下<code>startExitBackTransition</code>返回了<code>false</code>。点这个方法，进入到<code>android.app.ActivityTransitionState</code>类中（<strong>注</strong>：以下所有图片中的代码若未说明都来自这个类）：</p>
+<p>很明显在异常情况下<code>startExitBackTransition()</code>返回了<code>false</code>。点这个方法，进入到<code>android.app.ActivityTransitionState</code>类中（<strong>注</strong>：以下所有图片中的代码若未说明都来自这个类）：</p>
 <p><img src="/post/Android-Return-Transition-Patcher/image-20220327022518986.png" alt="image-20220327022518986">通过断点调试发现正常情况和异常情况的区别在于<code>getPendingExitNames()</code>是否为<code>null</code>：如果它为<code>null</code>，该方法就会返回<code>false</code>，那么<code>Transition</code>就不会执行。这个方法里的逻辑很简单，就是懒加载并返回了<code>mPendingExitNames</code>这个成员变量：</p>
 <p><img src="/post/Android-Return-Transition-Patcher/image-20220327022714802.png" alt="image-20220327022714802"></p>
 <p>还是通过断点发现，正常和异常情况的区别在于<code>mEnterTransitionCoordinator</code>是否为<code>null</code>，异常情况下这个变量为<code>null</code>，导致<code>mPendingExitNames</code>无法初始化，从而返回<code>null</code>。那么我们的思路就是找到何时<code>mEnterTransitionCoordinator</code>被置空。代码里有多处置空的地方，但是鉴于异常情况只有在<code>Activity</code>切换出去以后才会发生。那么，最可疑的地方莫过于<code>onStop</code>方法里面的置空处理：</p>
 <p><img src="/post/Android-Return-Transition-Patcher/image-20220327022929123.png" alt="image-20220327022929123">验证之后，问题就明了了：正常情况下，<code>getPendingExitNames</code>会初始化<code>mPendingExitNames</code>。但是异常情况下，由于走了<code>onStop</code>，<code>mEnterTransitionCoordinator</code>被置空，导致<code>mPendingExitNames</code>始终无法初始化最终导致了这个BUG。</p>
-<h2 id="安卓10之前？"><a href="#安卓10之前？" class="headerlink" title="安卓10之前？"></a>安卓10之前？</h2><p>但是为什么在安卓10之前没有这个问题呢？我们看一下源码的修改记录，发现了一条可疑的commit: <a target="_blank" rel="noopener" href="https://cs.android.com/android/_/android/platform/frameworks/base/+/d85bed510fd1aad7f5d764b9fb6ddfea3e5bb56e">d85bed5</a> ，我们看一下此commit对<a target="_blank" rel="noopener" href="https://cs.android.com/android/_/android/platform/frameworks/base/+/d85bed510fd1aad7f5d764b9fb6ddfea3e5bb56e:core/java/android/app/ActivityTransitionState.java;dlc=67f94b40024e07e64fd2875b7382b762805bebae"><code>android.app.ActivityTransitionState</code></a>这个类的修改：</p>
+<h2 id="安卓10之前？"><a href="#安卓10之前？" class="headerlink" title="安卓10之前？"></a>安卓10之前？</h2><p>但是为什么在安卓10之前没有这个问题呢？翻阅源码的修改记录，我发现了一条可疑的commit: <a target="_blank" rel="noopener" href="https://cs.android.com/android/_/android/platform/frameworks/base/+/d85bed510fd1aad7f5d764b9fb6ddfea3e5bb56e">d85bed5</a> 。我们看一下此commit对<a target="_blank" rel="noopener" href="https://cs.android.com/android/_/android/platform/frameworks/base/+/d85bed510fd1aad7f5d764b9fb6ddfea3e5bb56e:core/java/android/app/ActivityTransitionState.java;dlc=67f94b40024e07e64fd2875b7382b762805bebae"><code>android.app.ActivityTransitionState</code></a>这个类的修改：</p>
 <p><img src="/post/Android-Return-Transition-Patcher/image-20220327024045779.png" alt="image-20220327024045779"></p>
-<p>这个提交对这个类的修改在逻辑上的改动不大，主要修改就是成员<code>mEnteringNames</code>在语义上改为<code>mPendingExitNames</code>，本质上就是储存进入退出的共享元素的<code>Transition Name</code>的列表。关键在于，他将<code>mPendingExitNames</code>的获取方式变成了<code>getPendingExitNames()</code>方法来懒加载。而在安卓9的源码中，<code>mEnteringNames</code>会在<code>startEnter</code>方法中就被初始化，并且只会在<code>clear</code>方法中清空，那么此变量在整个<code>Acitivity Transition</code>的生命周期中始终是可用的，所以安卓10以前没有这个问题。</p>
+<p>这个提交对这个类的修改在逻辑上的改动不大，主要修改就是成员<code>mEnteringNames</code>在语义上改为<code>mPendingExitNames</code>，本质上还是储存进入退出的共享元素的<code>Transition Names</code>的列表。关键在于，他将<code>mPendingExitNames</code>的获取方式变成了<code>getPendingExitNames()</code>方法来懒加载。而在安卓9的源码中，<code>mEnteringNames</code>会在<code>startEnter</code>方法中就被初始化，并且只会在<code>clear</code>方法中清空，那么此变量在整个<code>Acitivity Transition</code>的生命周期中始终是可用的，所以安卓10以前没有这个问题。</p>
 <p>但是我们不禁疑问，谷歌程序员真的会犯这样的错误吗？继续看上面代码的第<strong>154</strong>行的<code>saveState</code>方法，这个方法会在<code>Acitivty.onSaveInstance()</code>中调用。因为<code>onSaveInstance</code>会在<code>onStop</code>之前调用，那么实际上<code>onStop</code>之前<code>mPendingExitNames</code>就会被初始化，所以…理论上…Android 10上的代码也是没有问题的，🤔怎么会是呢？</p>
-<p>通过断点发现，实际上<code>onSaveInstance</code>在<code>onStop</code>之后调用了，所以<code>mPendingExitNames</code>保存了个寂寞。查阅文档发现，原来<code>onSaveInstance</code>在安卓9有行为变更：</p>
+<p>通过断点发现，实际上<code>onSaveInstance</code>在<code>onStop</code>之后调用了，所以<code>mPendingExitNames</code>保存了个寂寞。查阅文档才知道，原来<code>onSaveInstance</code>在安卓9有行为变更：</p>
 <p><img src="/post/Android-Return-Transition-Patcher/image-20220327160844844.png" alt="image-20220327160844844"></p>
 <p>显然，那位代码贡献者并没有考虑到这一变更，所以这才是罪魁祸首~</p>
 <h2 id="补丁代码"><a href="#补丁代码" class="headerlink" title="补丁代码"></a>补丁代码</h2><h3 id="反射式"><a href="#反射式" class="headerlink" title="反射式"></a>反射式</h3><p>既然已经知道了问题所在，那么解决方法便呼之欲出了。解决方法很简单，在<code>onStop</code>前，我们调用至少一次<code>saveState</code>对<code>mPendingExitNames</code>进行初始化，这个方法是无副作用的，我们可以放心调用。但是<code>onStop</code>之前有很多时机，我们要确保<code>mEnterTransitionCoordinator</code>已经初始化。搜索发现，<code>mEnterTransitionCoordinator</code>初始化的地方在<code>enterReady(Activity)</code>中，而这个方法在<code>Activity.onStart()</code>中调用的，那么我们在<code>Activity</code>的<code>onStart</code>和<code>onStop</code>之间打补丁就行了：</p>
@@ -588,7 +588,7 @@ fun patchActivity(activity: Activity) &#123;
     Instrumentation().callActivityOnSaveInstanceState(activity, Bundle())
 &#125;
 </code></pre>
-<h2 id="Android-12-PE上奇怪的现象"><a href="#Android-12-PE上奇怪的现象" class="headerlink" title="Android 12 PE上奇怪的现象"></a>Android 12 PE上奇怪的现象</h2><p>在Android 11及以前，将APP退回出到最近任务，也会走<code>onStop</code>触发这个BUG。但是在我的Pixel 5的Android 12上，退出到最近任务，并不会触发这个BUG。调试发现，是因为没走<code>onStop</code>。把玩后发现，原来PE 的Launcher对于刚刚退回到最近任务的APP的显示，不再是显示其静态快照，而是将APP缩放，因此在最预览页面仍然能看到APP的UI更新。谷歌你做得好啊，做得好啊。</p>
+<h2 id="Android-12-PE上奇怪的现象"><a href="#Android-12-PE上奇怪的现象" class="headerlink" title="Android 12 PE上奇怪的现象"></a>Android 12 PE上奇怪的现象</h2><p>在Android 11及以前，将APP退回出到最近任务，也会走<code>onStop</code>触发这个BUG。但是在我的Pixel 5的Android 12上，退出到最近任务，并不会触发这个BUG。调试发现，是因为没走<code>onStop</code>。原来PE 的Launcher对于刚刚退回到最近任务的APP，不再是显示其静态快照，而是将APP缩放，因此在最近任务页面仍然能看到该APP的UI更新。谷歌你做得好啊，做得好啊。</p>
 <h2 id="使用ReturnTransitionPatcher"><a href="#使用ReturnTransitionPatcher" class="headerlink" title="使用ReturnTransitionPatcher"></a>使用<em>ReturnTransitionPatcher</em></h2><p>代码已经上传到<a target="_blank" rel="noopener" href="https://github.com/xjunz/ReturnTransitionPatcher">github</a>和Maven仓库，如果你想在项目中修复这个问题，可以在项目中引入，该库提供了完美的Patch时机和全局Patch功能:</p>
 <pre><code class="groovy">implementation &#39;io.github.xjunz:return-transition-patcher:+&#39;
 </code></pre>
