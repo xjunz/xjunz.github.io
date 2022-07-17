@@ -1,38 +1,38 @@
-
 /**********************VARS*****************************/
 
-:root{
+:root {
     --color_background: #faf2f1;
-    --color_surface:  #fffbfa;
-    --color_surface_variant:  #fddbdd;
+    --color_surface: #fffbfa;
+    --color_surface_variant: #fddbdd;
     --color_outline: #acacac;
     --color_on_surface: #625453;
     --color_accent: #ff4e58;
-    --outline_width:  2px;
-    --corner_large:  32px;
-    --corner_normal:  16px;
-    --corner_small:  8px;
+    --outline_width: 2px;
+    --corner_large: 32px;
+    --corner_normal: 16px;
+    --corner_small: 8px;
 }
 
 /**********************TEXT*****************************/
 
 /* expand letter-spacing for p tag and force NotoSerif font */
 p {
-    letter-spacing: .08em !important;
+    letter-spacing: 0.05em !important;
+    /* text-align: justify; */
     font-family: Noto Serif SC !important;
 }
 
 /* expand letter-spacing for h1 tag */
 h1 {
-    letter-spacing: 0.05em !important;
+    letter-spacing: .05em !important;
 }
 
 /* expand letter spacing for div tag */
 div {
-    letter-spacing: 0.05em !important;
+    letter-spacing: .05em !important;
 }
 
-li{
+li {
     background-color: var(--color_surface) !important;
 }
 
@@ -40,33 +40,36 @@ li{
 /**********************CODE*****************************/
 
 /* reduce padding for code block */
-#post-content .prettyprint{
+#post-content .prettyprint {
     padding: 5px !important;
 }
 
 /* remove extra padding for post content */
-#post-content ol, #post-content ul {
+#post-content ol,
+#post-content ul {
     padding-left: 40px !important;
-    overflow: scroll !important;
 }
 
 /* remove extra padding before every code line */
-#post-content > pre > ol > li {
+#post-content>pre>ol>li {
     padding-left: 0px !important;
 }
 
 /* beautify code block */
 .prettyprint.linenums.prettyprinted {
-   white-space: pre;
-   background-color: var(--color_surface) !important;
-   -webkit-border-radius:  var(--corner_small) !important;
-   border-radius:  var(--corner_small) !important;
-   outline-offset: -2px;
-   outline-style: dashed;
-   outline-color: var(--color_outline) !important;
-   outline-width: var(--outline_width);
+    background-color: var(--color_surface) !important;
+    -webkit-border-radius: var(--corner_small) !important;
+    border-radius: var(--corner_small) !important;
+    outline-offset: -2px;
+    outline-style: dashed;
+    outline-color: var(--color_outline) !important;
+    outline-width: var(--outline_width);
 }
 
+.linenums {
+    white-space: pre;
+    overflow: auto !important;
+}
 /**********************TIMELINE*****************************/
 
 /* reduce shadow for timeline page */
@@ -95,6 +98,7 @@ p.article-headline-p {
     font-size: 24px;
     line-height: 40px;
     font-weight: 400;
+    text-decoration: none;
     color: var(--color_on_surface);
 }
 
@@ -151,17 +155,14 @@ p.article-headline-p {
 .post_entry-module.mdl-card {
     -webkit-border-radius: var(--corner_normal) !important;
     border-radius: var(--corner_normal) !important;
+    min-height: 380px !important;
 }
 
-#scheme-Paradox .material-layout .mdl-card {
-    min-height: 450px;
-}
 
 /**********************POST CONTENT*****************************/
 
 /* pin footer to the bottom of viewport */
 .material-layout__content {
-    height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -178,14 +179,14 @@ p.article-headline-p {
 }
 
 /* img align center in post content */
-#post-content > img {
- margin-left: auto;
-    margin-right:auto;
-    display:block;
+#post-content>img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 /*  allow overflow for reference tooltips */
-.material-post_container > div > div {
+.material-post_container>div>div {
     overflow: visible;
 }
 
@@ -193,7 +194,7 @@ p.article-headline-p {
     overflow: visible !important;
 }
 
-#post-content > p {
+#post-content>p {
     overflow: visible !important;
 }
 
@@ -217,11 +218,11 @@ p.article-headline-p {
 .mdl-card__supporting-text.meta.meta--fill {
     -webkit-border-radius: inherit !important;
     border-radius: inherit !important;
-    background-color: var(--color_surface) !important ;
+    background-color: var(--color_surface) !important;
 }
 
 /* fix 'something else' background color */
-.something-else-logo.mdl-color--white.mdl-color-text--grey-600{
+.something-else-logo.mdl-color--white.mdl-color-text--grey-600 {
     background-color: var(--color_surface) !important;
 }
 
@@ -258,7 +259,7 @@ p.article-headline-p {
 }
 
 /* add drawer right border */
-.sidebar{
+.sidebar {
     border-width: 0px !important;
     border-right-width: var(--outline_width) !important;
     border-color: var(--color_outline) !important;
@@ -266,10 +267,10 @@ p.article-headline-p {
 }
 
 /* MDU style dropdown item */
-#sidebar-main > ul > li > a {
+#sidebar-main>ul>li>a {
     -webkit-border-radius: var(--corner_large) !important;
     border-radius: var(--corner_large) !important;
-    margin-top:  8px;
+    margin-top: 8px;
     margin-left: 8px;
     margin-right: 8px;
 }
@@ -282,35 +283,35 @@ p.article-headline-p {
 }
 
 /* dropdown menu is a special item,  remove duplicated margin */
-.dropdown > a {
+.dropdown>a {
     margin: 0px !important;
 }
 
 /* when dropdown opened, remove its bottom corners */
-#sidebar-main > ul > li.dropdown.open > a {
+#sidebar-main>ul>li.dropdown.open>a {
     border-bottom-right-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
 }
 
 /* round dropdown post counter */
-.dropdown > ul > li > a > span {
+.dropdown>ul>li>a>span {
     -webkit-border-radius: var(--corner_normal);
     border-radius: var(--corner_normal);
 }
 
 /* round total post counter */
-#sidebar-main > ul > li > a > span {
-     -webkit-border-radius: var(--corner_normal);
+#sidebar-main>ul>li>a>span {
+    -webkit-border-radius: var(--corner_normal);
     border-radius: var(--corner_normal);
 }
 
 /* change dropdown li background whe open */
-#sidebar-main > ul > li.dropdown.open > ul > li {
+#sidebar-main>ul>li.dropdown.open>ul>li {
     background-color: var(--color_background) !important;
 }
 
 /* change dropdown bottom corner when open */
-#sidebar-main > ul > li.dropdown.open > ul {
+#sidebar-main>ul>li.dropdown.open>ul {
     border-bottom-left-radius: var(--corner_large) !important;
     border-bottom-right-radius: var(--corner_large) !important;
     overflow: hidden;
@@ -318,8 +319,8 @@ p.article-headline-p {
 
 /* use rounded rect for sidebar avatar */
 .sidebar-image img {
-    -webkit-border-radius:  var(--corner_small) !important;
-    border-radius:  var(--corner_small) !important;
+    -webkit-border-radius: var(--corner_small) !important;
+    border-radius: var(--corner_small) !important;
 }
 
 /* disable drawer shadow */
@@ -331,14 +332,14 @@ p.article-headline-p {
 
 /* MDU style menu */
 .mdl-menu__outline.mdl-menu--bottom-right {
-    -webkit-border-radius:  var(--corner_normal) !important;
-    border-radius:  var(--corner_normal) !important;
+    -webkit-border-radius: var(--corner_normal) !important;
+    border-radius: var(--corner_normal) !important;
 }
 
 /* MDU style popup menu */
-.mdl-menu__container.is-upgraded.is-visible > ul {
-    -webkit-border-radius:  var(--corner_normal) !important;
-    border-radius:  var(--corner_normal) !important;
+.mdl-menu__container.is-upgraded.is-visible>ul {
+    -webkit-border-radius: var(--corner_normal) !important;
+    border-radius: var(--corner_normal) !important;
     overflow: hidden;
 }
 
@@ -357,9 +358,35 @@ p.article-headline-p {
 .mdl-card {
     -webkit-border-radius: var(--corner_normal) !important;
     border-radius: var(--corner_normal) !important;
-    outline-style: solid;
-    outline-width: var(--outline_width);
-    outline-color: var(--color_outline);
+    /* outline-style: solid; */
+    /* outline-width: var(--outline_width); */
+    /* outline-color: var(--color_outline); */
     background-color: var(--color_surface) !important;
-    box-shadow:  0 2px 2px 0 rgb(0 0 0 / 8%), 0 3px 1px -2px rgb(0 0 0 / 8%), 0 1px 5px 0 rgb(0 0 0 / 8%) !important;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 8%), 0 3px 1px -2px rgb(0 0 0 / 8%), 0 1px 5px 0 rgb(0 0 0 / 8%) !important;
+}
+
+/* mobile device */
+@media screen and (max-width: 480px) {
+    #scheme-Paradox .material-layout .something-else {
+        margin-bottom: 0px !important;
+    }
+    .post_entry-module.mdl-card {
+        width: 100%;
+        margin:0px !important;
+        border-radius: 0px !important;
+        padding: 0px !important;
+    }
+    .post_thumbnail-custom {
+        border-radius: 0px !important;
+        height: fit-content !important;
+        max-height: 280px;
+    }
+    #post_entry_title {
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+    #post_entry_continue {
+        display: none;
+    }
+
 }
