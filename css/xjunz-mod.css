@@ -18,18 +18,18 @@
 
 /* expand letter-spacing for p tag and force NotoSerif font */
 p {
-    letter-spacing: .2em;
+    letter-spacing: .08em !important;
     font-family: Noto Serif SC !important;
 }
 
 /* expand letter-spacing for h1 tag */
 h1 {
-    letter-spacing: .1em !important;
+    letter-spacing: 0.05em !important;
 }
 
 /* expand letter spacing for div tag */
 div {
-    letter-spacing: .15em;
+    letter-spacing: 0.05em !important;
 }
 
 li{
@@ -47,6 +47,7 @@ li{
 /* remove extra padding for post content */
 #post-content ol, #post-content ul {
     padding-left: 40px !important;
+    overflow: scroll !important;
 }
 
 /* remove extra padding before every code line */
@@ -56,6 +57,7 @@ li{
 
 /* beautify code block */
 .prettyprint.linenums.prettyprinted {
+   white-space: pre;
    background-color: var(--color_surface) !important;
    -webkit-border-radius:  var(--corner_small) !important;
    border-radius:  var(--corner_small) !important;
@@ -151,6 +153,9 @@ p.article-headline-p {
     border-radius: var(--corner_normal) !important;
 }
 
+#scheme-Paradox .material-layout .mdl-card {
+    min-height: 450px;
+}
 
 /**********************POST CONTENT*****************************/
 
@@ -232,15 +237,6 @@ p.article-headline-p {
     background-color: var(--color_surface) !important;
 }
 
-/* beautify Netease outlink player */
-#player > div {
-    border-radius: var(--corner_normal) !important;
-    box-shadow: none !important;
-    outline-width: var(--outline_width) !important;
-    outline-style: dashed;
-    outline-color: var(--color_outline) !important;
-}
-
 /**********************DRAWER*****************************/
 
 /* config backgroud color related to drawer */
@@ -269,7 +265,7 @@ p.article-headline-p {
     border-style: solid !important;
 }
 
-/*  MDU style dropdown item */
+/* MDU style dropdown item */
 #sidebar-main > ul > li > a {
     -webkit-border-radius: var(--corner_large) !important;
     border-radius: var(--corner_large) !important;

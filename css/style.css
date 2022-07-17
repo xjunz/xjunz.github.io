@@ -743,7 +743,7 @@ a {
 #scheme-Paradox .material-post_container .comments>form {
     display: flex;
     margin-bottom: 1pc;
-    flex-diretion: row
+    flex-direction: row
 }
 #scheme-Paradox .material-post_container .comments>form .mdl-textfield {
     margin-right: 1pc;
