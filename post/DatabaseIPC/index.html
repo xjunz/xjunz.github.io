@@ -623,15 +623,15 @@ fun Cursor.asBinder(): IRemoteCursor &#123;
 <p>Everything is done now. If we want to do a remote database query, we can just build a <code>RemoteCursorImpl</code> from a normal cursor in the callee process and transact it as a binder to the caller process, where we can reconstruct the cursor as <code>RemoteCursor</code> from the binder. </p>
 <h4 id="The-hidden-performance-issue"><a href="#The-hidden-performance-issue" class="headerlink" title="The hidden performance issue"></a>The hidden performance issue</h4><p>Everything seems perfect and working as expected, but there is a hidden performance issue. If the table we were querying contains a large number of records and you would like to read it all, the performance issue would be very significant, because there were too many IPC calls and too many memory copies. </p>
 <p>The following code snippet is a common cursor iteration boilerplate:</p>
-<pre><code class="kotlin"> database.query(&quot;SELECT projections FROM table_name&quot;).use &#123;
-     while (it.moveToNext()) &#123;
-       val str_field = it.getString(0)
-       val int_field = it.getInt(1)
-       // and more
-     &#125;
- &#125;
+<pre><code class="kotlin">database.query(&quot;SELECT projections FROM table_name&quot;).use &#123;
+    while (it.moveToNext()) &#123;
+      val str_field = it.getString(0)
+      val int_field = it.getInt(1)
+      // and more
+    &#125;
+&#125;
 </code></pre>
-<p>You can see that whenever we iterate a cursor, the application need to do approximately as many as <strong>row*col+1</strong> times of IPC calls and memory copies. Even thought the IPC call and memcpy are fast, but due to the time complexity of a cursor iteration, the more rows and columns you want to query, the more unbearable the performance issue will be,  which could finally lead to a performance disaster. </p>
+<p>You can see that whenever we iterate a cursor, the application need to do approximately as many as <em>row*col</em> times of IPC calls and memory copies. Even thought the IPC call and memcpy are fast, but due to the time complexity of a cursor iteration, the more rows and columns you want to query, the more unbearable the performance issue will be,  which could finally lead to a performance disaster. </p>
 <h3 id="How-does-the-Android-framework-do-it"><a href="#How-does-the-Android-framework-do-it" class="headerlink" title="# How does the Android framework do it?"></a># How does the Android framework do it?</h3><p>Let’s dive into the source code. In <a target="_blank" rel="noopener" href="https://cs.android.com/android/platform/superproject/+/master:frameworks/base/core/java/android/content/ContentProviderNative.java;"><code>ContentProviderNative</code></a>, where the real <code>ContentProvider</code> is implemented,  we will see how they construct the cursor from the callee process:</p>
 <pre><code class="java">// ContentProviderNative.java
 @Override
