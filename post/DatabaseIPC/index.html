@@ -84,7 +84,6 @@
     <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
 
     <!-- Import CSS -->
-    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?z/zz9H0hGZhVuuhN52axFg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
     
         <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
@@ -97,6 +96,7 @@
         
 
     
+    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?devRGCHXAlT1zYNWGku0fQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
     
 
@@ -631,8 +631,8 @@ fun Cursor.asBinder(): IRemoteCursor &#123;
     &#125;
 &#125;
 </code></pre>
-<p>You can see that whenever we iterate a cursor, the application need to do approximately as many as <em>row*col</em> times of IPC calls and memory copies. Even thought the IPC call and memcpy are fast, but due to the time complexity of a cursor iteration, the more rows and columns you want to query, the more unbearable the performance issue will be,  which could finally lead to a performance disaster. </p>
-<h3 id="How-does-the-Android-framework-do-it"><a href="#How-does-the-Android-framework-do-it" class="headerlink" title="# How does the Android framework do it?"></a># How does the Android framework do it?</h3><p>Let’s dive into the source code. In <a target="_blank" rel="noopener" href="https://cs.android.com/android/platform/superproject/+/master:frameworks/base/core/java/android/content/ContentProviderNative.java;"><code>ContentProviderNative</code></a>, where the real <code>ContentProvider</code> is implemented,  we will see how they construct the cursor from the callee process:</p>
+<p>You can see that whenever we iterate a cursor, the application needs to do approximately as many as <em>row*col</em> times of IPC calls and memory copies. Even thought the IPC call and memcpy are fast, but due to the time complexity of a cursor iteration, the more rows and columns you want to query, the more unbearable the performance issue will be,  which could finally lead to a performance disaster. </p>
+<h3 id="How-does-the-Android-framework-do-it"><a href="#How-does-the-Android-framework-do-it" class="headerlink" title="# How does the Android framework do it?"></a># How does the Android framework do it?</h3><p>Let’s dive into the source code. In <a target="_blank" rel="noopener" href="https://cs.android.com/android/platform/superproject/+/master:frameworks/base/core/java/android/content/ContentProviderNative.java;"><code>ContentProviderNative</code></a>, where the actual<code>ContentProvider</code> is implemented,  we will see how they reconstruct the cursor from the callee process:</p>
 <pre><code class="java">// ContentProviderNative.java
 @Override
 public Cursor query(@NonNull AttributionSource attributionSource, Uri url,
@@ -723,7 +723,7 @@ public CursorWindow getWindow(int position) &#123;
 <h2 id="Get-rid-of-ContentProvider"><a href="#Get-rid-of-ContentProvider" class="headerlink" title="Get rid of ContentProvider"></a>Get rid of ContentProvider</h2><blockquote>
 <p>Now that we’ve known the principle of cursor IPC, we can work on the database IPC without ContentProvider. We just need to mimics the Android framework. The following code snippets use SQLite database as an example.</p>
 </blockquote>
-<h3 id="Be-careful-of-hidden-APIs"><a href="#Be-careful-of-hidden-APIs" class="headerlink" title="Be careful of hidden APIs!"></a>Be careful of hidden APIs!</h3><p>You might think that we can just use those APIs like <code>IBulkCursor</code>  in the Android framework by reflection or linking. Yes, this may work but do rememeber that those are hidden apis and are not designed to be used by third-party apps, which are expected to be run in various devices, because their implementation varies on different Android releases or even on different ROMs. You’d better write the same codes in your project.</p>
+<h3 id="Be-careful-of-hidden-APIs"><a href="#Be-careful-of-hidden-APIs" class="headerlink" title="Be careful of hidden APIs!"></a>Be careful of hidden APIs!</h3><p>You might think that we can just use those APIs like <code>IBulkCursor</code>  in the Android framework by reflection or linking. Yes, this may work but do rememeber that those are hidden apis and are not designed to be used by third-party apps, which are expected to be run on various devices. Even if you could bypass the hidden api restrictions above Android P, their implementations may vary on different Android releases or even on different ROMs. You’d better write the codes in your project.</p>
 <h3 id="RemoteSQLiteDatabase"><a href="#RemoteSQLiteDatabase" class="headerlink" title="RemoteSQLiteDatabase"></a>RemoteSQLiteDatabase</h3><p>Firstly, we need to abstract a remote sqlite database representing a sqlite database in the callee process to be used in caller process. Thanks to <code>androidx.sqlite</code>, they provide a fine abstraction of a sqlite database called <code>SupportSQLiteDatabase</code>. Now we just need to copy its interfaces into an AIDL file. There are a lot of interfaces, you can just count those necessary in. In our illustration, we will only show several interfaces.</p>
 <pre><code class="java">// IRemoteSQLiteDatabase.aidl
 interface IRemoteSQLiteDatabase &#123;

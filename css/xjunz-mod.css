@@ -212,6 +212,22 @@ p.article-headline-p {
     border-bottom-right-radius: var(--corner_normal);
 }
 
+/* fix mal-laid formulas*/
+.math > span {
+    display: inline !important;
+    position: static !important;
+}
+
+.math > span > span {
+    position: static !important;
+}
+
+/* allow the formula to scroll when overflow */
+.MathJax_Display {
+    overflow: auto;
+}
+
+
 /**********************INDEX*****************************/
 
 /* fix 'something else' bottom radius */
