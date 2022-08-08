@@ -734,7 +734,7 @@ interface IRemoteSQLiteDatabase &#123;
     void close();
 &#125;
 </code></pre>
-<p>You might notice that we return a <code>BulkCursorDecriptor</code> in <code>query</code> method, because the <code>BulkCursorDecriptor</code> is parcelable and contains all we need to rebuild a cursor. Don’t forget to import it. </p>
+<p>You might have noticed that we return a <code>BulkCursorDecriptor</code> in <code>query</code> method, because the <code>BulkCursorDecriptor</code> is parcelable and contains all we need to rebuild a cursor. Don’t forget to import it. </p>
 <pre><code class="java">// BulkCursorDescriptor.java
 public final class BulkCursorDescriptor implements Parcelable &#123;
     public IBulkCursor cursor;
