@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Me, xjunz&#39;s blog</title>
-  <icon>http://www.xjunz.top/icon.png</icon>
+  <icon>http://www.xjunz.top/favicon.svg</icon>
   
   <link href="http://www.xjunz.top/atom.xml" rel="self"/>
   

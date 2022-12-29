@@ -154,22 +154,22 @@
     
     
     <entry>
-      <title>About Me</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>Gallery</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h1><p>目前的博客框架是<a href="https://hexo.io/">Hexo</a>,  主题是<a href="https://github.com/viosey/hexo-theme-material">Material</a> <del>(魔改)</del>，Markdown编辑器是<a href="https://www.typora.io/">Typora</a> .</p><h2 id="我的称呼"><a href="#我的称呼" class="headerlink" title="我的称呼"></a>我的称呼</h2><p><strong>XJUNZ</strong>  ( 读作: <em>&#x2F;eksdʒʌnz&#x2F;</em> )</p><h2 id="我来自"><a href="#我来自" class="headerlink" title="我来自"></a>我来自</h2><p>浙江</p><h2 id="年龄"><a href="#年龄" class="headerlink" title="年龄"></a>年龄</h2><p>95后  狮子座</p><h2 id="爱好"><a href="#爱好" class="headerlink" title="爱好"></a>爱好</h2><p>自由、和平以及一切美好的事物</p><h2 id="特长"><a href="#特长" class="headerlink" title="特长"></a>特长</h2><p><em>（不是每个人都有特长的啦~）</em></p><h2 id="联系到我"><a href="#联系到我" class="headerlink" title="联系到我"></a>联系到我</h2><p><strong>Telegram</strong>: <a href="https://t.me/xjunz">xjunz</a></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>Timeline</title>
-      <link href="/timeline/index.html"/>
-      <url>/timeline/index.html</url>
+      <title>About Me</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h1><p>目前的博客框架是<a href="https://hexo.io/">Hexo</a>,  主题是<a href="https://github.com/viosey/hexo-theme-material">Material</a> <del>(魔改)</del>，Markdown编辑器是<a href="https://www.typora.io/">Typora</a> .</p><h2 id="我的称呼"><a href="#我的称呼" class="headerlink" title="我的称呼"></a>我的称呼</h2><p><strong>XJUNZ</strong>  ( 读作: <em>&#x2F;eksdʒʌnz&#x2F;</em> )</p><h2 id="我来自"><a href="#我来自" class="headerlink" title="我来自"></a>我来自</h2><p>浙江</p><h2 id="年龄"><a href="#年龄" class="headerlink" title="年龄"></a>年龄</h2><p>95后  狮子座</p><h2 id="爱好"><a href="#爱好" class="headerlink" title="爱好"></a>爱好</h2><p>自由、和平以及一切美好的事物</p><h2 id="特长"><a href="#特长" class="headerlink" title="特长"></a>特长</h2><p><em>（不是每个人都有特长的啦~）</em></p><h2 id="联系到我"><a href="#联系到我" class="headerlink" title="联系到我"></a>联系到我</h2><p><strong>Telegram</strong>: <a href="https://t.me/xjunz">xjunz</a></p>]]></content>
       
     </entry>
     
@@ -187,9 +187,9 @@
     
     
     <entry>
-      <title>Gallery</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
+      <title>Timeline</title>
+      <link href="/timeline/index.html"/>
+      <url>/timeline/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
       
