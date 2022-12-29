@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Me, xjunz&#39;s blog</title>
+  <icon>http://www.xjunz.top/icon.png</icon>
+  
+  <link href="http://www.xjunz.top/atom.xml" rel="self"/>
+  
+  <link href="http://www.xjunz.top/"/>
+  <updated>2022-07-16T07:03:59.000Z</updated>
+  <id>http://www.xjunz.top/</id>
+  
+  <author>
+    <name>xjunz</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to Implement Inter-Process Database Communication Rid of ContentProvider?</title>
+    <link href="http://www.xjunz.top/post/DatabaseIPC/"/>
+    <id>http://www.xjunz.top/post/DatabaseIPC/</id>
+    <published>2022-07-16T07:03:59.000Z</published>
+    <updated>2022-07-16T07:03:59.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="Android Dev" scheme="http://www.xjunz.top/categories/Android-Dev/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Material主题个性化改造</title>
+    <link href="http://www.xjunz.top/post/RetroMaterialTheme/"/>
+    <id>http://www.xjunz.top/post/RetroMaterialTheme/</id>
+    <published>2022-03-29T10:31:07.000Z</published>
+    <updated>2022-04-06T15:17:32.309Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="杂谈" scheme="http://www.xjunz.top/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android 10 及以上，(Shared Element) Return Transition在特定情况下失效的问题探究</title>
+    <link href="http://www.xjunz.top/post/Android-Return-Transition-Patcher/"/>
+    <id>http://www.xjunz.top/post/Android-Return-Transition-Patcher/</id>
+    <published>2022-03-27T17:50:00.000Z</published>
+    <updated>2022-04-06T14:49:56.251Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="Android Dev" scheme="http://www.xjunz.top/categories/Android-Dev/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>真的有这么丝滑吗？MotionLayout + ViewDragHelper绝赞组合!</title>
+    <link href="http://www.xjunz.top/post/MotionLayout+ViewDragHelper/"/>
+    <id>http://www.xjunz.top/post/MotionLayout+ViewDragHelper/</id>
+    <published>2021-03-10T01:34:18.000Z</published>
+    <updated>2022-04-01T23:34:20.190Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;h1</summary>
+        
+      
+    
+    
+    
+    <category term="Android UI/UX" scheme="http://www.xjunz.top/categories/Android-UI-UX/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Databinding使用笔记</title>
+    <link href="http://www.xjunz.top/post/DatabindingNotes/"/>
+    <id>http://www.xjunz.top/post/DatabindingNotes/</id>
+    <published>2021-03-08T11:37:37.000Z</published>
+    <updated>2022-04-01T23:34:07.195Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;h1 id=&quot;Databinding使用中的一些细节&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Android Dev" scheme="http://www.xjunz.top/categories/Android-Dev/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于我从零开始搭博客这件事儿</title>
+    <link href="http://www.xjunz.top/post/HelloHexo/"/>
+    <id>http://www.xjunz.top/post/HelloHexo/</id>
+    <published>2019-04-25T15:04:19.000Z</published>
+    <updated>2022-04-03T16:00:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;h1 id=&quot;关于我从零开始搭博客这件事儿&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="杂谈" scheme="http://www.xjunz.top/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+  </entry>
+  
+</feed>
