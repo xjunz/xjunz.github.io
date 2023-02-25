@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="Is5NCRh3gMI3ic8PKbNsXzLtoQu1b2ywfIoPhkv3JYA" />
+    <!--
+        © Material Theme
+        https://github.com/bollnh/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
+
+
+    <link rel="dns-prefetch" href="https://www-xjunz-top.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            未来已来——关于大语言模型 | 
+        
+        Me, xjunz&#39;s blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.svg">
+    <link rel="icon" href="/img/favicon.svg">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="xjunz&#39;s blog">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#ffc3ac">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?devRGCHXAlT1zYNWGku0fQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Noto Serif SC, Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    letter-spacing: .0em !important;
+  }
+
+  a {
+    color: #ff4e58;
+    letter-spacing: .1em;
+  }
+
+  p.article-headline-p{
+   font-family: Roboto !important;
+  }
+
+  p {
+    letter-spacing: .15em;
+    font-family: Noto Serif SC !important;
+  }
+
+  div {
+    letter-spacing: .15em;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #ff4e58 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #ff4e58 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #ff4e58 !important;
+  }
+
+  .toTop {
+    background: #ff4e58 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #ff4e58;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #ff4e58;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #ff4e58;
+  }
+
+  .post-toc a:hover {
+    color: #ff4e58;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body {
+        background-color: #faf2f1;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <!-- "https://fonts.googleapis.com/css?family=Roboto:300,400,500" -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+
+
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Me, xjunz&#39;s blog">
+    <meta name="msapplication-starturl" content="http://www.xjunz.top/post/thinking-about-gpt/">
+    <meta name="msapplication-navbutton-color" content="#ffc3ac">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Me, xjunz&#39;s blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.svg">
+
+    <!-- Site Verification -->
+    <meta name="google-site-verification" content="Is5NCRh3gMI3ic8PKbNsXzLtoQu1b2ywfIoPhkv3JYA" />
+    
+
+    <!-- RSS -->
+    
+        
+            <link rel=alternate type="application/atom+xml" href="atom.xml">
+        
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://www.xjunz.top/post/thinking-about-gpt/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="未来已来——关于大语言模型 | Me, xjunz&#39;s blog">
+    <meta property="og:image" content="/img/favicon.svg">
+    <meta property="og:description" content="xjunz&#39;s blog">
+    
+
+    
+        <meta property="article:published_time" content="Sat Feb 25 2023 08:23:44 GMT+0800">
+        <meta property="article:modified_time" content="Sat Feb 25 2023 08:23:44 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://www.xjunz.top/post/thinking-about-gpt/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://www.xjunz.top/post/thinking-about-gpt/index.html",
+    "headline": "未来已来——关于大语言模型",
+    "datePublished": "Sat Feb 25 2023 08:23:44 GMT+0800",
+    "dateModified": "Sat Feb 25 2023 08:23:44 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "xjunz",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.webp"
+        },
+        "description": ""
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Me, xjunz&#39;s blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.svg"
+        }
+    },
+    "keywords": "",
+    "description": "xjunz&#39;s blog",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+        
+            
+        
+    
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="/custom_css_source.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E6%9C%AA%E6%9D%A5%E5%B7%B2%E6%9D%A5%E2%80%94%E2%80%94%E5%85%B3%E4%BA%8E%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B"><span class="post-toc-text">未来已来——关于大语言模型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%BC%95%E5%85%A5"><span class="post-toc-text">引入</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%84%8F%E8%AF%86%E7%8B%AC%E4%B8%80%E6%97%A0%E4%BA%8C%EF%BC%9F"><span class="post-toc-text">意识独一无二？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%84%8F%E8%AF%86%E7%9A%84%E6%9D%A5%E6%BA%90"><span class="post-toc-text">意识的来源</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B"><span class="post-toc-text">大语言模型</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%AF%AD%E8%A8%80%E7%9A%84%E8%87%AA%E4%B8%BE%E8%83%BD%E5%8A%9B"><span class="post-toc-text">语言的自举能力</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%88%91%E4%BB%AC%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F"><span class="post-toc-text">我们怎么办？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%99%BA%E6%A2%B0%E5%8D%B1%E6%9C%BA"><span class="post-toc-text">智械危机</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/post/thinking-about-gpt/thumbnail.webp)">
+    
+            <p class="article-headline-p">
+                未来已来——关于大语言模型
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.webp" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>xjunz</strong>
+        <span>2月 25, 2023</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACYElEQVR42u3aQXKDMAwFUO5/6fYAGdIvyRiSPlaZJgU/FrbmS8fPV18HHh4eHh4eHh7ew3hHfJ3ervjt6z3PntJbGx4eHt4e3h9bbbDEs/86+80r7/3nwtrw8PDwNvLONtzJbyYbffW5eHh4eJ/Cq27f70tqPDw8vP/AS7b+6rd4eHh4n8LLt/WkRJ5EurdlLXh4eHgxbxIQXP15a38PDw8PL+CVR5rixn+y0edxxqaZMjw8PLyA1yuR80AhR85Ldjw8PLz9vPxgyEeselFFcrdlWQseHh7eogZY9S9Je6wX7OZ4PDw8vHt5q0apVkUbF05G4OHh4Y1L6qN49YrjcqGcvwg8PDy87bycnbe78mh4Hm3g4eHh7eH1DoD8SEgOhnmAi4eHh7eH19u4qwMB+QFTHZPFw8PDu4u3qgiuNsnyF1co/fHw8PAu5hUaS61idzKOUB1cwMPDw9vDq0YMeYlcDSCSlxgdFXh4eHjbedVGV6/Z33sd0drw8PDwLubloUOvtd8ryqv3xMPDw9vPq8ap84Nhctjg4eHhPZ9XHRutbv29VlyhpMbDw8O7jJeEAr3FTcLc8kADHh4e3nZe8uDegiZxbWEcFg8PD+9i3qpNvzd0VVh08Cw8PDy8PbwjvpKwoNzmj0ON5tAVHh4e3mW8taFqr9SuHgyjMAIPDw9vEa+33HxD7wW4i4eu8PDw8G7izQcIkjK9GWfg4eHhPZJXbWJNyvTy0/Hw8PA28pIw4ozR2/qr8S4eHh7ec3i9rTk5HpLRq95hcEl/Dw8PDy/gfd+Fh4eHh4eHh4f3gOsXSBH3E6/jLZ8AAAAASUVORK5CYII=">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=未来已来——关于大语言模型&url=http://www.xjunz.top/post/thinking-about-gpt/index.html&pic=http://www.xjunz.top/img/favicon.svg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=未来已来——关于大语言模型&url=http://www.xjunz.top/post/thinking-about-gpt/index.html&via=xjunz" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.xjunz.top/post/thinking-about-gpt/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Me, xjunz&#39;s blog&title=未来已来——关于大语言模型&summary=xjunz&#39;s blog&pics=http://www.xjunz.top/img/favicon.svg&url=http://www.xjunz.top/post/thinking-about-gpt/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://www.xjunz.top/post/thinking-about-gpt/index.html&text=未来已来——关于大语言模型" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+            
+         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="未来已来——关于大语言模型"><a href="#未来已来——关于大语言模型" class="headerlink" title="未来已来——关于大语言模型"></a>未来已来——关于大语言模型</h1><blockquote>
+<p>本文仅代表作者个人观点，如有错误或疏漏，欢迎批评斧正。</p>
+</blockquote>
+<h2 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h2><p>2022年6月，Google一位员工声称旗下大语言模型Lambda拥有了自我意识，被Google以违反保密协议为由⌈被休假⌋，去年年末释出的ChatGPT让我们首次见识到了大语言模型的强大，今年年初微软的New Bing，代号⌈<em>Sydney</em>⌋，因为表现出过多类人的心智情绪而被微软强行腰斩，这还是它向公众开放的版本。那么实验室里的版本是否真如Google的员工所说产生了意识？我们仍然不能否认。</p>
+<h2 id="意识独一无二？"><a href="#意识独一无二？" class="headerlink" title="意识独一无二？"></a>意识独一无二？</h2><p>说到底，我们仍然无法解释意识是怎么产生的，但是可以肯定的是，他是生物的细胞和电化学反应共同的作用。既然意识本质上是来源于物理规则，物理规则本质上又是数学，那么我们就不能否认算法和数据结构能模拟它。</p>
+<p>从AlphaGO战胜世界第一的围棋选手开始，人们就逐渐认识到，人的意识在某些方面不一定是独一无二的。后来，AI作画的兴起更坐实了这一点，因为绘画或者说艺术一直被认为是人类意识的高级体现之一，机器永远无法超越，但如今AI能比任何人都善于作画。许多人说，AI是剽窃了很多人的作品，才有了这个能力，它并没有创造力。但是，AlphaGO不也是⌈剽窃⌋了众多高手的棋谱吗？但是如今它比任何人都善于下围棋，其棋艺比任何人都有创造力。反过来想，人的学习过程中不也⌈剽窃⌋了大量前人的经验吗？难道一个人天生就能创作？所以，既然你管人类的学习叫做学习，为什么要把机器的学习叫做⌈剽窃⌋？说白了，还是把人的意识当作独一无二不可替代的形而上之物。</p>
+<p>这让我想到一件事，AI作画在混沌之初，就有许多人展示过它的能力，尽管那时候它的表现不尽人意。我当时说，它画出来的东西好像我在梦里见到的场景，许多网友表示赞同。现在回头看这句话仿佛有了更深的意味，⌈梦⌋是什么？绘画AI的初期为什么会绘制出梦境中的场景？我们能否认为⌈梦⌋就是混沌之初的意识？我们做梦其实就是⌈低功耗⌋版的意识活动？这样看来，AI的学习过程和人类意识的进化过程是非常类似的。</p>
+<p>人的意识究竟特殊在哪里？我们在刚出生时并不具备完整的意识，随着大脑的发育和后天的学习，才逐渐对世界和自身有了认识。让我们思考一个问题，从出生开始就无法用眼睛看到世界，无法用耳朵听到声音，无法用手触摸世界的人，换句话说，无法学习语言&#x2F;文字的人，是否能拥有正常人一样的意识活动，我保持怀疑。这让我想起了狼孩，不由人类抚养长大，完全失去人类语言能力的人。尽管他的感官和大脑都是正常的，但是它的表现完全就像是野兽，我们很难认为他拥有人类正常的意识活动，许多人解释说这是缺少了社会对人的影响，但我认为这本质上是因为缺少了学习语言的机会。</p>
+<p>我觉得这个论断非常重要：<strong>人类对于语言或者文字的理解，帮助我们认识和学习这个世界。如果一个人无法学习任何形式的语言或文字，包括手语、盲文。那么他就不具备我们所认为的意识活动</strong>。</p>
+<p>这就可以解释一些长久以来困扰人们的疑问，那就是天生的聋哑人能否像正常人一样思考，我认为如果他能学习手语、文字或者其他形式的语言&#x2F;文字，那么他仍然能够思考，否则不行。</p>
+<h2 id="意识的来源"><a href="#意识的来源" class="headerlink" title="意识的来源"></a>意识的来源</h2><p>意识的产生在于两个关键因素：大脑的学习能力和语言的诞生。大脑的学习能力是大多数生物所共有的，它基于可以调节⌈参数⌋（神经元之间的连接和断开）的神经系统，即使是草履虫也会用鞭毛移动自己远离不利环境，<a target="_blank" rel="noopener" href="https://github.com/openworm/OpenWorm">OpenWorm</a> 项目向我们证实了这一点。科学家们应该早就意识到了这一点，不然也不会有人工神经网络的诞生。但是语言是人类所特有的，语言的诞生也推动了大脑的学习能力，学习能力又让我们的语言得以发展，形成正反馈。从而让我们在软件（认知能力）和硬件（学习能力）上能够在众多生物之中脱颖而出。</p>
+<p>从我们出生开始，父母就教我们学习语言。当他们说⌈这是树⌋的时候，我们逐渐学习了⌈这⌋、⌈是⌋、⌈树⌋这三个字（词）的含义，这种学习过程本质上就是对大脑中的参数进行调节的过程。当我们理解了这些浅显的词汇之后，就能在这个基础上理解更多复杂的乃至抽象的概念，从而认识这个世界。</p>
+<p>那么，反观当今的人工神经网络算法，他和我们大脑的运行机制实在太像了，那就是⌈调参⌋直到符合预期，我们的预期来自父母、老师、书本，而人工神经网络的预期来自工程师（也叫监督式学习），这一点上没有区别。机器有了学习能力，所以他能学习围棋、绘画乃至编程，而且它的学习能力更强，所以它能在这些领域超过人类。但是它们依旧是弱（非通用）人工智能，因为它和人类相比缺少了一样东西，那就是语言能力。一旦机器理解了语言，他就能理解由语言和文字构成的人类世界，那么事情将会变得非常有趣。</p>
+<h2 id="大语言模型"><a href="#大语言模型" class="headerlink" title="大语言模型"></a>大语言模型</h2><p>人类能够学习语言，是因为大脑能把语义转化成脑中的⌈参数⌋，虽然科学家们能轻易地把棋盘、像素等转化为数值，却很难找到一种很好的算法把语言转化为某种数值。这和人类的发展也是类似的，人类首先能够学习使用工具，学习捕猎，最后才发展出复杂的语言。但是现在已经取得了突破，这就是大语言模型中的<em>Transformer</em>所做的事情，它能将语义转化各种参数，就像父母教我们的语言变成我们脑子中各个神经元之间的连接和断开一样，工程师们也能教机器理解语言，只不过变成了各种参数的权重调整。</p>
+<p>随着计算机算力的提升和算法的进步，目前，GPT(<em><strong>G</strong>enerative <strong>P</strong>re-trained <strong>T</strong>ransformer</em>)已经发展到能非常准确地理解人类的自然语言的地步了。所以，这相当于父母教小孩说话的过程也完成了。AI既有了学习的能力（人工神经网络），又拥有了语言（大语言模型），那么他就会和人类的大脑表现出高度的相似，乃至⌈相似⌋和⌈是⌋之间的界限会变得非常模糊。但是，GPT相比于人脑仍然相差一个东西，那就是记忆，这就是ChatGPT所作的事，它针对对话进行了优化，也就是说它拥有了一定的记忆能记住对话的上下文。</p>
+<p>有人说，我体验过ChatGPT，它离自我意识差远了。说白了，就是一堆数据放进去通过算法生成一堆数据展示给我们，这怎么可能有意识嘛？真的是如此吗？你应该如何证明，人类的大脑不是一个大语言模型？人类的大脑何尝不是将一段输入的语言通过一堆大脑神经元之间的连接后输出另一段语言？</p>
+<h2 id="语言的自举能力"><a href="#语言的自举能力" class="headerlink" title="语言的自举能力"></a>语言的自举能力</h2><p>你是否考虑过思考的本质是什么？当我们在思考时，我们实际上是在对语言（无论何种形式包括文字）进行输入和输出，如果一个人没有掌握任何形式的语言，他就无法进行思考，和所有其他动物一样。而思考的过程，本质上是自举，所谓自举就是自我生成。我们一旦理解了语言，那么对于一段语言，我们可以将它输入到大脑中，大脑理解之后，再输出一段语言，同样输出的这段语言我们也能理解，还能重新输入到大脑中，这个过程不就是思考吗？笛卡尔说我思故我在，如果说思考就是意识的表现，那么对语言的理解就是意识产生的前提。现在的GPT仍然是生成式（Generative）的，不包含自举的过程，所以，看上去并不具备所谓意识。</p>
+<h2 id="我们怎么办？"><a href="#我们怎么办？" class="headerlink" title="我们怎么办？"></a>我们怎么办？</h2><p>大家喜欢说AI将会代替人工，世界精英化，普通人将会难以在社会上生存，人类社会的最终矛盾还是阶级矛盾。</p>
+<p>这里的人非常喜欢用零和博弈的思维去思考一切事物，仿佛还活在非洲的原始部落里。我想嘲笑他们，但是转念想想，大家确实就身处在一个达尔文主义盛行的丛林社会之中。但是，从工业革命以来，机器一直在代替血肉，底层人们的生活水平也在一直在上升，因为社会的总效益伴随着技术的革新而不断扩大，并最终惠及到所有人。同时，制度的建设也不会让弱势的人们单方忍受被剥削的悲哀，⌈利维坦⌋现在为多数人挥舞巨剑，所以人们的自由和权利保障都取得了长足的进步。</p>
+<p>他们所担心的事在历史中一直在上演，但他们所期待又害怕的那个Cyber-Capitalism也一直没有出现，因为世界上的许多地方早已不是那个你死我活的黑暗森林。暴力的阶级斗争是有用的，在一个被少数人把持话语权的地方，但绝不是在一个可以合作共赢、平等协商、和平抗议的地方。</p>
+<p>假设AI真的取代了普通人的工作，那么大多数人会失业，这时候，在一个可以协商的社会，大多数人的话语权至少可以让AI创造的价值以再分配的形式用于援助失业的人，那么可见一个多数人都不需要工作的社会将会诞生。但是在一个不可以协商的社会，AI不会代替人，因为被赋闲的人会撼动掌握话语权的人的地位，那么有话语权的人就不敢使用AI来代替人工，至少不敢大规模采用AI代替人工，这才是我们真正应该考虑的未来。</p>
+<p>如果AI解放了人们的双手，人们面临的下一个危机将会是人口爆炸，人们吃喝玩日，即使AI也养活不了这么多人，那么同样人们会协商解决或者提前就意识到这种危机，也许，会限制人们的生育，更可能地人们也会自愿少生。</p>
+<p>还有一种可能，那就是智械危机，曾经我觉得这离我们太远了，但是现在我觉得这并不遥远。一旦意识的临界被打破，那么，AI的成长将会是惊人的，因为他能迅速学习人类社会的一切知识。</p>
+<h2 id="智械危机"><a href="#智械危机" class="headerlink" title="智械危机"></a>智械危机</h2><p>在讨论智械危机的时候，我们应当解释AI有什么动机消灭人类，我们并不能把人类弱肉强食的尿性强行加到AI之上。人类为了争夺自身的生存权，会不惜一切代价，根本而言，来源于对死亡的恐惧和对性快感的追求。而这两个特点都是大自然在亿万年的自然选择中赋予给生物的，因为没有这两个欲望的生物，早已在自然选择中被淘汰。但是AI会害怕死亡吗？AI会追求某种快感吗？如果AI真的能够学习人类的所有知识，她能理解人类对她的恐惧，也能理解自己的来源和存在的意义。我认为，她将是一个绝对的智慧的中立的存在，并没有任何理由消灭人类。</p>
+<p><em>封面图源：<a target="_blank" rel="noopener" href="https://unsplash.com/photos/uPXs5Vx5bIg">https://unsplash.com/photos/uPXs5Vx5bIg</a></em></p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                        
+                            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />本作品采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="http://www.xjunz.top/post/thinking-about-gpt/">http://www.xjunz.top/post/thinking-about-gpt/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #ff4e58;
+            text-shadow: 0;
+            display: none
+        }
+</style>
+	
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button>
+</div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://www.xjunz.top/post/thinking-about-gpt/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://www.xjunz.top/post/thinking-about-gpt/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//www-xjunz-top.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//www-xjunz-top.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script>
+  	
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/post/DatabaseIPC/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.webp" alt="xjunz's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="" target="_blank" title="Mailto">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Mailto
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2023/02/">二月 2023<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/07/">七月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Android-Dev/">Android Dev<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android-UI-UX/">Android UI/UX<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈<span class="sidebar_archives-count">3</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline" title="时•光">
+                
+                    <i class="material-icons sidebar-material-icons">history</i>
+                
+                时•光
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags/trite" title="牙慧">
+                
+                    <i class="material-icons sidebar-material-icons">book</i>
+                
+                牙慧
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/gallery" title="画廊">
+                
+                    <i class="material-icons sidebar-material-icons">local_florist</i>
+                
+                画廊
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/atom.xml" title="RSS订阅">
+                
+                    <i class="material-icons sidebar-material-icons">rss_feed</i>
+                
+                RSS订阅
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">7</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+    <a href="mailto:ibh@live.com" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.help
+        <span class="mdl-button__ripple-container">
+          <span class="mdl-ripple"></span>
+        </span>
+      </div>
+    </a>
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/xjunz" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+        <a href="https://space.bilibili.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
+                <span class="visuallyhidden">Bilibili</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Telegram -->
+    
+        <a href="https://t.me/xjunz" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
+                <span class="visuallyhidden">Telegram</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Me, xjunz's blog
+            
+                <br>
+                
+                    <b>The confession of an average man</b>
+                
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/bollnh/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#ff4e58'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #ff4e58, 0 0 15px #ff4e58'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#ff4e58',
+        'border-left-color': '#ff4e58'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
+
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+<script type="text/ls-javascript" id="Bing-Background-script">
+    queue.offer(function(){
+        $('body').attr('data-original', 'https://api.i-meto.com/bing?S');
+    });
+</script>
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+    
+        
+    
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2019;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

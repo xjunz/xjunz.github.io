@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.xjunz.top/post/thinking-about-gpt/</loc>
+    
+    <lastmod>2023-02-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://www.xjunz.top/post/thinking-after-non-covid-policy/</loc>
     
     <lastmod>2022-12-29</lastmod>
@@ -157,7 +166,7 @@
 
   <url>
     <loc>http://www.xjunz.top/</loc>
-    <lastmod>2022-12-29</lastmod>
+    <lastmod>2023-02-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -165,7 +174,7 @@
   
   <url>
     <loc>http://www.xjunz.top/tags/trite/</loc>
-    <lastmod>2022-12-29</lastmod>
+    <lastmod>2023-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -174,21 +183,21 @@
   
   <url>
     <loc>http://www.xjunz.top/categories/Android-Dev/</loc>
-    <lastmod>2022-12-29</lastmod>
+    <lastmod>2023-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.xjunz.top/categories/%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2022-12-29</lastmod>
+    <lastmod>2023-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.xjunz.top/categories/Android-UI-UX/</loc>
-    <lastmod>2022-12-29</lastmod>
+    <lastmod>2023-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
