@@ -729,7 +729,7 @@ fun Order.toDTO(): OrderDTO &#123;
     )
 &#125;
 </code></pre>
-<p><code>OrderDTO</code>是<code>Order</code>类的数据类，它保留了<code>Order</code>中一些我们希望返回给客户端的字段，并且使用<code>@Serializable</code>注解，着代表这个类可以被序列化为<code>JSON</code>。注意这是<code>kotlinx.serialization</code>插件所包含的注解，而不是<code>JDK</code>中的<code>Serializable</code>。</p>
+<p><code>OrderDTO</code>是<code>Order</code>类的数据类，它保留了<code>Order</code>中一些我们希望返回给客户端的字段，并且使用<code>@Serializable</code>注解，这代表这个类可以被序列化为<code>JSON</code>。注意这是<code>kotlinx.serialization</code>插件所包含的注解，而不是<code>JDK</code>中的<code>Serializable</code>。</p>
 <h4 id="定义DAO"><a href="#定义DAO" class="headerlink" title="定义DAO"></a>定义DAO</h4><p>我们需要定义一个DAO类对数据库进行增删改查，感谢Exposed为我们提供了非常方便的DAO方法，使得我们可以从繁琐易错的<code>SQL</code>中解脱:</p>
 <pre><code class="kotlin">object OrderDao &#123;
 
@@ -1251,7 +1251,7 @@ tasks.withType&lt;ShadowJar&gt; &#123;
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2023/02/">二月 2023<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/09/">九月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/07/">七月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/archives/2023/03/">三月 2023<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2023/02/">二月 2023<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/09/">九月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/07/">七月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -1269,7 +1269,7 @@ tasks.withType&lt;ShadowJar&gt; &#123;
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Android-Dev/">Android Dev<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android-UI-UX/">Android UI/UX<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈<span class="sidebar_archives-count">3</span></a>
+                <a class="sidebar_archives-link" href="/categories/Android-Dev/">Android Dev<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android-UI-UX/">Android UI/UX<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈<span class="sidebar_archives-count">3</span></a>
             </ul>
         </li>
         
@@ -1335,7 +1335,7 @@ tasks.withType&lt;ShadowJar&gt; &#123;
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">8</span>
+                <span class="sidebar-badge">9</span>
             </a>
         </li>
         
