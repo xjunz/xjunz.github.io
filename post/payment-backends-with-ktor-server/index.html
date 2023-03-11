@@ -870,7 +870,7 @@ if [ -z &quot;$PID&quot; ]; then
     echo &quot;No process containing &#39;service.jar&#39; found.&quot;
 else
     # Kill the process
-    kill $PID
+    kill -15 $PID
     echo &quot;Process containing &#39;service.jar&#39; has been killed.&quot;
 fi
 
@@ -878,6 +878,15 @@ nohup java -jar service.jar &gt; nohup.log 2&gt;&amp;1 &amp;
 echo &quot;Service started...&quot;
 </code></pre>
 <p>这段脚本会判断当前服务是否正在运行，如果是，停止该进程，然后重新启动该服务，程序产生的日志将会被输出到当前目录的<code>nohup.log</code>文件里。</p>
+<p>注意我们使用 <code>kill -15</code>向Java进程发送信号让他正常退出，而我们在程序中通过<code>Runtime.addShutdownHook</code>来处理“善后事宜”：</p>
+<pre><code class="kotlin"> Runtime.getRuntime().addShutdownHook(object : Thread() &#123;
+        override fun run() &#123;
+            super.run()
+            TransactionManager.closeAndUnregister(database)
+        &#125;
+    &#125;)
+</code></pre>
+<p>这样可以防止Java进程被终止后，而postgres数据库的连接仍然未关闭导致数据库有限的连接池被占用。</p>
 <h4 id="自动部署"><a href="#自动部署" class="headerlink" title="自动部署"></a>自动部署</h4><p>我使用的是阿里云的ECS服务器，阿里云在IDEA提供了一个插件叫做：<u>Alibaba Cloud Toolkit</u>，它可以帮助我们实现一键部署。</p>
 <p>首先在顶栏上找到此插件的图标，点击<code>deploy to ECS</code>：<img src="/post/payment-backends-with-ktor-server/image-3.png" alt="image-3" style="zoom:67%;"></p>
 <p>然后如下进行配置：</p>
