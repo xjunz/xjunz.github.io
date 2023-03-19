@@ -1,9 +1,8 @@
 http://www.xjunz.top/post/payment-backends-with-ktor-server/
 http://www.xjunz.top/post/flow-in-android/
-http://www.xjunz.top/post/thinking-about-gpt/
+http://www.xjunz.top/post/thinking-about-gpt/thinking-about-gpt/
 http://www.xjunz.top/post/thinking-after-non-covid-policy/
 http://www.xjunz.top/post/RationalExistence/
-http://www.xjunz.top/post/Is-the-victim-guilty/
 http://www.xjunz.top/post/DatabaseIPC/
 http://www.xjunz.top/post/RetroMaterialTheme/
 http://www.xjunz.top/post/Android-Return-Transition-Patcher/

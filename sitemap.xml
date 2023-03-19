@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://www.xjunz.top/post/thinking-about-gpt/</loc>
+    <loc>http://www.xjunz.top/post/thinking-about-gpt/thinking-about-gpt/</loc>
     
     <lastmod>2023-02-25</lastmod>
     
@@ -41,15 +41,6 @@
     <loc>http://www.xjunz.top/post/RationalExistence/</loc>
     
     <lastmod>2022-08-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.xjunz.top/post/Is-the-victim-guilty/</loc>
-    
-    <lastmod>2022-08-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -184,7 +175,7 @@
 
   <url>
     <loc>http://www.xjunz.top/</loc>
-    <lastmod>2023-03-11</lastmod>
+    <lastmod>2023-03-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -192,7 +183,7 @@
   
   <url>
     <loc>http://www.xjunz.top/tags/trite/</loc>
-    <lastmod>2023-03-11</lastmod>
+    <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -201,21 +192,21 @@
   
   <url>
     <loc>http://www.xjunz.top/categories/Android-Dev/</loc>
-    <lastmod>2023-03-11</lastmod>
+    <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.xjunz.top/categories/%E6%9D%82%E8%B0%88/</loc>
-    <lastmod>2023-03-11</lastmod>
+    <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.xjunz.top/categories/Android-UI-UX/</loc>
-    <lastmod>2023-03-11</lastmod>
+    <lastmod>2023-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
