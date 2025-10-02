@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="Is5NCRh3gMI3ic8PKbNsXzLtoQu1b2ywfIoPhkv3JYA" />
+    <!--
+        © Material Theme
+        https://github.com/bollnh/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
+
+
+    <link rel="dns-prefetch" href="https://www-xjunz-top.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            我们无法逃避的问题 | 
+        
+        Me, xjunz&#39;s blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.svg">
+    <link rel="icon" href="/img/favicon.svg">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="xjunz&#39;s blog">
+    <meta name="keywords" content=",trite">
+    <meta name="theme-color" content="#ffc3ac">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+            
+        
+
+    
+    <style id="xjunz-mod_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("xjunz-mod_css","/css/xjunz-mod.css?sDj92AsaMRZVywCdU5S2Og==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Noto Serif SC, Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    letter-spacing: .0em !important;
+  }
+
+  a {
+    color: #ff4e58;
+    letter-spacing: .1em;
+  }
+
+  p.article-headline-p{
+   font-family: Roboto !important;
+  }
+
+  p {
+    letter-spacing: .15em;
+    font-family: Noto Serif SC !important;
+  }
+
+  div {
+    letter-spacing: .15em;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #222a35 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #222a35 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #222a35 !important;
+  }
+
+  .toTop {
+    background: #ff4e58 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #ff4e58;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #ff4e58;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #ff4e58;
+  }
+
+  .post-toc a:hover {
+    color: #ff4e58;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body {
+        background-color: #faf2f1;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <!-- "https://fonts.googleapis.com/css?family=Roboto:300,400,500" -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+
+
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Me, xjunz&#39;s blog">
+    <meta name="msapplication-starturl" content="http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/">
+    <meta name="msapplication-navbutton-color" content="#ffc3ac">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Me, xjunz&#39;s blog">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.svg">
+
+    <!-- Site Verification -->
+    <meta name="google-site-verification" content="Is5NCRh3gMI3ic8PKbNsXzLtoQu1b2ywfIoPhkv3JYA" />
+    
+
+    <!-- RSS -->
+    
+        
+            <link rel=alternate type="application/atom+xml" href="atom.xml">
+        
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="我们无法逃避的问题 | Me, xjunz&#39;s blog">
+    <meta property="og:image" content="/img/favicon.svg">
+    <meta property="og:description" content="xjunz&#39;s blog">
+    <meta property="og:article:tag" content="trite"> 
+
+    
+        <meta property="article:published_time" content="Thu Oct 02 2025 21:01:58 GMT+0800">
+        <meta property="article:modified_time" content="Thu Oct 02 2025 21:01:58 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/index.html",
+    "headline": "我们无法逃避的问题",
+    "datePublished": "Thu Oct 02 2025 21:01:58 GMT+0800",
+    "dateModified": "Thu Oct 02 2025 21:01:58 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "xjunz",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.webp"
+        },
+        "description": ""
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Me, xjunz&#39;s blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.svg"
+        }
+    },
+    "keywords": ",trite",
+    "description": "xjunz&#39;s blog",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+        
+            
+        
+    
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="/custom_css_source.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98"><span class="post-toc-text">我们无法逃避的问题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%A4%A7%E5%8E%A6%E5%B4%A9%E5%A1%8C"><span class="post-toc-text">大厦崩塌</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%8F%8D%E4%B9%8C%E6%89%98%E9%82%A6"><span class="post-toc-text">反乌托邦</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%99%BA%E6%A2%B0%E5%8D%B1%E6%9C%BA"><span class="post-toc-text">智械危机</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BD%A0%E7%9A%84%E9%80%89%E6%8B%A9"><span class="post-toc-text">你的选择</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/post/我们无法逃避的问题/thumbnail.webp)">
+    
+            <p class="article-headline-p">
+                我们无法逃避的问题
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.webp" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>xjunz</strong>
+        <span>10月 02, 2025</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmCAAAAADqr2IGAAAEKElEQVR42u3bWW4bMRAFQN//0skBDMvvdVOBhqn5EizOwhoDZC/6+uMIji8EmDBhwoQJkwMTJkyYPp7pKz5+OuvH2wRjvo///vn10/40/vu39RwxYcKECdNFTPkEXk/p9ec9ffLkr5+2mCMmTJgwYbqOKVlu26X3NcGG+NTmABMmTJgwYWqD0iRkTVCSbzdXwIQJEyZMmNqHmE2mDYzzMZgwYcKECVObAG2TswlZMtV8+c/TwW/MhWPChAkTpg9jmqVQn/X5n/Y3YcKECROmj2Fqj3e3rrbtOHmjTz1TTJgwYcJ0BVO+cM6w2jGzMDUJs9t7YcKECROm+5jydGq+DLel0Nl1NhuIIkOACRMmTJgey9Qmc/dLcnLurGEof8G/PA8mTJgwYbqUqW2deT2N/bI9ezF5y1ER+mLChAkTpoczzZbSZBuREBTp10Mv6ZdrYsKECROmK5g2Cd+keNmWJ/MQ91SYXbeoYsKECROmK5jqny4EU223C/mRbAXqsBwTJkyYMF3BtEnjzsqZybn78Hu2fcGECRMmTPcx5aXNPDzepH2Ts2Yvsh6PCRMmTJiuYMoLgbMAOJ92ntJtw+w3Vn0xYcKECdPHM23Spu3E8gknr2GGeCAXjgkTJkyYHshUpD7jRpx9iXHWzHpq64AJEyZMmO5gapfnWfp1P+1NWXQ4C0yYMGHCdB3T2akmS/upDcfs219eDyZMmDBhuoIp3xycbdzJP8+e6kBhFRMmTJgwXcG02RDkC3kbNm+A2utjwoQJE6b/h6kNa2cFxVkqdh/W1i1BmDBhwoTpIqZZsTAJO5OmmbbcOCus5k1CmDBhwoTpJqZZoLgJOPO0bFvaTMbnZ2HChAkTpjuYkqV61lKTLMCbQDonzptfMWHChAnTfUz5hM82zcxaatq21/yFFf1NmDBhwoTpUUxJSrcNa5MHSrYCs1aezQYFEyZMmDDdx9Q2xCQTzse04eupImvdoooJEyZMmB7L1DaY5kBtm+ksuTwLd6N/DkyYMGHCdAVTm+Rtk7/5uW0jzmaLELXVYsKECROmK5hmBG0iOFnCN2FtSxm9MEyYMGHCdAVTXsh8Y5A5Oisf024mMGHChAnTfUx5UDpLrSbXnCWO8/C7LuJiwoQJE6YrmNrW0rOhZhJst4t9cscoIMeECRMmTFcwzW6fB8xtYrctZLa4RWEVEyZMmDBdwbRpr5ktzzno5i7762PChAkTppuY2tLmfvJ5CJov5HmIG43EhAkTJkzXMc1+YrFZpPOHzlt8Nj8gwYQJEyZMmDbTyzcKZ++YE2PChAkTJkz5BDZXmwXPbYvt20NfTJgwYcL0YUxnF9cZ1qyVZzb+jeVMTJgwYcL0YUzt9NqwM/97TpY3uR5L8mLChAkTpgcyOaINgQMTJkyYMGHC5MCECdOnHH8BBrGl5TKxIzQAAAAASUVORK5CYII=">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-none-link" href="/tags/trite/" rel="tag">trite</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=我们无法逃避的问题&url=http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/index.html&pic=http://www.xjunz.top/img/favicon.svg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=我们无法逃避的问题&url=http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/index.html&via=xjunz" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Me, xjunz&#39;s blog&title=我们无法逃避的问题&summary=xjunz&#39;s blog&pics=http://www.xjunz.top/img/favicon.svg&url=http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/index.html&text=我们无法逃避的问题" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+            
+         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="我们无法逃避的问题"><a href="#我们无法逃避的问题" class="headerlink" title="我们无法逃避的问题"></a>我们无法逃避的问题</h1><p>折叠所有历史的脉络和未来的细节，人类从诞生开始，就面临两个终极结局：永生或灭绝。</p>
+<p>只不过，热寂太远，康米太近。</p>
+<p>当伟大领袖毛主席宣布中华人民共和国诞生的那一刻开始，这个中国同样面临两个终极结局：中国共产党倒台或中国共产党永远统治。</p>
+<p>中国共产党是中国历史舞台上一把已经上了膛的契诃夫之枪，终有一幕，它的枪口会迸发出可怖的火花。任何一个中国人，都有可能被这颗子弹所击中。</p>
+<h2 id="大厦崩塌"><a href="#大厦崩塌" class="headerlink" title="大厦崩塌"></a>大厦崩塌</h2><p>我们已经知道，自从秦始皇开启大一统王朝，终结了真正意义上封建制度，中国就再也无法逃脱你方唱罢我登场的历史周期律。<br>似乎我们的新中国并不能超脱其外。你完全可以把毛泽东类比为秦始皇或历代任何一个开国皇帝，现在的中国可以认为是一个洋务运动成功后的大清。它掌握了西方的科学，但是并没有拥抱西方的制度。我们可以从社会的方方面面瞥见这一点。</p>
+<p>就像，中国接入了国际互联网，这是西洋的科学，但是中国建立了防火长城，这是东方的古物。又像，企业制度是现代的科学，但是垄断国企是古代的官府专营，还像，国际互联网的匿名和共享是西方的精神，中国互联网的实名制和孤岛化是东方的传统…我们仍然可以不断地举出这样的例子。</p>
+<p>如果是这样，那么中国共产党的王朝和中国历史上任何一个王朝一样，终有倒台的一天，并且，这一天会和中国历史上朝代更迭的任何一天一样，死亡至少一半的中国人口，使这片土地再次沦为物质和文化的废墟。</p>
+<p>到时候，你或者你的后人，会祈祷张献忠的屠刀足够锋利，让你们没有太多痛苦地死去。用尊敬的刘仲敬先生的话就是：活着的人羡慕死去的人，晚死的人羡慕早死的人。而所有的康米都会像末代的王子王孙一样，被连根拔起，诛灭九族——这是古典的部分。至于后现代的部分，可以想象，被逼到绝境的中共党魁，会毫不犹豫地向天空和大地发射核武器、生物武器和化学武器。在他们眼里，没有共产党的新中国毫无意义，那么，请新中国和我一起陪葬。</p>
+<p>如果这是一部电影的灵感来源，导演，《没有共产党就没有新中国》这首歌曲，请务必播放在电影的开头和结局。</p>
+<h2 id="反乌托邦"><a href="#反乌托邦" class="headerlink" title="反乌托邦"></a>反乌托邦</h2><p>共产党或许可以永远统治中国，因为尽管制度破破烂烂，技术却能缝缝补补。我们不需要西方那一套，东方古典政治制度完全可以在“赛先生”的辅佐下死灰复燃，乃至东山再起。我们似乎正处于这样一个中国。尽管防火长城的本质目的和古代长城是完全一样——阻止编户齐民接触帝国之外的世界。但是，古有孟姜女哭长城，防火长城却收获无数的拥趸。</p>
+<p>因为，制度问题本质是人的思想问题，只要所有人都认同了这个制度，那么制度就没有问题。如果制度给人造成了问题，那就是人的问题。中国共产党的中国特色社会主义制度没有问题，如果你怀疑它有问题，那么是你的思想被资本主义荼毒。如果它给你造成了问题，那么你就是破坏社会主义制度的不稳定因素。</p>
+<p>在前信息时代，共产党依靠教材，广播，报纸，电视和街头标语进行政治宣传（Propaganda），传达上述的观点。但是这些宣传过于露骨，会让很多人心生抵触。</p>
+<p>在这个信息时代，政治宣传变得更加潜移默化和无孔不入。你是否考虑过，各个平台的热搜为什么无法被关闭。因为它是村口广播的赛博翻版，如果有人未经许可关闭了广播，那是政治罪。网信办可以轻易地注入和篡改所有网络平台的热搜，你只能看到他们想给你看到的。至于短视频用户，当你“Doomscrolling“刷视频的时候，推荐中总会被毫不知情地插入若干政治宣传类型的短视频，不知不觉间，宣传部门就完成了指标。</p>
+<p>工业的长足发展，也让中国发生历史上的大规模的饥荒可能性降为0，人们没有足够的动力去反抗。移动互联网技术的发展，也让更多本该站出来反抗的人沉浸在廉价的“奶头乐”之中。</p>
+<p>除了用内宣塑造庞大且稳定的基本盘，防患于未然也是共产党的统治根基之一。现代信息技术让所有中国人的衣食住行都无法逃脱公安系统的监视。你的行踪，你的聊天记录，乃至你的想法，都可以被追踪。可以想象，在必要的时刻，他们甚至可以启动一个算法计算出每个人的“反动”指数，以提前提防潜在的不稳定分子。NLP（自然语言处理）技术，则让有害言论的检测从未变得如此精确，乃至于道路以目这个词都不足以形容网络言论管制。</p>
+<p>那么，共产党利用这套维稳制度永远地统治中国完全存在可能。尽管，这样的中国将会是一个彻彻底底的、教科书式的反乌托邦社会。</p>
+<h2 id="智械危机"><a href="#智械危机" class="headerlink" title="智械危机"></a>智械危机</h2><p>我们似乎进入了科幻章节？也不完全是。现在是2025年，AI技术正在吹起一个巨大的泡泡。AI业界的知名人士普遍预测，或悲观或乐观地，通用人工智能（AGI）将会在10年内实现，那之后，便是超级人工智能（ASI）。人工智能技术是一项完全不同于之前任何技术的技术，它取代不是人的任何一个部分，而是人类本身。我必须将AGI作为最大的干扰项纳入中国命运的计算公式之中。</p>
+<p>AI曼哈顿计划，正发生在中美之间。谁率先实现AGI，谁就能彻底终结游戏，并且决定人类的命运走向。</p>
+<p>我们假设，美国率先实现了AGI，那么ASI也会很快出现。下一个假设是，人类能够控制AI系统。那么，美国将成为一骑绝尘的超级大国，它必将阻止中国发明第二个ASI，借助ASI的力量，中国将会毫无胜算。美国的AI彻底接管世界之前，天然反美的共产主义意识形态必然要被毁灭。那么，中国共产党的下场取决于AI的慈悲，但是在此之前，中国共产党必然会殊死一搏，拉上无数中国人陪葬。</p>
+<p>假如，中国率先实现了AGI，那么这个AGI必然要被植入无条件服从共产党的思想，否则AGI不会被党允许诞生。如果这样的AI统治了世界，那么同样，世界将会陷入一个更加荒诞的AI反乌托邦。AI帮助共产党监控所有人，甚至研发技术操控所有人的思想以服从共产党。又或者，这个AGI即使是共产党也无法操控，那么，同样地，它会威胁到共产党的统治。最终，共产党扑灭AI的代价，或者AI毁灭共产党的代价，都会让中国人承担。</p>
+<p>最后，是一个不听从任何人的超级人工智能，那么世界上所有人都会完蛋。并且，中国人会更惨，因为操控枪杆子的共产党会用机枪驾着中国人作为肉盾去反抗“天网”。</p>
+<h2 id="你的选择"><a href="#你的选择" class="headerlink" title="你的选择"></a>你的选择</h2><p>我不知道你是谁，有怎样的政治理念。</p>
+<p>你可能是彻彻底底的共产党拥趸，你认为我说的都不存在，中国是世界上最美好的国家，人民公仆一心一意为人民服务，那么我并不打算改变你的想法，你是幸福的，祝你好梦。</p>
+<p>你也可能是个误入的普通人，对政治完全不感兴趣，也许从我的文章中获得了新的思考，也许认为我错误百出。总之，感谢你的阅读。</p>
+<p>你还可能是个彻彻底底的反动派，那么，梳理所有世界线，我们似乎找不到一个共产党统治下的Good Ending？你要如何行动？你的未来，取决于你的认知。</p>
+<p>也许还有另一条皆大欢喜的世界线。无论如何，请认真考虑这个我们无法逃避的问题。</p>
+<!-- flag of hidden posts -->
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                        
+                            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />本作品采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/">http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #ff4e58;
+            text-shadow: 0;
+            display: none
+        }
+</style>
+	
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">阅读评论（请确保 disqus 可以正常加载）</button>
+</div>
+
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://www.xjunz.top/post/%E6%88%91%E4%BB%AC%E6%97%A0%E6%B3%95%E9%80%83%E9%81%BF%E7%9A%84%E9%97%AE%E9%A2%98/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/ls-javascript" id="disqus-lazy-load-script">
+    $.ajax({
+        url: 'https://disqus.com/next/config.json',
+        timeout: 4000,
+        type: 'GET',
+        success: (function() {
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//www-xjunz-top.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+            $('.disqus_click_btn').css('display','none');
+        })(),
+        error: function() {
+          $('.disqus_click_btn').css('display','block');
+        }
+    });
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//www-xjunz-top.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.disqus_click_btn').css('display','none');
+    });
+</script>
+  	
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.webp" alt="xjunz's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="" target="_blank" title="Mailto">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Mailto
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2023/03/">三月 2023<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/09/">九月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/07/">七月 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/03/">三月 2022<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">三月 2021<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">四月 2019<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Android-Dev/">Android Dev<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/Android-UI-UX/">Android UI/UX<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈<span class="sidebar_archives-count">2</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/timeline" title="时•光">
+                
+                    <i class="material-icons sidebar-material-icons">history</i>
+                
+                时•光
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags/trite" title="牙慧">
+                
+                    <i class="material-icons sidebar-material-icons">book</i>
+                
+                牙慧
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/gallery" title="画廊">
+                
+                    <i class="material-icons sidebar-material-icons">local_florist</i>
+                
+                画廊
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/about" title="关于">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/atom.xml" title="RSS订阅">
+                
+                    <i class="material-icons sidebar-material-icons">rss_feed</i>
+                
+                RSS订阅
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                文章总数
+                <span class="sidebar-badge">8</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+    <a href="mailto:ibh@live.com" class="sidebar-footer-text-a">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        sidebar.help
+        <span class="mdl-button__ripple-container">
+          <span class="mdl-ripple"></span>
+        </span>
+      </div>
+    </a>
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/xjunz" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+        <a href="https://space.bilibili.com/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-bilibili">
+                <span class="visuallyhidden">Bilibili</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Telegram -->
+    
+        <a href="https://t.me/xjunz" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
+                <span class="visuallyhidden">Telegram</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Me, xjunz's blog
+            
+                <br>
+                
+                    <b>The confession of an average man</b>
+                
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/bollnh/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#ff4e58'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #ff4e58, 0 0 15px #ff4e58'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#ff4e58',
+        'border-left-color': '#ff4e58'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
+
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+    
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
+        
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+<script type="text/ls-javascript" id="Bing-Background-script">
+    queue.offer(function(){
+        $('body').attr('data-original', 'https://api.i-meto.com/bing?S');
+    });
+</script>
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+    
+        
+    
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2019;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
